@@ -6,13 +6,18 @@
 // constantes que informam de qual recipiente será lida a informação
 #define SUPERIOR 0
 #define INFERIOR 1
-//constantes que define a manipulacao das informaçõe
-#define LIGAR_BOMBA "B"
-#define DESLIGAR_BOMBA "b"
-#define LIGAR_MOTOR "M"
-#define DESLIGAR_MOTOR "m"
-#define LIGAR "L"
-#define DESLIGAR "l"
+//constantes que define a manipulacao dos estados dos agentes ativos do sistema
+#define LIGAR_BOMBA 'B'
+#define DESLIGAR_BOMBA 'b'
+#define LIGAR_MOTOR 'M'
+#define DESLIGAR_MOTOR 'm'
+#define LIGAR 'L'
+#define DESLIGAR 'l'
+// constantes que define em qual pino do PIC16F877A estão ligados os respectivos hardware
+#define RELE_BOMBA PORTDbits.RD2
+#define LED_BOMBA PORTDbits.RD3
+#define RELE_MOTOR PORTDbits.RD6
+#define BOTAO_LIGAR_DESLIGAR PORTDbits.RD7
 
 //Variáveis Globais de Controle.
 int ADCResult = 0;
@@ -132,6 +137,47 @@ void ADCRead(int ch) {
 }
 
 /**
+ *  funcao responsavel por verificar de acordo com a informação
+ * lida da porta serial, qual procedimento deve ser realizado
+ * @param input recebe como parametro um caractere recebido da serial
+ */
+void active(char input) {
+
+    if (input == LIGAR_BOMBA) {
+
+        RELE_BOMBA = 0; // ativacao do rele usado no projeto é feita em nivel logico baixo
+        LED_BOMBA = 1;
+        USARTWriteChar(LIGAR_BOMBA); // escrevo no canal serial
+
+    } else if (input == DESLIGAR_BOMBA) {
+
+        RELE_BOMBA = 1;
+        LED_BOMBA = 0;
+        USARTWriteChar(DESLIGAR_BOMBA); // escrevo no canal serial
+
+    } else if (input = LIGAR_MOTOR) {
+
+        RELE_MOTOR = 0;
+    
+    } else if (input == DESLIGAR_MOTOR) {
+
+        RELE_MOTOR = 1;
+        USARTWriteChar(DESLIGAR_MOTOR); // escrevo no canal serial
+    
+    } else if (input == LIGAR) {
+
+        BOTAO_LIGAR_DESLIGAR = 1;
+        USARTWriteChar(LIGAR); // escrevo no canal serial
+   
+    } else if (input == DESLIGAR) {
+
+        BOTAO_LIGAR_DESLIGAR = 0;
+        USARTWriteChar(DESLIGAR); // escrevo no canal serial
+
+    }
+}
+
+/**
  *  funcao responsavel por preparar o nivel recebido e envia-lo pela porta serial
  * @param send recebe como parametro a informação a ser preparada para o envio
  */
@@ -163,10 +209,30 @@ void sendString(const char *send) {
     USARTWriteString(envio); // envio o valor para a serial
 }
 
+/**
+ *  Funcao responsavel por imprimir a barra de progresso junto ao LCD
+ * @param preint recebe como parametro o numero de segmentos do lcd que devem ser preechidos
+ */
+void progressBar(int preint) {
+    int i = 0;
+    unsigned char *result;
+    unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+        ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+
+    // imprime barrinha
+    while (preint >= 0) { // enquanto nao for alcando a primeira coluna do LCD
+        aux[i] = 0xFF;
+        preint--;
+        i++;
+    }
+    result = &aux; // ponteiro recebe array de char
+    lcd_escreve_string(result); // escreve no lcd as barras de progresso
+    __delay_ms(200);
+}
+
 //-----------------------------------------------------------------------------
 
 void interrupt ISR(void) {
-
 
     // Verificação se a Interrupção foi causada pela conversão A/D.
     if (PIR1bits.ADIF) {
@@ -176,18 +242,15 @@ void interrupt ISR(void) {
         //Variáveis para a função ftoa funcionar corretamente.
         char * buf;
         char * per;
-        char * teste;
-        char * qtdc;
+        //char * teste;
+       // char * qtdc;
         float input;
         float input2;
         float pre;
         int preint;
         int status;
         int status2;
-        int status3;
-        int i = 0;
-        unsigned char *result;
-        unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+        //int status3;
 
         input = ADCResult * 0.0048828125;
         buf = ftoa(input, &status); //Vetor buf armazena a tensão convertida.
@@ -206,7 +269,7 @@ void interrupt ISR(void) {
         per = ftoa(input2, &status2);
         lcd_escreve_string(per);
 
-        sendString(per);// chamada a funcao que irá escrever o nivel do recipiente na porta serial
+        sendString(per); // chamada a funcao que irá escrever o nivel do recipiente na porta serial
 
         lcd_gotoxy(16, 1);
         lcd_escreve_string("%");
@@ -224,48 +287,15 @@ void interrupt ISR(void) {
             PORTDbits.RD2 = 1;
             PORTDbits.RD3 = 0;
         }
-        // imprime barrinha
-
-        while (preint >= 0) {
-            aux[i] = 0xFF;
-            preint--;
-            i++;
-        }
-        result = &aux;
-        //        teste = ftoa(preint, &status2);
-        lcd_escreve_string(result);
-        //lcd_gotoxy(0, 0);
-
-
-        //if (ADCResult >= 769) {
-        //  LCDCursor(0, 9);
-        //  LCDWriteString("100%");
-        // }
-        // if (ADCResult >= 513 && ADCResult <= 768) {
-        //    LCDCursor(0,9);
-        //   LCDWriteString("75%");
-        // }
-
-        // if (ADCResult >= 257 && ADCResult <= 512) {
-        //    LCDCursor(0,9);
-        //    LCDWriteString("5%");
-        // }
-
-        // if (ADCResult >= 0 && ADCResult <= 256) {
-        //   LCDCursor(0,9);
-        //  LCDWriteString("25%");
-        // }
-
-        __delay_ms(200);
+        
+        progressBar(preint); //chamada a funcao que irá pintar a barra de progresso
 
         PIR1bits.ADIF = 0; // Limpa a flag da interrupção do conversor A/D.
     }
     //Verifica se a interrupção foi causada pela recepção de bytes.
     if (PIR1bits.RCIF) {
-        USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
-        USARTWriteString("\n\r Caracter Digitado :");
-        USARTWriteChar(USARTReceiveChar());
-
+        // chamada a funcao responsavel por verificar de acordo com o caractere recebido, qual procedimento deve ser realizado
+        active(USARTReceiveChar());
     }
 }
 
@@ -304,7 +334,7 @@ void main(void) {
     inicialize(); // funcao que irá configurar a utilizacao dos PORTS
 
     while (1) {
-        ADCRead(SUPERIOR);// realizo a leitura do nivel d'agua do recipiente superior
+        ADCRead(SUPERIOR); // realizo a leitura do nivel d'agua do recipiente superior
         __delay_ms(300);
         if (PORTCbits.RC3 == 1) {
             while (PORTCbits.RC3 == 1) {

@@ -1603,7 +1603,7 @@ void lcd_escreve_string(const unsigned char *y);
 void LCDClear();
 void LCDWriteCmd(unsigned char Byte);
 
-# 18 "main.c"
+# 23 "main.c"
 int ADCResult = 0;
 unsigned char Display[7];
 int flag_an = -1;
@@ -1686,7 +1686,7 @@ PIR1bits.RCIF = 0;
 return (USARTData);
 }
 
-# 105
+# 110
 void ADCInit() {
 
 ADCON1bits.ADFM = 1;
@@ -1716,7 +1716,44 @@ while (ADCON0bits.GO_DONE);
 
 }
 
-# 138
+# 144
+void active(char input) {
+
+if (input == 'B') {
+
+PORTDbits.RD2 = 0;
+PORTDbits.RD3 = 1;
+USARTWriteChar('B');
+
+} else if (input == 'b') {
+
+PORTDbits.RD2 = 1;
+PORTDbits.RD3 = 0;
+USARTWriteChar('b');
+
+} else if (input = 'M') {
+
+PORTDbits.RD6 = 0;
+
+} else if (input == 'm') {
+
+PORTDbits.RD6 = 1;
+USARTWriteChar('m');
+
+} else if (input == 'L') {
+
+PORTDbits.RD7 = 1;
+USARTWriteChar('L');
+
+} else if (input == 'l') {
+
+PORTDbits.RD7 = 0;
+USARTWriteChar('l');
+
+}
+}
+
+# 184
 void sendString(const char *send) {
 int x = 0;
 char array[40];
@@ -1745,10 +1782,27 @@ envio = &array;
 USARTWriteString(envio);
 }
 
+# 216
+void progressBar(int preint) {
+int i = 0;
+unsigned char *result;
+unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+
+
+while (preint >= 0) {
+aux[i] = 0xFF;
+preint--;
+i++;
+}
+result = &aux;
+lcd_escreve_string(result);
+_delay((unsigned long)((200)*(20000000/4000.0)));
+}
+
 
 
 void interrupt ISR(void) {
-
 
 
 if (PIR1bits.ADIF) {
@@ -1758,18 +1812,15 @@ ADCResult = ((ADRESH << 8) + ADRESL);
 
 char * buf;
 char * per;
-char * teste;
-char * qtdc;
+
+
 float input;
 float input2;
 float pre;
 int preint;
 int status;
 int status2;
-int status3;
-int i = 0;
-unsigned char *result;
-unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+
 
 input = ADCResult * 0.0048828125;
 buf = ftoa(input, &status);
@@ -1807,31 +1858,18 @@ PORTDbits.RD2 = 1;
 PORTDbits.RD3 = 0;
 }
 
-
-while (preint >= 0) {
-aux[i] = 0xFF;
-preint--;
-i++;
-}
-result = &aux;
-
-lcd_escreve_string(result);
-
-# 259
-_delay((unsigned long)((200)*(20000000/4000.0)));
+progressBar(preint);
 
 PIR1bits.ADIF = 0;
 }
 
 if (PIR1bits.RCIF) {
-USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
-USARTWriteString("\n\r Caracter Digitado :");
-USARTWriteChar(USARTReceiveChar());
 
+active(USARTReceiveChar());
 }
 }
 
-# 276
+# 306
 void inicialize(void) {
 TRISA = 0b11111111;
 PORTAbits.RA0 = 0;
