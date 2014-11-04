@@ -40,7 +40,7 @@
 "15 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c
 [v ___ftneg __ftneg `(f  1 e 3 0 ]
 "6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c
-[v _ftoa ftoa `(*.5uc  1 e 1 0 ]
+[v _ftoa ftoa `(*.4uc  1 e 1 0 ]
 "18 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "44 C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c
@@ -113,7 +113,7 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"6 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\lcd_4bit.c
+"6 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c
 [v _init_lcd_4bit init_lcd_4bit `(v  1 e 0 0 ]
 "39
 [v _lcd_envia_nibble lcd_envia_nibble `(v  1 e 0 0 ]
@@ -134,37 +134,25 @@
 [v i1_lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
 "179
 [v _LCDClear LCDClear `(v  1 e 0 0 ]
-"30 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
+"15 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c
 [v _USARTInit USARTInit `(v  1 e 0 0 ]
-"72
+"55
 [v _USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 [v i1_USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
-"81
+"62
 [v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
 [v i1_USARTWriteString USARTWriteString `(v  1 e 0 0 ]
-"94
+"73
 [v _USARTReceiveChar USARTReceiveChar `(uc  1 e 1 0 ]
-"115
+"97
 [v _ADCInit ADCInit `(v  1 e 0 0 ]
-"137
+"119
 [v _ADCRead ADCRead `(v  1 e 0 0 ]
-"149
-[v _Ativar Ativar `(v  1 e 0 0 ]
-"170
-[v _Bomba Bomba `(v  1 e 0 0 ]
-"185
-[v _ProgressBar ProgressBar `(v  1 e 0 0 ]
-"207
-[v _sendSerial sendSerial `(v  1 e 0 0 ]
-"235
+"136
 [v _ISR ISR `II(v  1 e 0 0 ]
-"293
-[v _reset reset `(v  1 e 0 0 ]
-"305
-[v _inicialize inicialize `(v  1 e 0 0 ]
-"332
+"241
 [v _main main `(v  1 e 0 0 ]
-[s S284 . 1 `uc 1 RA0 1 0 :1:0 
+[s S263 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -172,8 +160,8 @@
 `uc 1 RA5 1 0 :1:5 
 ]
 "173 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
-[u S291 . 1 `S284 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES291  1 e 1 @5 ]
+[u S270 . 1 `S263 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES270  1 e 1 @5 ]
 [s S101 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
@@ -328,36 +316,20 @@
 [v _WREN WREN `VEb  1 e 0 @3170 ]
 "354 C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c
 [v _dpowers dpowers `DCC[10]ul  1 s 40 dpowers ]
-"27 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\lcd_4bit.h
+"27 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.h
 [v _LCD_INIT_STRING LCD_INIT_STRING `DCC[4]uc  1 e 4 0 ]
-"18 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
-[v _flag_Leitura flag_Leitura `i  1 e 2 0 ]
-"19
-[v _Buffer_Leitura Buffer_Leitura `i  1 e 2 0 ]
-"20
-[v _SUPERIOR SUPERIOR `DCCi  1 e 2 0 ]
-"21
-[v _INFERIOR INFERIOR `DCCi  1 e 2 0 ]
-"22
+"8 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c
 [v _ADCResult ADCResult `i  1 e 2 0 ]
-"23
+"10
+[v _Display Display `[7]uc  1 e 7 0 ]
+"11
 [v _flag_an flag_an `i  1 e 2 0 ]
-"332
+"241
 [v _main main `(v  1 e 0 0 ]
 {
-"342
+"276
 } 0
-"293
-[v _reset reset `(v  1 e 0 0 ]
-{
-"300
-} 0
-"305
-[v _inicialize inicialize `(v  1 e 0 0 ]
-{
-"330
-} 0
-"168 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\lcd_4bit.c
+"168 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c
 [v _lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
 {
 [v lcd_escreve_string@y y `*.26DCCuc  1 p 2 12 ]
@@ -391,21 +363,21 @@
 [v init_lcd_4bit@i i `uc  1 a 1 7 ]
 "36
 } 0
-"81 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
+"62 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c
 [v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
 {
 [v USARTWriteString@str str `*.26DCCuc  1 p 2 1 ]
-"88
+"69
 } 0
-"72
+"55
 [v _USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 {
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 0 ]
-"75
+"58
 } 0
-"179 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\lcd_4bit.c
+"179 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c
 [v _LCDClear LCDClear `(v  1 e 0 0 ]
 {
 "189
@@ -429,61 +401,98 @@
 [v lcd_envia_nibble@n n `uc  1 a 1 1 ]
 "50
 } 0
-"115 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
-[v _ADCInit ADCInit `(v  1 e 0 0 ]
-{
-"131
-} 0
-"137
+"119 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c
 [v _ADCRead ADCRead `(v  1 e 0 0 ]
 {
 [v ADCRead@ch ch `i  1 p 2 0 ]
-"142
+"132
 } 0
-"235
+"97
+[v _ADCInit ADCInit `(v  1 e 0 0 ]
+{
+"116
+} 0
+"136
 [v _ISR ISR `II(v  1 e 0 0 ]
 {
-"280
-[v ISR@recebido recebido `uc  1 a 1 70 ]
-"241
-[v ISR@input2 input2 `f  1 a 3 71 ]
-"242
-[v ISR@pre pre `f  1 a 3 67 ]
-"240
-[v ISR@input input `f  1 a 3 64 ]
-"243
-[v ISR@preint preint `i  1 a 2 74 ]
-"244
-[v ISR@status status `i  1 a 2 62 ]
+"159
+[v ISR@aux aux `[16]uc  1 a 16 0 ]
+"151
+[v ISR@input2 input2 `f  1 a 3 32 ]
+"150
+[v ISR@input input `f  1 a 3 29 ]
+"152
+[v ISR@pre pre `f  1 a 3 21 ]
+"157
+[v ISR@i i `i  1 a 2 26 ]
+"153
+[v ISR@preint preint `i  1 a 2 24 ]
+"155
+[v ISR@status2 status2 `i  1 a 2 19 ]
+"154
+[v ISR@status status `i  1 a 2 17 ]
+"147
+[v ISR@per per `*.4uc  1 a 1 35 ]
+"158
+[v ISR@result result `*.4uc  1 a 1 28 ]
+"146
+[v ISR@buf buf `*.4uc  1 a 1 16 ]
+"158
+[v ISR@F1345 F1345 `[16]uc  1 s 16 F1345 ]
 "239
-[v ISR@percentual percentual `*.5uc  1 a 1 76 ]
-"288
 } 0
-"207
-[v _sendSerial sendSerial `(v  1 e 0 0 ]
+"168 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c
+[v i1_lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
 {
-"209
-[v sendSerial@origem origem `[40]uc  1 a 40 0 ]
-"208
-[v sendSerial@x x `i  1 a 2 44 ]
-[v sendSerial@status status `i  1 a 2 40 ]
-"211
-[v sendSerial@nivelRecipiente nivelRecipiente `*.5DCCuc  1 a 1 43 ]
-"210
-[v sendSerial@envio envio `*.4DCCuc  1 a 1 42 ]
-"207
-[v sendSerial@preint preint `i  1 p 2 50 ]
-[v sendSerial@recipiente recipiente `i  1 p 2 52 ]
-"230
+[v i1lcd_escreve_string@y y `*.26DCCuc  1 p 2 12 ]
+"175
+} 0
+"82
+[v i1_lcd_putc lcd_putc `(v  1 e 0 0 ]
+{
+[v i1lcd_putc@c c `uc  1 a 1 wreg ]
+[v i1lcd_putc@c c `uc  1 a 1 wreg ]
+[v i1lcd_putc@c c `uc  1 a 1 11 ]
+"103
+} 0
+"70
+[v i1_lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
+{
+[v i1lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v i1lcd_gotoxy@address lcd_gotoxy `uc  1 a 1 8 ]
+[v i1lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v i1lcd_gotoxy@y y `uc  1 p 1 5 ]
+"74
+[v i1lcd_gotoxy@x x `uc  1 a 1 7 ]
+"79
+} 0
+"53
+[v i1_lcd_envia_byte lcd_envia_byte `(v  1 e 0 0 ]
+{
+[v i1lcd_envia_byte@address address `uc  1 a 1 wreg ]
+[v i1lcd_envia_byte@address address `uc  1 a 1 wreg ]
+[v i1lcd_envia_byte@n n `uc  1 p 1 2 ]
+"55
+[v i1lcd_envia_byte@address address `uc  1 a 1 4 ]
+"67
+} 0
+"39
+[v i1_lcd_envia_nibble lcd_envia_nibble `(v  1 e 0 0 ]
+{
+[v i1lcd_envia_nibble@n n `uc  1 a 1 wreg ]
+[v i1lcd_envia_nibble@n n `uc  1 a 1 wreg ]
+"41
+[v i1lcd_envia_nibble@n n `uc  1 a 1 1 ]
+"50
 } 0
 "6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c
-[v _ftoa ftoa `(*.5uc  1 e 1 0 ]
+[v _ftoa ftoa `(*.4uc  1 e 1 0 ]
 {
 "10
 [v ftoa@l l `ul  1 a 4 45 ]
 [v ftoa@rem rem `ul  1 a 4 41 ]
 "9
-[v ftoa@cp cp `*.5uc  1 a 1 49 ]
+[v ftoa@cp cp `*.4uc  1 a 1 49 ]
 "6
 [v ftoa@f f `f  1 p 3 36 ]
 [v ftoa@status status `*.4i  1 p 1 39 ]
@@ -494,11 +503,11 @@
 "492 C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
-[s S684 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[s S662 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
 "533
-[u S687 . 4 `ul 1 _val 4 0 `S684 1 _str 4 0 ]
-[v sprintf@_val _val `S687  1 a 4 26 ]
+[u S665 . 4 `ul 1 _val 4 0 `S662 1 _str 4 0 ]
+[v sprintf@_val _val `S665  1 a 4 26 ]
 "504
 [v sprintf@prec prec `i  1 a 2 33 ]
 "501
@@ -510,10 +519,10 @@
 "508
 [v sprintf@flag flag `uc  1 a 1 24 ]
 "492
-[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 [v sprintf@f f `*.24DCCuc  1 p 1 10 ]
 "542
-[v sprintf@sp sp `*.5uc  1 a 1 30 ]
+[v sprintf@sp sp `*.4uc  1 a 1 30 ]
 "1550
 } 0
 "8 C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c
@@ -624,15 +633,6 @@
 [v ___ftge@ff2 ff2 `f  1 p 3 3 ]
 "13
 } 0
-"32 C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c
-[v ___awtoft __awtoft `(f  1 e 3 0 ]
-{
-"34
-[v ___awtoft@sign sign `uc  1 a 1 13 ]
-"32
-[v ___awtoft@c c `i  1 p 2 8 ]
-"42
-} 0
 "49 C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
 {
@@ -647,6 +647,15 @@
 [v ___ftdiv@f1 f1 `f  1 p 3 19 ]
 "78
 } 0
+"32 C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
 "62 C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
@@ -655,96 +664,48 @@
 [v ___ftpack@sign sign `uc  1 p 1 4 ]
 "86
 } 0
-"94 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 1 ]
+[v ___awmod@counter counter `uc  1 a 1 0 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 9 ]
+[v ___awmod@dividend dividend `i  1 p 2 11 ]
+"35
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"73 Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c
 [v _USARTReceiveChar USARTReceiveChar `(uc  1 e 1 0 ]
 {
-"95
-[v USARTReceiveChar@USARTData USARTData `uc  1 a 1 4 ]
-"110
-} 0
-"185
-[v _ProgressBar ProgressBar `(v  1 e 0 0 ]
-{
-"188
-[v ProgressBar@aux aux `[16]uc  1 a 16 6 ]
-"186
-[v ProgressBar@i i `i  1 a 2 22 ]
-"187
-[v ProgressBar@result result `*.4uc  1 a 1 24 ]
-"185
-[v ProgressBar@preint preint `i  1 p 2 0 ]
-"187
-[v ProgressBar@F1340 F1340 `[16]uc  1 s 16 F1340 ]
-"200
-} 0
-"168 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\lcd_4bit.c
-[v i1_lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
-{
-[v i1lcd_escreve_string@y y `*.26DCCuc  1 p 2 12 ]
-"175
-} 0
-"82
-[v i1_lcd_putc lcd_putc `(v  1 e 0 0 ]
-{
-[v i1lcd_putc@c c `uc  1 a 1 wreg ]
-[v i1lcd_putc@c c `uc  1 a 1 wreg ]
-[v i1lcd_putc@c c `uc  1 a 1 11 ]
-"103
-} 0
-"70
-[v i1_lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
-{
-[v i1lcd_gotoxy@x x `uc  1 a 1 wreg ]
-[v i1lcd_gotoxy@address lcd_gotoxy `uc  1 a 1 8 ]
-[v i1lcd_gotoxy@x x `uc  1 a 1 wreg ]
-[v i1lcd_gotoxy@y y `uc  1 p 1 5 ]
 "74
-[v i1lcd_gotoxy@x x `uc  1 a 1 7 ]
-"79
+[v USARTReceiveChar@USARTData USARTData `uc  1 a 1 4 ]
+"90
 } 0
-"53
-[v i1_lcd_envia_byte lcd_envia_byte `(v  1 e 0 0 ]
-{
-[v i1lcd_envia_byte@address address `uc  1 a 1 wreg ]
-[v i1lcd_envia_byte@address address `uc  1 a 1 wreg ]
-[v i1lcd_envia_byte@n n `uc  1 p 1 2 ]
-"55
-[v i1lcd_envia_byte@address address `uc  1 a 1 4 ]
-"67
-} 0
-"39
-[v i1_lcd_envia_nibble lcd_envia_nibble `(v  1 e 0 0 ]
-{
-[v i1lcd_envia_nibble@n n `uc  1 a 1 wreg ]
-[v i1lcd_envia_nibble@n n `uc  1 a 1 wreg ]
-"41
-[v i1lcd_envia_nibble@n n `uc  1 a 1 1 ]
-"50
-} 0
-"170 Z:\6 Semestre\Sistemas Embarcados\PRJ_Sist_abast\Sistema-de-Abastecimento-de--gua-\BOIA.X\main.c
-[v _Bomba Bomba `(v  1 e 0 0 ]
-{
-"179
-} 0
-"149
-[v _Ativar Ativar `(v  1 e 0 0 ]
-{
-[v Ativar@comando comando `uc  1 a 1 wreg ]
-[v Ativar@comando comando `uc  1 a 1 wreg ]
-[v Ativar@comando comando `uc  1 a 1 3 ]
-"165
-} 0
-"81
+"62
 [v i1_USARTWriteString USARTWriteString `(v  1 e 0 0 ]
 {
 [v i1USARTWriteString@str str `*.26DCCuc  1 p 2 1 ]
-"88
+"69
 } 0
-"72
+"55
 [v i1_USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 {
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 0 ]
-"75
+"58
 } 0

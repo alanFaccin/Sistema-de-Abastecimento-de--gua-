@@ -13,7 +13,10 @@
 #define LIGAR_MOTOR 'M'
 #define DESLIGAR_MOTOR 'm'
 
+
 //Variáveis Globais de Controle.
+int flag_Leitura = 0;
+int Buffer_Leitura = 0;
 const int SUPERIOR = 0;
 const int INFERIOR = 1;
 int ADCResult = 0;
@@ -166,7 +169,7 @@ void Ativar(char comando) {
  */
 void Bomba(void) {
     //Aciona o rele que starta a bomba quando o nivel esta baixo
-    if (ADCResult < 160) {
+    if (ADCResult < 40) {
         Ativar(LIGAR_BOMBA);
     }
 
@@ -232,10 +235,7 @@ void sendSerial(int preint, int recipiente) {
 void interrupt ISR(void) {
     // Verificação se a Interrupção foi causada pela conversão A/D.
     if (PIR1bits.ADIF) {
-        // Converte os dois bytes em um valor inteiro para manipulação de dados.
-        ADCResult = ((ADRESH << 8) + ADRESL);
-        //Variáveis para a função ftoa funcionar corretamente.
-        char * bufferConversor;
+
         char * percentual;
         float input;
         float input2;
@@ -243,25 +243,35 @@ void interrupt ISR(void) {
         int preint;
         int status;
 
-        input = ADCResult * 0.0048828125;
-        bufferConversor = ftoa(input, &status); //Vetor buf armazena a tensão convertida.
+        if (flag_Leitura < 5) {
+            flag_Leitura++;
+            // Converte os dois bytes em um valor inteiro para manipulação de dados.
+            ADCResult = ((ADRESH << 8) + ADRESL);
+            Buffer_Leitura += ADCResult;
+        } else {
 
-        // Envia o valor formatado para o LCD.
-        // coluna e linha
-        lcd_gotoxy(0, 1);
-        lcd_escreve_string("Nivel:");
-        lcd_gotoxy(7, 1);
-        input2 = ((input * 100) / 0.8);
-        percentual = ftoa(input2, &status);
-        lcd_escreve_string(percentual);
-        lcd_gotoxy(16, 1);
-        lcd_escreve_string("%");
-        lcd_gotoxy(0, 0);
-        pre = input2 * 0.16;
-        preint = (int) pre;
-        Bomba(); // funçao responsavel por verificar o nivel de água no recipiente superior
-        ProgressBar(preint); // chamada a funcao responsavel por exibir o progresso do preenchimento
-        sendSerial(preint, SUPERIOR);
+            flag_Leitura=0;
+            input = (Buffer_Leitura * 0.0048828125)/5;
+            // Envia o valor formatado para o LCD.
+            // coluna e linha
+            lcd_gotoxy(0, 1);
+            lcd_escreve_string("Nivel:");
+            USARTWriteString("Nivel:");
+            lcd_gotoxy(7, 1);
+            input2 = ((input * 100) / 0.8);
+            percentual = ftoa(input2, &status);
+            lcd_escreve_string(percentual);
+            USARTWriteString(percentual);
+            lcd_gotoxy(16, 1);
+            lcd_escreve_string("%");
+            USARTWriteString("%");
+            lcd_gotoxy(0, 0);
+            pre = input2 * 0.16;
+            preint = (int) pre;
+            Bomba(); // funçao responsavel por verificar o nivel de água no recipiente superior
+            ProgressBar(preint); // chamada a funcao responsavel por exibir o progresso do preenchimento
+            sendSerial(preint, SUPERIOR);
+        }
         PIR1bits.ADIF = 0; // Limpa a flag da interrupção do conversor A/D.
     }
 
@@ -314,14 +324,16 @@ void inicialize(void) {
     __delay_ms(1000);
     ADCInit();
     lcd_escreve_string("\fLoading PIC...");
+    USARTWriteString("\fLoading PIC...");
     __delay_ms(5000);
     LCDClear();
 }
 
 void main(void) {
     inicialize(); // funcao que irá inicializar as configurões do port
-    if (START==1) {
-        while (1) {//loop infinito
+    if (START == 1) {
+        USARTWriteString("Kaliane");
+        while (1) {//loop inUSARTWriteString("Kaliane");finito
             ADCRead(1);
             __delay_ms(300);
             reset(); // funcao responsavel por verificar o o botao reset esta pressionado

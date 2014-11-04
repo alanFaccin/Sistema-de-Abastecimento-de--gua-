@@ -1603,15 +1603,14 @@ void lcd_escreve_string(const unsigned char *y);
 void LCDClear();
 void LCDWriteCmd(unsigned char Byte);
 
-# 18 "main.c"
-int flag_Leitura = 0;
-int Buffer_Leitura = 0;
-const int SUPERIOR = 0;
-const int INFERIOR = 1;
+# 8 "main.c"
 int ADCResult = 0;
+
+unsigned char Display[7];
 int flag_an = -1;
 
-# 30
+
+
 void USARTInit(long BaudRate, int Mode) {
 int BR = 0;
 
@@ -1650,13 +1649,15 @@ PIE1bits.RCIE = 1;
 PIR1bits.RCIF = 0;
 }
 
-# 72
+
+
 void USARTWriteChar(unsigned char USARTData) {
 while (!PIR1bits.TXIF);
 TXREG = USARTData;
 }
 
-# 81
+
+
 void USARTWriteString(const char *str) {
 
 while (*str != '\0') {
@@ -1666,7 +1667,8 @@ str++;
 }
 }
 
-# 94
+
+
 unsigned char USARTReceiveChar(void) {
 unsigned char USARTData;
 
@@ -1682,10 +1684,11 @@ USARTData = RCREG;
 RCSTAbits.CREN = 1;
 PIR1bits.RCIF = 0;
 }
+
 return (USARTData);
 }
 
-# 115
+# 97
 void ADCInit() {
 
 ADCON1bits.ADFM = 1;
@@ -1697,6 +1700,9 @@ ADCON1bits.PCFG0 = 0;
 
 ADCON0bits.ADCS1 = 1;
 ADCON0bits.ADCS0 = 0;
+
+
+
 ADCON0bits.ADON = 1;
 
 
@@ -1704,50 +1710,84 @@ PIE1bits.ADIE = 1;
 PIR1bits.ADIF = 0;
 }
 
-# 137
+
 void ADCRead(int ch) {
+
+
+
 ADCON0bits.CHS = ch;
+
+
 _delay((unsigned long)((25)*(20000000/4000000.0)));
 ADCON0bits.GO = 1;
 while (ADCON0bits.GO_DONE);
+
+
+
 }
 
-# 149
-void Ativar(char comando) {
-if (comando == 'B') {
-PORTDbits.RD2 = 0;
-PORTDbits.RD3 = 1;
-USARTWriteString('B');
-} else if (comando == 'b') {
-PORTDbits.RD2 = 1;
-PORTDbits.RD3 = 0;
-USARTWriteString('b');
-} else if (comando == 'M') {
-PORTDbits.RD4 = 1;
-USARTWriteString('M');
-} else if (comando == 'm') {
-PORTDbits.RD4 = 0;
-USARTWriteString('m');
-}
-}
 
-# 170
-void Bomba(void) {
 
-if (ADCResult < 40) {
-Ativar('B');
-}
+void interrupt ISR(void) {
 
-if (ADCResult > 160) {
-Ativar('b');
-}
-}
 
-# 185
-void ProgressBar(int preint) {
+
+if (PIR1bits.ADIF) {
+
+
+ADCResult = ((ADRESH << 8) + ADRESL);
+
+
+char * buf;
+char * per;
+char * teste;
+char * qtdc;
+float input;
+float input2;
+float pre;
+int preint;
+int status;
+int status2;
+int status3;
 int i = 0;
 unsigned char *result;
 unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+
+input = ADCResult * 0.0048828125;
+buf = ftoa(input, &status);
+
+
+
+Display[0] = (ADCResult / 1000) + 48;
+Display[1] = ((ADCResult / 100) % 10) + 48;
+Display[2] = ((ADCResult / 10) % 10) + 48;
+Display[3] = (ADCResult % 10) + 48;
+
+
+
+
+lcd_gotoxy(0, 1);
+lcd_escreve_string("Nivel:");
+lcd_gotoxy(7, 1);
+input2 = ((input * 100) / 1);
+per = ftoa(input2, &status2);
+lcd_escreve_string(per);
+USARTWriteString(per);
+lcd_gotoxy(16, 1);
+lcd_escreve_string("%");
+lcd_gotoxy(0, 0);
+pre = input2 * 0.16;
+preint = (int) pre;
+
+if (ADCResult < 200) {
+PORTDbits.RD2 = 0;
+PORTDbits.RD3 = 1;
+}
+
+if (ADCResult > 200) {
+PORTDbits.RD2 = 1;
+PORTDbits.RD3 = 0;
+}
 
 
 while (preint >= 0) {
@@ -1758,103 +1798,22 @@ i++;
 result = &aux;
 
 lcd_escreve_string(result);
+
+# 228
 _delay((unsigned long)((200)*(20000000/4000.0)));
-}
 
-# 207
-void sendSerial(int preint, int recipiente) {
-int status = 0, x = 0;
-char origem [40];
-const char * envio;
-const char * nivelRecipiente;
-nivelRecipiente = ftoa(preint, &status);
-
-while (*nivelRecipiente != '\n') {
-if ((x == 0)) {
-if (recipiente == SUPERIOR) {
-origem[x] = 'S';
-} else {
-origem[x] = 'I';
-}
-x++;
-} else {
-origem[x] = *nivelRecipiente;
-*nivelRecipiente++;
-x++;
-}
-}
-envio = &origem;
-USARTWriteString(*envio);
-}
-
-# 235
-void interrupt ISR(void) {
-
-if (PIR1bits.ADIF) {
-
-char * percentual;
-float input;
-float input2;
-float pre;
-int preint;
-int status;
-
-if (flag_Leitura < 5) {
-flag_Leitura++;
-
-ADCResult = ((ADRESH << 8) + ADRESL);
-Buffer_Leitura += ADCResult;
-} else {
-
-flag_Leitura=0;
-input = (Buffer_Leitura * 0.0048828125)/5;
-
-
-lcd_gotoxy(0, 1);
-lcd_escreve_string("Nivel:");
-USARTWriteString("Nivel:");
-lcd_gotoxy(7, 1);
-input2 = ((input * 100) / 0.8);
-percentual = ftoa(input2, &status);
-lcd_escreve_string(percentual);
-USARTWriteString(percentual);
-lcd_gotoxy(16, 1);
-lcd_escreve_string("%");
-USARTWriteString("%");
-lcd_gotoxy(0, 0);
-pre = input2 * 0.16;
-preint = (int) pre;
-Bomba();
-ProgressBar(preint);
-sendSerial(preint, SUPERIOR);
-}
 PIR1bits.ADIF = 0;
 }
 
-
 if (PIR1bits.RCIF) {
-char recebido = USARTReceiveChar();
-
-Ativar(recebido);
-
-
-
+USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
+USARTWriteString("\n\r Caracter Digitado :");
+USARTWriteChar(USARTReceiveChar());
 
 }
 }
 
-# 293
-void reset(void) {
-if (PORTCbits.RC3 == 1) {
-while (PORTCbits.RC3 == 1) {
-PORTDbits.RD2 = 1;
-PORTDbits.RD3 = 0;
-}
-}
-}
-
-# 305
-void inicialize(void) {
+void main(void) {
 TRISA = 0b11111111;
 PORTAbits.RA0 = 0;
 TRISDbits.TRISD2 = 0;
@@ -1867,7 +1826,6 @@ TRISCbits.TRISC1 = 1;
 TRISCbits.TRISC2 = 1;
 TRISCbits.TRISC3 = 1;
 PORTCbits.RC3 = 0;
-PORTCbits.RC2 = 0;
 _delay((unsigned long)((2000)*(20000000/4000.0)));
 init_lcd_4bit();
 _delay((unsigned long)((2000)*(20000000/4000.0)));
@@ -1879,16 +1837,15 @@ lcd_escreve_string("\fLoading PIC...");
 USARTWriteString("\fLoading PIC...");
 _delay((unsigned long)((5000)*(20000000/4000.0)));
 LCDClear();
-}
 
-void main(void) {
-inicialize();
-if (PORTCbits.RC2 == 1) {
-USARTWriteString("Kaliane");
 while (1) {
-ADCRead(1);
+ADCRead(0);
 _delay((unsigned long)((300)*(20000000/4000.0)));
-reset();
+if (PORTCbits.RC3 == 1) {
+while (PORTCbits.RC3 == 1) {
+PORTDbits.RD2 = 1;
+PORTDbits.RD3 = 0;
+}
 }
 }
 }
