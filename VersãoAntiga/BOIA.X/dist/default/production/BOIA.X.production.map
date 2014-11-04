@@ -2,10 +2,10 @@ Microchip MPLAB XC8 Compiler V1.32 ()
 
 Linker command line:
 
---edf=C:\Program Files\Microchip\xc8\v1.32\dat\en_msgs.txt -cs \
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.32\dat\en_msgs.txt -cs \
   -h+dist/default/production\BOIA.X.production.sym \
   --cmf=dist/default/production\BOIA.X.production.cmf -z -Q16F877A \
-  -oC:\Users\Alan\AppData\Local\Temp\s1q4.6 \
+  -oC:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.6 \
   -Mdist/default/production/BOIA.X.production.map -E1 -ver=XC8 \
   -ASTACK=0110h-016fh -pstack=STACK -ACONST=00h-0FFhx32 -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -AENTRY=00h-0FFhx32 -ASTRING=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Alan\AppData\Local\Temp\s1q4.obj \
+  -DENTRY=2 -k C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj \
   dist/default/production\BOIA.X.production.obj 
 
 Object code version is 3.11
@@ -28,65 +28,67 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
                 end_init                             12       12        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\BOIA.X.production.obj
                 cinit                                15       15       2C        8       0
                 intentry                              4        4        E        8       0
-                text38                             177E     177E        8     2EFC       0
-                text37                              894      894       23     1128       0
-                text36                              801      801       1B     1002       0
-                text35                              B7B      B7B       5B     16F6       0
-                text34                              AD3      AD3       4F     15A6       0
-                text33                              CF7      CF7       68     19EE       0
-                text32                              873      873       21     10E6       0
-                text31                              E8E      E8E       B8     1D1C       0
-                text30                              BD6      BD6       5D     17AC       0
-                text29                              602      602       D3        8       0
-                text28                             1786     1786        8     2F0C       0
-                text27                              4FB      4FB      107        8       0
-                text26                              81C      81C       1C     1038       0
-                text25                              D5F      D5F       8E     1ABE       0
-                text24                              8FD      8FD       2B     11FA       0
-                text23                              C33      C33       5E     1866       0
-                text22                              A85      A85       4E     150A       0
-                text21                              8B7      8B7       23     116E       0
-                text20                             1796     1796        E     2F2C       0
-                text19                              2BF      2BF      23C        8       0
-                text18                              F46      F46       BA     1E8C       0
-                text17                              98A      98A       39     1314       0
-                text16                              6D5      6D5       2B        8       0
-                text15                             17E6     17E6       1A     2FCC       0
-                text14                              9C3      9C3       3B     1386       0
-                text13                              8DA      8DA       23     11B4       0
-                text12                               41       41      27E        8       0
-                text11                             17D3     17D3       13     2FA6       0
-                text10                              854      854       1F     10A8       0
-                text9                               B22      B22       59     1644       0
-                text8                               7CB      7CB       35      F96       0
-                text7                               9FE      9FE       40     13FC       0
-                text6                              17A4     17A4        E     2F48       0
-                text5                               928      928       31     1250       0
-                text4                               C91      C91       66     1922       0
-                text3                               838      838       1C     1070       0
-                text2                               A3E      A3E       47     147C       0
-                text1                               959      959       31     12B2       0
-                maintext                            DED      DED       A1     1BDA       0
+                text40                             1712     1712        8     2E24       0
+                text39                              80D      80D       23     101A       0
+                text38                             178C     178C       1B     2F18       0
+                text37                              BA0      BA0       5B     1740       0
+                text36                              AA0      AA0       4F     1540       0
+                text35                              D1C      D1C       68     1A38       0
+                text34                             17DF     17DF       21     2FBE       0
+                text33                              E8E      E8E       B8     1D1C       0
+                text32                              BFB      BFB       5D     17F6       0
+                text31                              5FF      5FF       D3        8       0
+                text30                             171A     171A        8     2E34       0
+                text29                              4F8      4F8      107        8       0
+                text28                             17A7     17A7       1C     2F4E       0
+                text27                              E00      E00       8E     1C00       0
+                text26                              89F      89F       2B     113E       0
+                text25                              C58      C58       5E     18B0       0
+                text24                              A52      A52       4E     14A4       0
+                text23                              830      830       23     1060       0
+                text22                             1722     1722        E     2E44       0
+                text21                              2BC      2BC      23C        8       0
+                text20                              F46      F46       BA     1E8C       0
+                text19                              AEF      AEF       58     15DE       0
+                text18                              957      957       39     12AE       0
+                text17                              8CA      8CA       2B     1194       0
+                text16                             1772     1772       1A     2EE4       0
+                text15                              990      990       3B     1320       0
+                text14                              853      853       23     10A6       0
+                text13                               41       41      27B        8       0
+                text12                              6D2      6D2       2D        8       0
+                text11                             175F     175F       13     2EBE       0
+                text10                              B47      B47       59     168E       0
+                text9                               7CB      7CB       35      F96       0
+                text8                               9CB      9CB       40     1396       0
+                text7                              1730     1730        E     2E60       0
+                text6                               8F5      8F5       31     11EA       0
+                text5                               CB6      CB6       66     196C       0
+                text4                              17C3     17C3       1C     2F86       0
+                text3                               A0B      A0B       47     1416       0
+                text2                               926      926       31     124C       0
+                text1                               D84      D84       7C     1B08       0
+                maintext                            876      876       29     10EC       0
                 cstackBANK0                          20       20       3A       20       1
                 cstackCOMMON                         70       70        E       70       1
                 cstackBANK1                          A0       A0       24       A0       1
-                cstackBANK3                         190      190       11      190       1
-                inittext                           17C2     17C2       11     2F84       0
-                clrtext                            178E     178E        8     2F1C       0
+                cstackBANK3                         190      190       14      190       1
+                inittext                           174E     174E       11     2E9C       0
+                clrtext                             805      805        8     100A       0
                 dataBANK1                            C4       C4       10       A0       1
                 bssBANK1                             D4       D4        9       A0       1
-                dataBANK0                            6B       6B        2       20       1
-                bssBANK0                             5A       5A       11       20       1
+                dataBANK0                            6D       6D        2       20       1
+                bssBANK0                             5A       5A       13       20       1
                 strings                             700      700       CB      E00       0
-                idataBANK1                         17B2     17B2       10     2F64       0
-                idataBANK0                         177C     177C        2     2EF8       0
+                idataBANK1                         173E     173E       10     2E7C       0
+                idataBANK0                          803      803        2     1006       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -98,49 +100,51 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                15       15       2C         0
                 intentry                              4        4        E         0
                 reset_vec                             0        0        3         0
-                text38                             177E     177E        8         0
-                text37                              894      894       23         0
-                text36                              801      801       1B         0
-                text35                              B7B      B7B       5B         0
-                text34                              AD3      AD3       4F         0
-                text33                              CF7      CF7       68         0
-                text32                              873      873       21         0
-                text31                              E8E      E8E       B8         0
-                text30                              BD6      BD6       5D         0
-                text29                              602      602       D3         0
-                text28                             1786     1786        8         0
-                text27                              4FB      4FB      107         0
-                text26                              81C      81C       1C         0
-                text25                              D5F      D5F       8E         0
-                text24                              8FD      8FD       2B         0
-                text23                              C33      C33       5E         0
-                text22                              A85      A85       4E         0
-                text21                              8B7      8B7       23         0
-                text20                             1796     1796        E         0
-                text19                              2BF      2BF      23C         0
-                text18                              F46      F46       BA         0
-                text17                              98A      98A       39         0
-                text16                              6D5      6D5       2B         0
-                text15                             17E6     17E6       1A         0
-                text14                              9C3      9C3       3B         0
-                text13                              8DA      8DA       23         0
-                text12                               41       41      27E         0
-                text11                             17D3     17D3       13         0
-                text10                              854      854       1F         0
-                text9                               B22      B22       59         0
-                text8                               7CB      7CB       35         0
-                text7                               9FE      9FE       40         0
-                text6                              17A4     17A4        E         0
-                text5                               928      928       31         0
-                text4                               C91      C91       66         0
-                text3                               838      838       1C         0
-                text2                               A3E      A3E       47         0
-                text1                               959      959       31         0
-                maintext                            DED      DED       A1         0
-                inittext                           17C2     17C2       11         0
-                clrtext                            178E     178E        8         0
-                idataBANK1                         17B2     17B2       10         0
-                idataBANK0                         177C     177C        2         0
+                text40                             1712     1712        8         0
+                text39                              80D      80D       23         0
+                text38                             178C     178C       1B         0
+                text37                              BA0      BA0       5B         0
+                text36                              AA0      AA0       4F         0
+                text35                              D1C      D1C       68         0
+                text34                             17DF     17DF       21         0
+                text33                              E8E      E8E       B8         0
+                text32                              BFB      BFB       5D         0
+                text31                              5FF      5FF       D3         0
+                text30                             171A     171A        8         0
+                text29                              4F8      4F8      107         0
+                text28                             17A7     17A7       1C         0
+                text27                              E00      E00       8E         0
+                text26                              89F      89F       2B         0
+                text25                              C58      C58       5E         0
+                text24                              A52      A52       4E         0
+                text23                              830      830       23         0
+                text22                             1722     1722        E         0
+                text21                              2BC      2BC      23C         0
+                text20                              F46      F46       BA         0
+                text19                              AEF      AEF       58         0
+                text18                              957      957       39         0
+                text17                              8CA      8CA       2B         0
+                text16                             1772     1772       1A         0
+                text15                              990      990       3B         0
+                text14                              853      853       23         0
+                text13                               41       41      27B         0
+                text12                              6D2      6D2       2D         0
+                text11                             175F     175F       13         0
+                text10                              B47      B47       59         0
+                text9                               7CB      7CB       35         0
+                text8                               9CB      9CB       40         0
+                text7                              1730     1730        E         0
+                text6                               8F5      8F5       31         0
+                text5                               CB6      CB6       66         0
+                text4                              17C3     17C3       1C         0
+                text3                               A0B      A0B       47         0
+                text2                               926      926       31         0
+                text1                               D84      D84       7C         0
+                maintext                            876      876       29         0
+                inittext                           174E     174E       11         0
+                clrtext                             805      805        8         0
+                idataBANK1                         173E     173E       10         0
+                idataBANK0                          803      803        2         0
 
         CLASS   STRCODE        
 
@@ -154,8 +158,8 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   BANK0          
                 cstackBANK0                          20       20       3A         1
-                dataBANK0                            6B       6B        2         1
-                bssBANK0                             5A       5A       11         1
+                dataBANK0                            6D       6D        2         1
+                bssBANK0                             5A       5A       13         1
 
         CLASS   BANK1          
                 cstackBANK1                          A0       A0       24         1
@@ -165,7 +169,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   BANK2          
 
         CLASS   BANK3          
-                cstackBANK3                         190      190       11         1
+                cstackBANK3                         190      190       14         1
 
         CLASS   RAM            
 
@@ -192,90 +196,97 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                intentry                       000004  0006FC  000700         8       0  CODE        2
-                cstackBANK0                    000020  00004D  00006D        20       1  BANK0       1
+                intentry                       000004  0006FB  0006FF         8       0  CODE        2
+                cstackBANK0                    000020  00004F  00006F        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 cstackBANK1                    0000A0  00003D  0000DD        A0       1  BANK1       1
-                cstackBANK3                    000190  000011  0001A1       190       1  BANK3       1
+                cstackBANK3                    000190  000014  0001A4       190       1  BANK3       1
                 strings                        000700  0000CB  0007CB       E00       0  STRING      2
-                text8                          0007CB  000035  000800       F96       0  CODE        2
-                text36                         000801  00001B  00081C      1002       0  CODE        2
-                text26                         00081C  00001C  000838      1038       0  CODE        2
-                text3                          000838  00001C  000854      1070       0  CODE        2
-                text10                         000854  00001F  000873      10A8       0  CODE        2
-                text32                         000873  000021  000894      10E6       0  CODE        2
-                text37                         000894  000023  0008B7      1128       0  CODE        2
-                text21                         0008B7  000023  0008DA      116E       0  CODE        2
-                text13                         0008DA  000023  0008FD      11B4       0  CODE        2
-                text24                         0008FD  00002B  000928      11FA       0  CODE        2
-                text5                          000928  000031  000959      1250       0  CODE        2
-                text1                          000959  000031  00098A      12B2       0  CODE        2
-                text17                         00098A  000039  0009C3      1314       0  CODE        2
-                text14                         0009C3  00003B  0009FE      1386       0  CODE        2
-                text7                          0009FE  000040  000A3E      13FC       0  CODE        2
-                text2                          000A3E  000047  000A85      147C       0  CODE        2
-                text22                         000A85  00004E  000AD3      150A       0  CODE        2
-                text34                         000AD3  00004F  000B22      15A6       0  CODE        2
-                text9                          000B22  000059  000B7B      1644       0  CODE        2
-                text35                         000B7B  00005B  000BD6      16F6       0  CODE        2
-                text30                         000BD6  00005D  000C33      17AC       0  CODE        2
-                text23                         000C33  00005E  000C91      1866       0  CODE        2
-                text4                          000C91  000066  000CF7      1922       0  CODE        2
-                text33                         000CF7  000068  000D5F      19EE       0  CODE        2
-                text25                         000D5F  00008E  000DED      1ABE       0  CODE        2
-                maintext                       000DED  0000A1  000E8E      1BDA       0  CODE        2
-                text31                         000E8E  0000B8  000F46      1D1C       0  CODE        2
-                text18                         000F46  0000BA  001000      1E8C       0  CODE        2
-                idataBANK0                     00177C  000002  00177E      2EF8       0  CODE        2
-                text38                         00177E  000008  001786      2EFC       0  CODE        2
-                text28                         001786  000008  00178E      2F0C       0  CODE        2
-                clrtext                        00178E  000008  001796      2F1C       0  CODE        2
-                text20                         001796  00000E  0017A4      2F2C       0  CODE        2
-                text6                          0017A4  00000E  0017B2      2F48       0  CODE        2
-                idataBANK1                     0017B2  000010  0017C2      2F64       0  CODE        2
-                inittext                       0017C2  000011  0017D3      2F84       0  CODE        2
-                text11                         0017D3  000013  0017E6      2FA6       0  CODE        2
-                text15                         0017E6  00001A  001800      2FCC       0  CODE        2
+                text9                          0007CB  000035  000800       F96       0  CODE        2
+                idataBANK0                     000803  000002  000805      1006       0  CODE        2
+                clrtext                        000805  000008  00080D      100A       0  CODE        2
+                text39                         00080D  000023  000830      101A       0  CODE        2
+                text23                         000830  000023  000853      1060       0  CODE        2
+                text14                         000853  000023  000876      10A6       0  CODE        2
+                maintext                       000876  000029  00089F      10EC       0  CODE        2
+                text26                         00089F  00002B  0008CA      113E       0  CODE        2
+                text17                         0008CA  00002B  0008F5      1194       0  CODE        2
+                text6                          0008F5  000031  000926      11EA       0  CODE        2
+                text2                          000926  000031  000957      124C       0  CODE        2
+                text18                         000957  000039  000990      12AE       0  CODE        2
+                text15                         000990  00003B  0009CB      1320       0  CODE        2
+                text8                          0009CB  000040  000A0B      1396       0  CODE        2
+                text3                          000A0B  000047  000A52      1416       0  CODE        2
+                text24                         000A52  00004E  000AA0      14A4       0  CODE        2
+                text36                         000AA0  00004F  000AEF      1540       0  CODE        2
+                text19                         000AEF  000058  000B47      15DE       0  CODE        2
+                text10                         000B47  000059  000BA0      168E       0  CODE        2
+                text37                         000BA0  00005B  000BFB      1740       0  CODE        2
+                text32                         000BFB  00005D  000C58      17F6       0  CODE        2
+                text25                         000C58  00005E  000CB6      18B0       0  CODE        2
+                text5                          000CB6  000066  000D1C      196C       0  CODE        2
+                text35                         000D1C  000068  000D84      1A38       0  CODE        2
+                text1                          000D84  00007C  000E00      1B08       0  CODE        2
+                text27                         000E00  00008E  000E8E      1C00       0  CODE        2
+                text33                         000E8E  0000B8  000F46      1D1C       0  CODE        2
+                text20                         000F46  0000BA  001000      1E8C       0  CODE        2
+                text40                         001712  000008  00171A      2E24       0  CODE        2
+                text30                         00171A  000008  001722      2E34       0  CODE        2
+                text22                         001722  00000E  001730      2E44       0  CODE        2
+                text7                          001730  00000E  00173E      2E60       0  CODE        2
+                idataBANK1                     00173E  000010  00174E      2E7C       0  CODE        2
+                inittext                       00174E  000011  00175F      2E9C       0  CODE        2
+                text11                         00175F  000013  001772      2EBE       0  CODE        2
+                text16                         001772  00001A  00178C      2EE4       0  CODE        2
+                text38                         00178C  00001B  0017A7      2F18       0  CODE        2
+                text28                         0017A7  00001C  0017C3      2F4E       0  CODE        2
+                text4                          0017C3  00001C  0017DF      2F86       0  CODE        2
+                text34                         0017DF  000021  001800      2FBE       0  CODE        2
                 config                         002007  000001  002008      400E       0  CONFIG      2
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            006D-006F              3           1
+        BANK0            006F-006F              1           1
         BANK1            00DD-00EF             13           1
         BANK2            0110-016F             60           1
-        BANK3            01A1-01EF             4F           1
+        BANK3            01A4-01EF             4C           1
         CODE             0003-0003              1           2
-                         0800-0800              1
-                         1000-177B            77C
+                         06FF-06FF              1
+                         0800-0802              3
+                         1000-1711            712
                          1800-1FFF            800
         CONST            0003-0003              1           2
-                         0800-0800              1
-                         1000-177B            100
+                         06FF-06FF              1
+                         0800-0802              3
+                         1000-1711            100
                          1800-1FFF            100
         EEDATA           2100-21FF            100           2
         ENTRY            0003-0003              1           2
-                         0800-0800              1
-                         1000-177B            100
+                         06FF-06FF              1
+                         0800-0802              3
+                         1000-1711            100
                          1800-1FFF            100
         IDLOC            2000-2003              4           2
-        RAM              006D-006F              3           1
+        RAM              006F-006F              1           1
                          00DD-00EF             13
                          0110-016F             60
-                         01A1-01EF             4F
+                         01A4-01EF             4C
         SFR0             0000-001F             20           1
         SFR1             0080-009F             20           1
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
         STRCODE          0003-0003              1           2
-                         0800-0800              1
-                         1000-177B            77C
+                         06FF-06FF              1
+                         0800-0802              3
+                         1000-1711            712
                          1800-1FFF            800
         STRING           0003-0003              1           2
-                         0800-0800              1
-                         1000-177B            100
+                         06FF-06FF              1
+                         0800-0802              3
+                         1000-1711            100
                          1800-1FFF            100
 
                                   Symbol Table
@@ -296,7 +307,7 @@ UNUSED ADDRESS RANGES
 ?___wmul                       cstackCOMMON 0070
 ?_sprintf                      cstackBANK0  002A
 ADCRead@ch                     cstackBANK3  0190
-ISR@F1345                      dataBANK1    00C4
+ISR@F1351                      dataBANK1    00C4
 ISR@aux                        cstackBANK1  00A0
 ISR@buf                        cstackBANK1  00B0
 ISR@i                          cstackBANK1  00BA
@@ -311,17 +322,17 @@ ISR@status2                    cstackBANK1  00B3
 USARTReceiveChar@USARTData     cstackCOMMON 0074
 USARTWriteChar@USARTData       cstackBANK3  0190
 USARTWriteString@str           cstackBANK3  0191
-_ADCInit                       text11       17D3
+_ADCInit                       text11       175F
 _ADCON0bits                    (abs)        001F
 _ADCON1bits                    (abs)        009F
-_ADCRead                       text10       0854
+_ADCRead                       text12       06D2
 _ADCResult                     bssBANK1     00DB
 _ADRESH                        (abs)        001E
 _ADRESL                        (abs)        009E
 _Display                       bssBANK1     00D4
 _INTCONbits                    (abs)        000B
-_ISR                           text12       0041
-_LCDClear                      text7        09FE
+_ISR                           text13       0041
+_LCDClear                      text8        09CB
 _LCD_INIT_STRING               strings      0738
 _OERR                          (abs)        00C1
 _PIE1bits                      (abs)        008C
@@ -339,9 +350,9 @@ _TRISCbits                     (abs)        0087
 _TRISDbits                     (abs)        0088
 _TXREG                         (abs)        0019
 _TXSTAbits                     (abs)        0098
-_USARTReceiveChar              text36       0801
-_USARTWriteChar                text6        17A4
-_USARTWriteString              text5        0928
+_USARTReceiveChar              text38       178C
+_USARTWriteChar                text7        1730
+_USARTWriteString              text6        08F5
 __CFG_BOREN$ON                 (abs)        0000
 __CFG_CP$OFF                   (abs)        0000
 __CFG_CPD$OFF                  (abs)        0000
@@ -386,7 +397,7 @@ __Hsfr1                        sfr1         0000
 __Hsfr2                        sfr2         0000
 __Hsfr3                        sfr3         0000
 __Hspace_0                     (abs)        2008
-__Hspace_1                     (abs)        01A1
+__Hspace_1                     (abs)        01A4
 __Hspace_2                     (abs)        0000
 __Hspace_3                     (abs)        0000
 __Hstack                       stack        0000
@@ -435,123 +446,125 @@ __Lstack                       stack        0000
 __Lstrings                     strings      0000
 __Ltext                        text         0000
 __S0                           (abs)        2008
-__S1                           (abs)        01A1
+__S1                           (abs)        01A4
 __S2                           (abs)        0000
 __S3                           (abs)        0000
-___awdiv                       text35       0B7B
+___awdiv                       text37       0BA0
 ___awdiv@counter               cstackCOMMON 0075
 ___awdiv@dividend              cstackCOMMON 0072
 ___awdiv@divisor               cstackCOMMON 0070
 ___awdiv@quotient              cstackCOMMON 0077
 ___awdiv@sign                  cstackCOMMON 0076
-___awmod                       text34       0AD3
+___awmod                       text36       0AA0
 ___awmod@counter               cstackBANK0  0020
 ___awmod@dividend              cstackCOMMON 007B
 ___awmod@divisor               cstackCOMMON 0079
 ___awmod@sign                  cstackBANK0  0021
-___awtoft                      text32       0873
+___awtoft                      text34       17DF
 ___awtoft@c                    cstackCOMMON 0078
 ___awtoft@sign                 cstackCOMMON 007D
-___ftadd                       text27       04FB
+___ftadd                       text29       04F8
 ___ftadd@exp1                  cstackBANK0  0026
 ___ftadd@exp2                  cstackBANK0  0025
 ___ftadd@f1                    cstackCOMMON 0078
 ___ftadd@f2                    cstackCOMMON 007B
 ___ftadd@sign                  cstackBANK0  0024
-___ftdiv                       text31       0E8E
+___ftdiv                       text33       0E8E
 ___ftdiv@cntr                  cstackBANK0  003A
 ___ftdiv@exp                   cstackBANK0  003E
 ___ftdiv@f1                    cstackBANK0  0033
 ___ftdiv@f2                    cstackBANK0  0030
 ___ftdiv@f3                    cstackBANK0  003B
 ___ftdiv@sign                  cstackBANK0  003F
-___ftge                        text30       0BD6
+___ftge                        text32       0BFB
 ___ftge@ff1                    cstackCOMMON 0070
 ___ftge@ff2                    cstackCOMMON 0073
-___ftmul                       text29       0602
+___ftmul                       text31       05FF
 ___ftmul@cntr                  cstackBANK0  002E
 ___ftmul@exp                   cstackBANK0  002A
 ___ftmul@f1                    cstackBANK0  0020
 ___ftmul@f2                    cstackBANK0  0023
 ___ftmul@f3_as_product         cstackBANK0  002B
 ___ftmul@sign                  cstackBANK0  002F
-___ftneg                       text28       1786
+___ftneg                       text30       171A
 ___ftneg@f1                    cstackCOMMON 0070
-___ftpack                      text33       0CF7
+___ftpack                      text35       0D1C
 ___ftpack@arg                  cstackCOMMON 0070
 ___ftpack@exp                  cstackCOMMON 0073
 ___ftpack@sign                 cstackCOMMON 0074
-___ftsub                       text26       081C
+___ftsub                       text28       17A7
 ___ftsub@f1                    cstackBANK0  002A
 ___ftsub@f2                    cstackBANK0  0027
-___fttol                       text25       0D5F
+___fttol                       text27       0E00
 ___fttol@exp1                  cstackBANK0  003D
 ___fttol@f1                    cstackBANK0  0030
 ___fttol@lval                  cstackBANK0  0039
 ___fttol@sign1                 cstackBANK0  0038
 ___int_sp                      stack        0000
 ___latbits                     (abs)        0002
-___lldiv                       text23       0C33
+___lldiv                       text25       0C58
 ___lldiv@counter               cstackCOMMON 007D
 ___lldiv@dividend              cstackCOMMON 0074
 ___lldiv@divisor               cstackCOMMON 0070
 ___lldiv@quotient              cstackCOMMON 0079
-___llmod                       text22       0A85
+___llmod                       text24       0A52
 ___llmod@counter               cstackBANK0  0029
 ___llmod@dividend              cstackBANK0  0024
 ___llmod@divisor               cstackBANK0  0020
-___lltoft                      text24       08FD
+___lltoft                      text26       089F
 ___lltoft@c                    cstackCOMMON 0078
 ___lltoft@exp                  cstackCOMMON 007D
 ___sp                          stack        0000
-___wmul                        text21       08B7
+___wmul                        text23       0830
 ___wmul@multiplicand           cstackCOMMON 0072
 ___wmul@multiplier             cstackCOMMON 0070
 ___wmul@product                cstackCOMMON 0074
-__end_of_ADCInit               text11       17E6
-__end_of_ADCRead               text10       0873
-__end_of_ISR                   text12       02BF
-__end_of_LCDClear              text7        0A3E
+__end_of_ADCInit               text11       1772
+__end_of_ADCRead               text12       06FF
+__end_of_ISR                   text13       02BC
+__end_of_LCDClear              text8        0A0B
 __end_of_LCD_INIT_STRING       strings      073C
-__end_of_USARTReceiveChar      text36       081C
-__end_of_USARTWriteChar        text6        17B2
-__end_of_USARTWriteString      text5        0959
-__end_of___awdiv               text35       0BD6
-__end_of___awmod               text34       0B22
-__end_of___awtoft              text32       0894
-__end_of___ftadd               text27       0602
-__end_of___ftdiv               text31       0F46
-__end_of___ftge                text30       0C33
-__end_of___ftmul               text29       06D5
-__end_of___ftneg               text28       178E
-__end_of___ftpack              text33       0D5F
-__end_of___ftsub               text26       0838
-__end_of___fttol               text25       0DED
-__end_of___lldiv               text23       0C91
-__end_of___llmod               text22       0AD3
-__end_of___lltoft              text24       0928
-__end_of___wmul                text21       08DA
+__end_of_USARTReceiveChar      text38       17A7
+__end_of_USARTWriteChar        text7        173E
+__end_of_USARTWriteString      text6        0926
+__end_of___awdiv               text37       0BFB
+__end_of___awmod               text36       0AEF
+__end_of___awtoft              text34       1800
+__end_of___ftadd               text29       05FF
+__end_of___ftdiv               text33       0F46
+__end_of___ftge                text32       0C58
+__end_of___ftmul               text31       06D2
+__end_of___ftneg               text30       1722
+__end_of___ftpack              text35       0D84
+__end_of___ftsub               text28       17C3
+__end_of___fttol               text27       0E8E
+__end_of___lldiv               text25       0CB6
+__end_of___llmod               text24       0AA0
+__end_of___lltoft              text26       08CA
+__end_of___wmul                text23       0853
 __end_of__initialization       cinit        003D
 __end_of__stringdata           strings      07CB
 __end_of__stringtab            strings      0710
 __end_of_dpowers               strings      0738
-__end_of_ftoa                  text18       1000
-__end_of_init_lcd_4bit         text4        0CF7
-__end_of_isdigit               text20       17A4
-__end_of_lcd_envia_byte        text8        0800
-__end_of_lcd_envia_nibble      text9        0B7B
-__end_of_lcd_escreve_string    text1        098A
-__end_of_lcd_gotoxy            text3        0854
-__end_of_lcd_putc              text2        0A85
-__end_of_main                  maintext     0E8E
-__end_of_sprintf               text19       04FB
-__end_ofi1_USARTWriteChar      text38       1786
-__end_ofi1_USARTWriteString    text37       08B7
-__end_ofi1_lcd_envia_byte      text16       0700
-__end_ofi1_lcd_envia_nibble    text17       09C3
-__end_ofi1_lcd_escreve_string  text13       08FD
-__end_ofi1_lcd_gotoxy          text15       1800
-__end_ofi1_lcd_putc            text14       09FE
+__end_of_ftoa                  text20       1000
+__end_of_inicialize            text1        0E00
+__end_of_init_lcd_4bit         text5        0D1C
+__end_of_isdigit               text22       1730
+__end_of_lcd_envia_byte        text9        0800
+__end_of_lcd_envia_nibble      text10       0BA0
+__end_of_lcd_escreve_string    text2        0957
+__end_of_lcd_gotoxy            text4        17DF
+__end_of_lcd_putc              text3        0A52
+__end_of_main                  maintext     089F
+__end_of_sendString            text19       0B47
+__end_of_sprintf               text21       04F8
+__end_ofi1_USARTWriteChar      text40       171A
+__end_ofi1_USARTWriteString    text39       0830
+__end_ofi1_lcd_envia_byte      text17       08F5
+__end_ofi1_lcd_envia_nibble    text18       0990
+__end_ofi1_lcd_escreve_string  text14       0876
+__end_ofi1_lcd_gotoxy          text16       178C
+__end_ofi1_lcd_putc            text15       09CB
 __initialization               cinit        0015
 __pbssBANK0                    bssBANK0     005A
 __pbssBANK1                    bssBANK1     00D4
@@ -559,51 +572,53 @@ __pcstackBANK0                 cstackBANK0  0020
 __pcstackBANK1                 cstackBANK1  00A0
 __pcstackBANK3                 cstackBANK3  0190
 __pcstackCOMMON                cstackCOMMON 0070
-__pdataBANK0                   dataBANK0    006B
+__pdataBANK0                   dataBANK0    006D
 __pdataBANK1                   dataBANK1    00C4
-__pidataBANK0                  idataBANK0   177C
-__pidataBANK1                  idataBANK1   17B2
+__pidataBANK0                  idataBANK0   0803
+__pidataBANK1                  idataBANK1   173E
 __pintentry                    intentry     0004
-__pmaintext                    maintext     0DED
+__pmaintext                    maintext     0876
 __pstrings                     strings      0700
-__ptext1                       text1        0959
-__ptext10                      text10       0854
-__ptext11                      text11       17D3
-__ptext12                      text12       0041
-__ptext13                      text13       08DA
-__ptext14                      text14       09C3
-__ptext15                      text15       17E6
-__ptext16                      text16       06D5
-__ptext17                      text17       098A
-__ptext18                      text18       0F46
-__ptext19                      text19       02BF
-__ptext2                       text2        0A3E
-__ptext20                      text20       1796
-__ptext21                      text21       08B7
-__ptext22                      text22       0A85
-__ptext23                      text23       0C33
-__ptext24                      text24       08FD
-__ptext25                      text25       0D5F
-__ptext26                      text26       081C
-__ptext27                      text27       04FB
-__ptext28                      text28       1786
-__ptext29                      text29       0602
-__ptext3                       text3        0838
-__ptext30                      text30       0BD6
-__ptext31                      text31       0E8E
-__ptext32                      text32       0873
-__ptext33                      text33       0CF7
-__ptext34                      text34       0AD3
-__ptext35                      text35       0B7B
-__ptext36                      text36       0801
-__ptext37                      text37       0894
-__ptext38                      text38       177E
-__ptext4                       text4        0C91
-__ptext5                       text5        0928
-__ptext6                       text6        17A4
-__ptext7                       text7        09FE
-__ptext8                       text8        07CB
-__ptext9                       text9        0B22
+__ptext1                       text1        0D84
+__ptext10                      text10       0B47
+__ptext11                      text11       175F
+__ptext12                      text12       06D2
+__ptext13                      text13       0041
+__ptext14                      text14       0853
+__ptext15                      text15       0990
+__ptext16                      text16       1772
+__ptext17                      text17       08CA
+__ptext18                      text18       0957
+__ptext19                      text19       0AEF
+__ptext2                       text2        0926
+__ptext20                      text20       0F46
+__ptext21                      text21       02BC
+__ptext22                      text22       1722
+__ptext23                      text23       0830
+__ptext24                      text24       0A52
+__ptext25                      text25       0C58
+__ptext26                      text26       089F
+__ptext27                      text27       0E00
+__ptext28                      text28       17A7
+__ptext29                      text29       04F8
+__ptext3                       text3        0A0B
+__ptext30                      text30       171A
+__ptext31                      text31       05FF
+__ptext32                      text32       0BFB
+__ptext33                      text33       0E8E
+__ptext34                      text34       17DF
+__ptext35                      text35       0D1C
+__ptext36                      text36       0AA0
+__ptext37                      text37       0BA0
+__ptext38                      text38       178C
+__ptext39                      text39       080D
+__ptext4                       text4        17C3
+__ptext40                      text40       1712
+__ptext5                       text5        0CB6
+__ptext6                       text6        08F5
+__ptext7                       text7        1730
+__ptext8                       text8        09CB
+__ptext9                       text9        07CB
 __size_of_ADCInit              (abs)        0000
 __size_of_ADCRead              (abs)        0000
 __size_of_ISR                  (abs)        0000
@@ -627,6 +642,7 @@ __size_of___llmod              (abs)        0000
 __size_of___lltoft             (abs)        0000
 __size_of___wmul               (abs)        0000
 __size_of_ftoa                 (abs)        0000
+__size_of_inicialize           (abs)        0000
 __size_of_init_lcd_4bit        (abs)        0000
 __size_of_isdigit              (abs)        0000
 __size_of_lcd_envia_byte       (abs)        0000
@@ -635,6 +651,7 @@ __size_of_lcd_escreve_string   (abs)        0000
 __size_of_lcd_gotoxy           (abs)        0000
 __size_of_lcd_putc             (abs)        0000
 __size_of_main                 (abs)        0000
+__size_of_sendString           (abs)        0000
 __size_of_sprintf              (abs)        0000
 __size_ofi1_USARTWriteChar     (abs)        0000
 __size_ofi1_USARTWriteString   (abs)        0000
@@ -647,22 +664,25 @@ __stringbase                   strings      070F
 __stringdata                   strings      073C
 __stringtab                    strings      0700
 _dpowers                       strings      0710
-_flag_an                       dataBANK0    006B
-_ftoa                          text18       0F46
-_init_lcd_4bit                 text4        0C91
-_isdigit                       text20       1796
-_isdigit$870                   cstackCOMMON 0070
-_lcd_envia_byte                text8        07CB
-_lcd_envia_nibble              text9        0B22
-_lcd_escreve_string            text1        0959
-_lcd_gotoxy                    text3        0838
-_lcd_putc                      text2        0A3E
-_main                          maintext     0DED
-_sprintf                       text19       02BF
+_flag_an                       dataBANK0    006D
+_ftoa                          text20       0F46
+_inicialize                    text1        0D84
+_init_lcd_4bit                 text5        0CB6
+_isdigit                       text22       1722
+_isdigit$879                   cstackCOMMON 0070
+_lcd_envia_byte                text9        07CB
+_lcd_envia_nibble              text10       0B47
+_lcd_escreve_string            text2        0926
+_lcd_gotoxy                    text4        17C3
+_lcd_putc                      text3        0A0B
+_main                          maintext     0876
+_recipiente                    bssBANK0     005A
+_sendString                    text19       0AEF
+_sprintf                       text21       02BC
 btemp                          (abs)        007E
-clear_ram0                     clrtext      178E
+clear_ram0                     clrtext      0805
 end_of_initialization          cinit        003D
-ftoa@buf                       bssBANK0     005A
+ftoa@buf                       bssBANK0     005C
 ftoa@cp                        cstackBANK0  0051
 ftoa@f                         cstackBANK0  0044
 ftoa@l                         cstackBANK0  004D
@@ -670,13 +690,13 @@ ftoa@rem                       cstackBANK0  0049
 ftoa@status                    cstackBANK0  0047
 i1USARTWriteChar@USARTData     cstackCOMMON 0070
 i1USARTWriteString@str         cstackCOMMON 0071
-i1_USARTWriteChar              text38       177E
-i1_USARTWriteString            text37       0894
-i1_lcd_envia_byte              text16       06D5
-i1_lcd_envia_nibble            text17       098A
-i1_lcd_escreve_string          text13       08DA
-i1_lcd_gotoxy                  text15       17E6
-i1_lcd_putc                    text14       09C3
+i1_USARTWriteChar              text40       1712
+i1_USARTWriteString            text39       080D
+i1_lcd_envia_byte              text17       08CA
+i1_lcd_envia_nibble            text18       0957
+i1_lcd_escreve_string          text14       0853
+i1_lcd_gotoxy                  text16       1772
+i1_lcd_putc                    text15       0990
 i1lcd_envia_byte@address       cstackCOMMON 0074
 i1lcd_envia_byte@n             cstackCOMMON 0072
 i1lcd_envia_nibble@n           cstackCOMMON 0071
@@ -685,9 +705,9 @@ i1lcd_gotoxy@address           cstackCOMMON 0078
 i1lcd_gotoxy@x                 cstackCOMMON 0077
 i1lcd_gotoxy@y                 cstackCOMMON 0075
 i1lcd_putc@c                   cstackCOMMON 007B
-init_fetch0                    inittext     17C2
+init_fetch0                    inittext     174E
 init_lcd_4bit@i                cstackBANK3  0197
-init_ram0                      inittext     17C6
+init_ram0                      inittext     1752
 interrupt_function             intentry     0004
 intlevel0                      functab      0000
 intlevel1                      functab      0000
@@ -711,6 +731,10 @@ ltemp2                         (abs)        0086
 ltemp3                         (abs)        0080
 reset_vec                      reset_vec    0000
 saved_w                        (abs)        007E
+sendString@array               cstackBANK0  0020
+sendString@envio               cstackBANK0  0048
+sendString@send                cstackBANK0  0049
+sendString@x                   cstackBANK0  004A
 sprintf@_val                   cstackBANK0  003A
 sprintf@ap                     cstackBANK0  0039
 sprintf@c                      cstackBANK0  0043
@@ -743,7 +767,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 241 in file "main.c"
+		line 302 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -762,16 +786,46 @@ FUNCTION INFORMATION:
       Temps:          0       0       0       3       0
       Totals:         0       0       0       3       0
 Total ram usage:        3 bytes
+ Hardware stack levels required when called:   12
+ This function calls:
+		_ADCRead
+		_inicialize
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _inicialize *****************
+ Defined at:
+		line 276 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       3       0
+      Totals:         0       0       0       3       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
  Hardware stack levels required when called:   11
  This function calls:
 		_ADCInit
-		_ADCRead
 		_LCDClear
 		_USARTWriteString
 		_init_lcd_4bit
 		_lcd_escreve_string
  This function is called by:
-		Startup code after reset
+		_main
  This function uses a non-reentrant model
 
 
@@ -803,7 +857,7 @@ Total ram usage:        2 bytes
  This function calls:
 		_lcd_putc
  This function is called by:
-		_main
+		_inicialize
  This function uses a non-reentrant model
 
 
@@ -898,16 +952,16 @@ Total ram usage:        3 bytes
 		_lcd_envia_byte
 		_lcd_envia_nibble
  This function is called by:
-		_main
+		_inicialize
  This function uses a non-reentrant model
 
 
  *************** function _USARTWriteString *****************
  Defined at:
-		line 62 in file "main.c"
+		line 70 in file "main.c"
  Parameters:    Size  Location     Type
   str             2    1[BANK3 ] PTR const unsigned char 
-		 -> ftoa@buf(17), STR_7(16), STR_5(23), STR_4(44), 
+		 -> STR_7(16), STR_5(23), STR_4(44), sendString@array(40), 
 		 -> STR_1(40), 
  Auto vars:     Size  Location     Type
 		None
@@ -930,13 +984,13 @@ Total ram usage:        2 bytes
  This function calls:
 		_USARTWriteChar
  This function is called by:
-		_main
+		_inicialize
  This function uses a non-reentrant model
 
 
  *************** function _USARTWriteChar *****************
  Defined at:
-		line 55 in file "main.c"
+		line 63 in file "main.c"
  Parameters:    Size  Location     Type
   USARTData       1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -990,7 +1044,7 @@ Total ram usage:        2 bytes
  This function calls:
 		_lcd_envia_byte
  This function is called by:
-		_main
+		_inicialize
  This function uses a non-reentrant model
 
 
@@ -1059,9 +1113,39 @@ Total ram usage:        2 bytes
  This function uses a non-reentrant model
 
 
+ *************** function _ADCInit *****************
+ Defined at:
+		line 105 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_inicialize
+ This function uses a non-reentrant model
+
+
  *************** function _ADCRead *****************
  Defined at:
-		line 119 in file "main.c"
+		line 124 in file "main.c"
  Parameters:    Size  Location     Type
   ch              2    0[BANK3 ] int 
  Auto vars:     Size  Location     Type
@@ -1089,39 +1173,9 @@ Total ram usage:        3 bytes
  This function uses a non-reentrant model
 
 
- *************** function _ADCInit *****************
- Defined at:
-		line 97 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		None
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         0       0       0       0       0
-      Locals:         0       0       0       0       0
-      Temps:          0       0       0       0       0
-      Totals:         0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    6
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
  *************** function _ISR *****************
  Defined at:
-		line 136 in file "main.c"
+		line 168 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1167,6 +1221,7 @@ Total ram usage:       44 bytes
 		___ftmul
 		___fttol
 		_ftoa
+		_sendString
 		i1_USARTWriteChar
 		i1_USARTWriteString
 		i1_lcd_escreve_string
@@ -1333,9 +1388,45 @@ Total ram usage:        2 bytes
  This function uses a non-reentrant model
 
 
+ *************** function _sendString *****************
+ Defined at:
+		line 138 in file "main.c"
+ Parameters:    Size  Location     Type
+  send            1    wreg     PTR const unsigned char 
+		 -> ftoa@buf(17), 
+ Auto vars:     Size  Location     Type
+  send            1   41[BANK0 ] PTR const unsigned char 
+		 -> ftoa@buf(17), 
+  array          40    0[BANK0 ] unsigned char [40]
+  x               2   42[BANK0 ] int 
+  envio           1   40[BANK0 ] PTR unsigned char 
+		 -> sendString@array(40), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0      44       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:         1      44       0       0       0
+Total ram usage:       45 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_USARTWriteString
+ This function is called by:
+		_ISR
+ This function uses a non-reentrant model
+
+
  *************** function _ftoa *****************
  Defined at:
-		line 6 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c"
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c"
  Parameters:    Size  Location     Type
   f               3   36[BANK0 ] float 
   status          1   39[BANK0 ] PTR int 
@@ -1376,7 +1467,7 @@ Total ram usage:       14 bytes
 
  *************** function _sprintf *****************
  Defined at:
-		line 492 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c"
+		line 492 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c"
  Parameters:    Size  Location     Type
   sp              1    wreg     PTR unsigned char 
 		 -> ftoa@buf(17), 
@@ -1420,7 +1511,7 @@ Total ram usage:       26 bytes
 
  *************** function _isdigit *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\isdigit.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1449,7 +1540,7 @@ Total ram usage:        2 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c"
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[COMMON] unsigned int 
   multiplicand    2    2[COMMON] unsigned int 
@@ -1479,7 +1570,7 @@ Total ram usage:        6 bytes
 
  *************** function ___llmod *****************
  Defined at:
-		line 6 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c"
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c"
  Parameters:    Size  Location     Type
   divisor         4    0[BANK0 ] unsigned long 
   dividend        4    4[BANK0 ] unsigned long 
@@ -1509,7 +1600,7 @@ Total ram usage:       10 bytes
 
  *************** function ___lldiv *****************
  Defined at:
-		line 6 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c"
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c"
  Parameters:    Size  Location     Type
   divisor         4    0[COMMON] unsigned long 
   dividend        4    4[COMMON] unsigned long 
@@ -1540,7 +1631,7 @@ Total ram usage:       14 bytes
 
  *************** function ___lltoft *****************
  Defined at:
-		line 35 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c"
+		line 35 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c"
  Parameters:    Size  Location     Type
   c               4    8[COMMON] unsigned long 
  Auto vars:     Size  Location     Type
@@ -1570,7 +1661,7 @@ Total ram usage:        6 bytes
 
  *************** function ___fttol *****************
  Defined at:
-		line 44 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c"
+		line 44 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c"
  Parameters:    Size  Location     Type
   f1              3   16[BANK0 ] float 
  Auto vars:     Size  Location     Type
@@ -1602,7 +1693,7 @@ Total ram usage:       14 bytes
 
  *************** function ___ftsub *****************
  Defined at:
-		line 18 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c"
+		line 18 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c"
  Parameters:    Size  Location     Type
   f2              3    7[BANK0 ] float 
   f1              3   10[BANK0 ] float 
@@ -1633,7 +1724,7 @@ Total ram usage:        6 bytes
 
  *************** function ___ftadd *****************
  Defined at:
-		line 86 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c"
+		line 86 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c"
  Parameters:    Size  Location     Type
   f1              3    8[COMMON] float 
   f2              3   11[COMMON] float 
@@ -1666,7 +1757,7 @@ Total ram usage:       13 bytes
 
  *************** function ___ftneg *****************
  Defined at:
-		line 15 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c"
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c"
  Parameters:    Size  Location     Type
   f1              3    0[COMMON] float 
  Auto vars:     Size  Location     Type
@@ -1695,7 +1786,7 @@ Total ram usage:        3 bytes
 
  *************** function ___ftmul *****************
  Defined at:
-		line 62 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c"
+		line 62 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c"
  Parameters:    Size  Location     Type
   f1              3    0[BANK0 ] float 
   f2              3    3[BANK0 ] float 
@@ -1730,7 +1821,7 @@ Total ram usage:       16 bytes
 
  *************** function ___ftge *****************
  Defined at:
-		line 4 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c"
+		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c"
  Parameters:    Size  Location     Type
   ff1             3    0[COMMON] float 
   ff2             3    3[COMMON] float 
@@ -1760,7 +1851,7 @@ Total ram usage:       12 bytes
 
  *************** function ___ftdiv *****************
  Defined at:
-		line 49 in file "C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c"
+		line 49 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c"
  Parameters:    Size  Location     Type
   f2              3   16[BANK0 ] float 
   f1              3   19[BANK0 ] float 
@@ -1794,7 +1885,7 @@ Total ram usage:       16 bytes
 
  *************** function ___awtoft *****************
  Defined at:
-		line 32 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c"
+		line 32 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c"
  Parameters:    Size  Location     Type
   c               2    8[COMMON] int 
  Auto vars:     Size  Location     Type
@@ -1824,7 +1915,7 @@ Total ram usage:        6 bytes
 
  *************** function ___ftpack *****************
  Defined at:
-		line 62 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c"
+		line 62 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c"
  Parameters:    Size  Location     Type
   arg             3    0[COMMON] unsigned um
   exp             1    3[COMMON] unsigned char 
@@ -1859,7 +1950,7 @@ Total ram usage:        8 bytes
 
  *************** function ___awmod *****************
  Defined at:
-		line 6 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c"
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c"
  Parameters:    Size  Location     Type
   divisor         2    9[COMMON] int 
   dividend        2   11[COMMON] int 
@@ -1890,7 +1981,7 @@ Total ram usage:        7 bytes
 
  *************** function ___awdiv *****************
  Defined at:
-		line 6 in file "C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c"
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c"
  Parameters:    Size  Location     Type
   divisor         2    0[COMMON] int 
   dividend        2    2[COMMON] int 
@@ -1922,7 +2013,7 @@ Total ram usage:        9 bytes
 
  *************** function _USARTReceiveChar *****************
  Defined at:
-		line 73 in file "main.c"
+		line 81 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1952,10 +2043,10 @@ Total ram usage:        2 bytes
 
  *************** function i1_USARTWriteString *****************
  Defined at:
-		line 62 in file "main.c"
+		line 70 in file "main.c"
  Parameters:    Size  Location     Type
   str             2    1[COMMON] PTR const unsigned char 
-		 -> ftoa@buf(17), STR_7(16), STR_5(23), STR_4(44), 
+		 -> STR_7(16), STR_5(23), STR_4(44), sendString@array(40), 
 		 -> STR_1(40), 
  Auto vars:     Size  Location     Type
 		None
@@ -1979,13 +2070,14 @@ Total ram usage:        2 bytes
 		i1_USARTWriteChar
  This function is called by:
 		_USARTReceiveChar
+		_sendString
 		_ISR
  This function uses a non-reentrant model
 
 
  *************** function i1_USARTWriteChar *****************
  Defined at:
-		line 55 in file "main.c"
+		line 63 in file "main.c"
  Parameters:    Size  Location     Type
   USARTData       1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2017,131 +2109,133 @@ Total ram usage:        1 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c
-		___ftge        		CODE           	0BD6	0000	93
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c
+		___ftpack      		CODE           	0D1C	0000	104
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c estimated size: 93
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c estimated size: 104
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c
-		___wmul        		CODE           	08B7	0000	35
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c
+		___awtoft      		CODE           	17DF	0000	33
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c estimated size: 35
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c estimated size: 33
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c
-		___fttol       		CODE           	0D5F	0000	142
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c
+		___ftmul       		CODE           	05FF	0000	211
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c estimated size: 142
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c estimated size: 211
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c
-		___awdiv       		CODE           	0B7B	0000	91
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c
+		___awmod       		CODE           	0AA0	0000	79
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c estimated size: 91
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c estimated size: 79
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c
-		___ftadd       		CODE           	04FB	0000	263
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c
+		___llmod       		CODE           	0A52	0000	78
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c estimated size: 263
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c estimated size: 78
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c
-		___lldiv       		CODE           	0C33	0000	94
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c
+		___ftge        		CODE           	0BFB	0000	93
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c estimated size: 94
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c estimated size: 93
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c
-		___ftneg       		CODE           	1786	0000	8
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c
+		_sprintf       		CODE           	02BC	0000	572
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c estimated size: 8
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c estimated size: 572
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c
-		___ftsub       		CODE           	081C	0000	28
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c
+		___lltoft      		CODE           	089F	0000	43
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c estimated size: 28
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c estimated size: 43
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c
-		___ftpack      		CODE           	0CF7	0000	104
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c
+		___fttol       		CODE           	0E00	0000	142
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c estimated size: 104
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c estimated size: 142
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c
-		___awtoft      		CODE           	0873	0000	33
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\isdigit.c
+		_isdigit       		CODE           	1722	0000	14
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c estimated size: 33
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\isdigit.c estimated size: 14
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c
-		_isdigit       		CODE           	1796	0000	14
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c
+		___awdiv       		CODE           	0BA0	0000	91
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c estimated size: 14
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c estimated size: 91
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c
+		___ftadd       		CODE           	04F8	0000	263
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c estimated size: 263
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c
+		___lldiv       		CODE           	0C58	0000	94
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c estimated size: 94
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c
+		___wmul        		CODE           	0830	0000	35
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c estimated size: 35
 
 shared
 		__stringtab    		STRING         	0700	0000	16
 		__stringdata   		STRING         	073C	0000	143
-		i1_USARTWriteSt		CODE           	0894	0000	35
+		i1_USARTWriteSt		CODE           	080D	0000	35
 		_dpowers       		STRING         	0710	0000	40
-		i1_lcd_envia_by		CODE           	06D5	0000	43
+		i1_lcd_envia_by		CODE           	08CA	0000	43
 		_LCD_INIT_STRIN		STRING         	0738	0000	4
-		i1_lcd_escreve_		CODE           	08DA	0000	35
+		i1_lcd_escreve_		CODE           	0853	0000	35
 		__initializatio		CODE           	0015	0000	40
-		i1_lcd_envia_ni		CODE           	098A	0000	57
-		i1_lcd_gotoxy  		CODE           	17E6	0000	26
-		i1_USARTWriteCh		CODE           	177E	0000	8
-		i1_lcd_putc    		CODE           	09C3	0000	59
+		i1_lcd_envia_ni		CODE           	0957	0000	57
+		i1_lcd_gotoxy  		CODE           	1772	0000	26
+		i1_USARTWriteCh		CODE           	1712	0000	8
+		i1_lcd_putc    		CODE           	0990	0000	59
 
 shared estimated size: 506
 
-C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c
-		___ftdiv       		CODE           	0E8E	0000	184
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c
+		___ftneg       		CODE           	171A	0000	8
 
-C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c estimated size: 184
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c estimated size: 8
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c
-		_sprintf       		CODE           	02BF	0000	572
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c
+		___ftsub       		CODE           	17A7	0000	28
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c estimated size: 572
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c
-		___lltoft      		CODE           	08FD	0000	43
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c estimated size: 43
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c
-		___ftmul       		CODE           	0602	0000	211
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c estimated size: 211
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c
-		___awmod       		CODE           	0AD3	0000	79
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c estimated size: 79
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c
-		_ftoa          		CODE           	0F46	0000	186
-
-C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c estimated size: 186
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c estimated size: 28
 
 lcd_4bit.c
-		_LCDClear      		CODE           	09FE	0000	64
-		_lcd_putc      		CODE           	0A3E	0000	71
-		_lcd_envia_nibb		CODE           	0B22	0000	89
-		_lcd_escreve_st		CODE           	0959	0000	49
+		_LCDClear      		CODE           	09CB	0000	64
+		_lcd_putc      		CODE           	0A0B	0000	71
+		_lcd_envia_nibb		CODE           	0B47	0000	89
+		_lcd_escreve_st		CODE           	0926	0000	49
 		_lcd_envia_byte		CODE           	07CB	0000	53
-		_lcd_gotoxy    		CODE           	0838	0000	28
-		_init_lcd_4bit 		CODE           	0C91	0000	102
+		_lcd_gotoxy    		CODE           	17C3	0000	28
+		_init_lcd_4bit 		CODE           	0CB6	0000	102
 
 lcd_4bit.c estimated size: 456
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c
-		___llmod       		CODE           	0A85	0000	78
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c
+		___ftdiv       		CODE           	0E8E	0000	184
 
-C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c estimated size: 78
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c estimated size: 184
 
 main.c
-		_ISR           		CODE           	0041	0000	638
-		_ADCInit       		CODE           	17D3	0000	19
-		_main          		CODE           	0DED	0000	161
-		_USARTWriteStri		CODE           	0928	0000	49
-		_USARTWriteChar		CODE           	17A4	0000	14
-		_ADCRead       		CODE           	0854	0000	31
-		_USARTReceiveCh		CODE           	0801	0000	27
+		_ISR           		CODE           	0041	0000	635
+		_ADCInit       		CODE           	175F	0000	19
+		_main          		CODE           	0876	0000	41
+		_inicialize    		CODE           	0D84	0000	124
+		_sendString    		CODE           	0AEF	0000	88
+		_USARTWriteStri		CODE           	08F5	0000	49
+		_USARTWriteChar		CODE           	1730	0000	14
+		_ADCRead       		CODE           	06D2	0000	45
+		_USARTReceiveCh		CODE           	178C	0000	27
 
-main.c estimated size: 939
+main.c estimated size: 1042
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c
+		_ftoa          		CODE           	0F46	0000	186
+
+C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c estimated size: 186
 

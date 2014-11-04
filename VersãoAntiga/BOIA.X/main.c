@@ -3,14 +3,22 @@
 #include "hardware.h"
 #include "lcd_4bit.h"
 
+// constantes que informam de qual recipiente será lida a informação
+#define SUPERIOR 0
+#define INFERIOR 1
+//constantes que define a manipulacao das informaçõe
+#define LIGAR_BOMBA "B"
+#define DESLIGAR_BOMBA "b"
+#define LIGAR_MOTOR "M"
+#define DESLIGAR_MOTOR "m"
+#define LIGAR "L"
+#define DESLIGAR "l"
 
 //Variáveis Globais de Controle.
 int ADCResult = 0;
-//unsigned short ADCResult = 0;
 unsigned char Display[7];
 int flag_an = -1;
-
-//-----------------------------------------------------------------------------
+int recipiente = 0; // variavel responsavel por controlar de qual recipiente estamos lendo os dados
 
 void USARTInit(long BaudRate, int Mode) {
     int BR = 0;
@@ -105,9 +113,6 @@ void ADCInit() {
     //Configuração do Registrador ADCON0 para a Conversão A/D.
     ADCON0bits.ADCS1 = 1; // Frequência de Trabalho (Fosc/32 - 1.6us).
     ADCON0bits.ADCS0 = 0; // Frequência de Trabalho (Fosc/32 - 1.6us).
-    //ADCON0bits.CHS2 = 0; // Configuração do Canal 0 (RA0/AN0).
-    //ADCON0bits.CHS1 = 0; // Configuração do Canal 0 (RA0/AN0).
-    //ADCON0bits.CHS0 = 0; // Configuração do Canal 0 (RA0/AN0).
     ADCON0bits.ADON = 1; // Ativa o Sistema de Conversão A/D.
 
     //Configuração dos Registradores PIE1 e PIR1 para a Conversão A/D.
@@ -118,17 +123,44 @@ void ADCInit() {
 
 void ADCRead(int ch) {
 
-
-
     ADCON0bits.CHS = ch; // Configuração do Canal 0 (RA0/AN0).
-    //ADCON0bits.CHS1 = 0; // Configuração do Canal 0 (RA0/AN0).
-    //ADCON0bits.CHS0 = 0; // Configuração do Canal 0 (RA0/AN0).
+    recipiente = ch; // informo de qual recipiente estamos lendo o valor
     __delay_us(25); //Waits for the acquisition to complete
     ADCON0bits.GO = 1;
     while (ADCON0bits.GO_DONE);
 
-    //ADCResult = (ADRESH<<8) + ADRESL ;   //Merging the MSB and LSB
+}
 
+/**
+ *  funcao responsavel por preparar o nivel recebido e envia-lo pela porta serial
+ * @param send recebe como parametro a informação a ser preparada para o envio
+ */
+void sendString(const char *send) {
+    int x = 0;
+    char array[40]; // vetor responsavel por armazenar as informações iteradas do parametro recebido
+    char * envio; // ponteiro que será enviado via serial
+
+    while (*send != '\0') { // enquanto não alcaçarmos o final da string
+        if (x == 0) { // se estivermos iterado pela primeira vez a string
+            if (recipiente == SUPERIOR) { // se estivermos tratando um valor lido do recipiente superior
+                array[x] = 'S';
+            } else if (recipiente == INFERIOR) { // se estivermos tratando um valor lido do recipiente inferior
+                array[x] = 'I';
+            }
+            x++; // incremento a variavel de controle
+        } else {
+            array[x] = *send; // adiciono a posicao iterada do array o valor do caractere iterado
+            send++;
+            x++;
+        }
+    }
+
+    if (x < 39) { // se não tivermos preechidos todas as posicoes do vetor
+        array[x] = '\0'; // incremento caractere de fim de curso
+    }
+
+    envio = &array; // converto o vetor em ponteiro
+    USARTWriteString(envio); // envio o valor para a serial
 }
 
 //-----------------------------------------------------------------------------
@@ -139,7 +171,6 @@ void interrupt ISR(void) {
     // Verificação se a Interrupção foi causada pela conversão A/D.
     if (PIR1bits.ADIF) {
         // Converte os dois bytes em um valor inteiro para manipulação de dados.
-        //ADCResult = ((ADRESH << 8) + ADRESL) * 0.0048828125;
         ADCResult = ((ADRESH << 8) + ADRESL);
 
         //Variáveis para a função ftoa funcionar corretamente.
@@ -168,21 +199,21 @@ void interrupt ISR(void) {
         Display[2] = ((ADCResult / 10) % 10) + 48; // Obtém a dezena do valor.
         Display[3] = (ADCResult % 10) + 48; // Obtém a unidade do valor.
 
-        // Envia o valor formatado para o LCD.
-        // coluna e linha
-
         lcd_gotoxy(0, 1);
         lcd_escreve_string("Nivel:");
         lcd_gotoxy(7, 1);
         input2 = ((input * 100) / 1);
         per = ftoa(input2, &status2);
         lcd_escreve_string(per);
-        USARTWriteString(per);
+
+        sendString(per);// chamada a funcao que irá escrever o nivel do recipiente na porta serial
+
         lcd_gotoxy(16, 1);
         lcd_escreve_string("%");
         lcd_gotoxy(0, 0);
         pre = input2 * 0.16;
         preint = (int) pre;
+
         //Aciona o rele que starta a bomba quando o nivel esta baixo
         if (ADCResult < 200) {
             PORTDbits.RD2 = 0;
@@ -238,7 +269,11 @@ void interrupt ISR(void) {
     }
 }
 
-void main(void) {
+/**
+ *  Funcao responsavel por inicializar os PORTS e Configurar-los como saida ou entrada
+ *  para o disposito PIC16F877A
+ */
+void inicialize(void) {
     TRISA = 0b11111111;
     PORTAbits.RA0 = 0;
     TRISDbits.TRISD2 = 0;
@@ -262,9 +297,14 @@ void main(void) {
     USARTWriteString("\fLoading PIC...");
     __delay_ms(5000);
     LCDClear();
+}
+
+void main(void) {
+
+    inicialize(); // funcao que irá configurar a utilizacao dos PORTS
 
     while (1) {
-        ADCRead(0);
+        ADCRead(SUPERIOR);// realizo a leitura do nivel d'agua do recipiente superior
         __delay_ms(300);
         if (PORTCbits.RC3 == 1) {
             while (PORTCbits.RC3 == 1) {

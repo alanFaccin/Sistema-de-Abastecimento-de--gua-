@@ -11,105 +11,112 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+$C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 end_init CODE 0 12 12 3 2
 reset_vec CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\BOIA.X.production.obj
 cinit CODE 0 15 15 2C 2
 intentry CODE 0 4 4 E 2
-text38 CODE 0 177E 177E 8 2
-text37 CODE 0 894 894 23 2
-text36 CODE 0 801 801 1B 2
-text35 CODE 0 B7B B7B 5B 2
-text34 CODE 0 AD3 AD3 4F 2
-text33 CODE 0 CF7 CF7 68 2
-text32 CODE 0 873 873 21 2
-text31 CODE 0 E8E E8E B8 2
-text30 CODE 0 BD6 BD6 5D 2
-text29 CODE 0 602 602 D3 2
-text28 CODE 0 1786 1786 8 2
-text27 CODE 0 4FB 4FB 107 2
-text26 CODE 0 81C 81C 1C 2
-text25 CODE 0 D5F D5F 8E 2
-text24 CODE 0 8FD 8FD 2B 2
-text23 CODE 0 C33 C33 5E 2
-text22 CODE 0 A85 A85 4E 2
-text21 CODE 0 8B7 8B7 23 2
-text20 CODE 0 1796 1796 E 2
-text19 CODE 0 2BF 2BF 23C 2
-text18 CODE 0 F46 F46 BA 2
-text17 CODE 0 98A 98A 39 2
-text16 CODE 0 6D5 6D5 2B 2
-text15 CODE 0 17E6 17E6 1A 2
-text14 CODE 0 9C3 9C3 3B 2
-text13 CODE 0 8DA 8DA 23 2
-text12 CODE 0 41 41 27E 2
-text11 CODE 0 17D3 17D3 13 2
-text10 CODE 0 854 854 1F 2
-text9 CODE 0 B22 B22 59 2
-text8 CODE 0 7CB 7CB 35 2
-text7 CODE 0 9FE 9FE 40 2
-text6 CODE 0 17A4 17A4 E 2
-text5 CODE 0 928 928 31 2
-text4 CODE 0 C91 C91 66 2
-text3 CODE 0 838 838 1C 2
-text2 CODE 0 A3E A3E 47 2
-text1 CODE 0 959 959 31 2
-maintext CODE 0 DED DED A1 2
+text40 CODE 0 1712 1712 8 2
+text39 CODE 0 80D 80D 23 2
+text38 CODE 0 178C 178C 1B 2
+text37 CODE 0 BA0 BA0 5B 2
+text36 CODE 0 AA0 AA0 4F 2
+text35 CODE 0 D1C D1C 68 2
+text34 CODE 0 17DF 17DF 21 2
+text33 CODE 0 E8E E8E B8 2
+text32 CODE 0 BFB BFB 5D 2
+text31 CODE 0 5FF 5FF D3 2
+text30 CODE 0 171A 171A 8 2
+text29 CODE 0 4F8 4F8 107 2
+text28 CODE 0 17A7 17A7 1C 2
+text27 CODE 0 E00 E00 8E 2
+text26 CODE 0 89F 89F 2B 2
+text25 CODE 0 C58 C58 5E 2
+text24 CODE 0 A52 A52 4E 2
+text23 CODE 0 830 830 23 2
+text22 CODE 0 1722 1722 E 2
+text21 CODE 0 2BC 2BC 23C 2
+text20 CODE 0 F46 F46 BA 2
+text19 CODE 0 AEF AEF 58 2
+text18 CODE 0 957 957 39 2
+text17 CODE 0 8CA 8CA 2B 2
+text16 CODE 0 1772 1772 1A 2
+text15 CODE 0 990 990 3B 2
+text14 CODE 0 853 853 23 2
+text13 CODE 0 41 41 27B 2
+text12 CODE 0 6D2 6D2 2D 2
+text11 CODE 0 175F 175F 13 2
+text10 CODE 0 B47 B47 59 2
+text9 CODE 0 7CB 7CB 35 2
+text8 CODE 0 9CB 9CB 40 2
+text7 CODE 0 1730 1730 E 2
+text6 CODE 0 8F5 8F5 31 2
+text5 CODE 0 CB6 CB6 66 2
+text4 CODE 0 17C3 17C3 1C 2
+text3 CODE 0 A0B A0B 47 2
+text2 CODE 0 926 926 31 2
+text1 CODE 0 D84 D84 7C 2
+maintext CODE 0 876 876 29 2
 cstackBANK0 BANK0 1 20 20 3A 1
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK1 BANK1 1 A0 A0 24 1
-cstackBANK3 BANK3 1 190 190 11 1
-inittext CODE 0 17C2 17C2 11 2
-clrtext CODE 0 178E 178E 8 2
+cstackBANK3 BANK3 1 190 190 14 1
+inittext CODE 0 174E 174E 11 2
+clrtext CODE 0 805 805 8 2
 dataBANK1 BANK1 1 C4 C4 10 1
 bssBANK1 BANK1 1 D4 D4 9 1
-dataBANK0 BANK0 1 6B 6B 2 1
-bssBANK0 BANK0 1 5A 5A 11 1
+dataBANK0 BANK0 1 6D 6D 2 1
+bssBANK0 BANK0 1 5A 5A 13 1
 strings STRING 0 700 700 CB 2
-idataBANK1 CODE 0 17B2 17B2 10 2
-idataBANK0 CODE 0 177C 177C 2 2
+idataBANK1 CODE 0 173E 173E 10 2
+idataBANK0 CODE 0 803 803 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-BANK0 006D-006F 1
+BANK0 006F-006F 1
 BANK1 00DD-00EF 1
 BANK2 0110-016F 1
-BANK3 01A1-01EF 1
+BANK3 01A4-01EF 1
 CODE 0003-0003 2
-CODE 0800-0800 2
-CODE 1000-177B 2
+CODE 06FF-06FF 2
+CODE 0800-0802 2
+CODE 1000-1711 2
 CODE 1800-1FFF 2
 CONST 0003-0003 2
-CONST 0800-0800 2
-CONST 1000-177B 2
+CONST 06FF-06FF 2
+CONST 0800-0802 2
+CONST 1000-1711 2
 CONST 1800-1FFF 2
 EEDATA 2100-21FF 2
 ENTRY 0003-0003 2
-ENTRY 0800-0800 2
-ENTRY 1000-177B 2
+ENTRY 06FF-06FF 2
+ENTRY 0800-0802 2
+ENTRY 1000-1711 2
 ENTRY 1800-1FFF 2
 IDLOC 2000-2003 2
-RAM 006D-006F 1
+RAM 006F-006F 1
 RAM 00DD-00EF 1
 RAM 0110-016F 1
-RAM 01A1-01EF 1
+RAM 01A4-01EF 1
 SFR0 0000-001F 1
 SFR1 0080-009F 1
 SFR2 0100-010F 1
 SFR3 0180-018F 1
 STACK 0110-016F 1
 STRCODE 0003-0003 2
-STRCODE 0800-0800 2
-STRCODE 1000-177B 2
+STRCODE 06FF-06FF 2
+STRCODE 0800-0802 2
+STRCODE 1000-1711 2
 STRCODE 1800-1FFF 2
 STRING 0003-0003 2
-STRING 0800-0800 2
-STRING 1000-177B 2
+STRING 06FF-06FF 2
+STRING 0800-0802 2
+STRING 1000-1711 2
 STRING 1800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -125,600 +132,622 @@ STRING 1800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\BOIA.X.production.obj
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":136 4 intentry CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":704 15 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":707 15 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":758 15 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":759 16 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":760 17 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":761 18 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":762 19 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":765 1E cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":766 1F cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":767 20 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":768 21 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":800 26 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":801 27 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":802 28 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":803 29 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":804 2A cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":805 2B cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":806 2C cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":807 2D cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":808 2E cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":812 33 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":813 38 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":814 39 cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":815 3C cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":821 3D cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":822 3D cinit CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":823 3E cinit CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":136 41 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":140 41 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":143 43 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":157 4B text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":159 4D text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":161 64 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":162 96 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":166 B6 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":167 CE text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":168 F5 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":169 11C text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":174 134 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":175 13C text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":176 145 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":177 14D text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":178 191 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":179 1B1 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":180 1BA text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":181 1C5 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":182 1CD text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":183 1D6 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":184 1DD text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":185 20E text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":187 231 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":188 23C text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":189 23F text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":192 240 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":193 24D text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":194 250 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":198 251 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":199 255 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":200 262 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":201 26A text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":198 270 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":203 271 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":205 279 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":228 282 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":230 291 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":233 294 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":234 296 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":235 29F text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":236 2A8 text12 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":239 2B2 text12 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":492 2BF text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":542 2C2 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":545 2C6 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":547 2D6 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":550 2DA text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":551 2E5 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":555 2E6 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":557 2E8 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":606 2E9 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":607 2F7 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":609 2FB text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":610 314 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":611 32B text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":620 339 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":622 345 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":630 349 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":631 34B text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":632 359 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":631 386 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":635 387 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":644 38B text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":650 38C text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":652 38C text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":653 38D text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":827 38E text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":831 392 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":644 393 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":831 3AA text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1290 3AA text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1291 3AC text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1295 3BC text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1299 3CE text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1300 3D8 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1314 3DE text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1315 3E4 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1314 418 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1348 420 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1349 431 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1350 438 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1351 44B text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1390 452 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1391 465 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1393 473 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1437 477 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1439 47B text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1440 486 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1498 48D text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1533 4DC text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1483 4E7 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\doprnt.c":1547 4F6 text19 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":86 4FB text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":90 4FB text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":91 509 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":92 515 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":93 524 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":94 52B text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":96 53A text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":97 53E text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":98 53F text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":99 540 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":100 541 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":101 542 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":102 543 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":103 549 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":104 54A text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":106 550 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":110 554 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":111 55C text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":112 55E text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":114 569 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":115 571 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":113 575 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":117 57A text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":121 57E text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":122 586 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":123 588 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":125 593 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":126 59B text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":124 59F text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":129 5A3 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":131 5A5 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":132 5AB text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":134 5B5 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":136 5B7 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":137 5BD text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":139 5C7 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":140 5C8 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":141 5D6 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":142 5D8 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":143 5DE text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":144 5E8 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c":146 5EA text27 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":62 602 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":67 602 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":68 613 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":69 61A text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":70 629 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":71 630 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":72 635 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":73 647 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":74 659 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":75 65D text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":77 65E text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":78 65F text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":79 665 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":134 66B text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":136 66F text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":137 671 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":138 67F text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":139 687 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":140 68F text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":143 693 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":145 697 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":146 699 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":147 6A7 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":148 6AF text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":149 6B7 text29 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c":156 6BB text29 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":53 6D5 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":55 6D6 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":56 6D9 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":58 6DE text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":59 6E5 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":61 6E8 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":63 6E9 text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":65 6EC text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":66 6FA text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":67 6FF text16 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":53 7CB text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":55 7CE text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":56 7D1 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":58 7D8 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":59 7E1 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":61 7E4 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":63 7E5 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":65 7E8 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":66 7F8 text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":67 7FF text8 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":73 801 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":76 801 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":78 805 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":81 80A text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":83 811 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":84 814 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":85 818 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":86 819 text36 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":89 81A text36 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c":18 81C text26 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c":23 81C text26 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c":24 820 text26 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":70 838 text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":74 83B text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":75 844 text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":77 845 text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":78 84A text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":79 853 text3 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":119 854 text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":123 854 text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":126 866 text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":127 86D text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":128 870 text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":132 871 text10 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":128 872 text10 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":32 873 text32 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":36 873 text32 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":37 874 text32 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":38 876 text32 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":39 87B text32 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c":41 87D text32 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":62 894 text37 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":64 894 text37 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":66 8A2 text37 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":67 8B2 text37 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":64 8B6 text37 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":15 8B7 text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":43 8B7 text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":45 8B9 text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":46 8BB text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":47 8C1 text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":48 8C8 text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":49 8CF text21 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c":52 8D3 text21 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":168 8DA text13 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":170 8DA text13 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":172 8E8 text13 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":173 8F8 text13 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":170 8FC text13 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":35 8FD text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":38 8FD text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":41 901 text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":42 905 text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":43 90E text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":41 912 text24 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c":45 913 text24 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":62 928 text5 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":64 928 text5 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":66 93C text5 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":67 952 text5 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":64 958 text5 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":168 959 text1 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":170 959 text1 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":172 96D text1 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":173 983 text1 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":170 989 text1 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":39 98A text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":41 98B text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":42 996 text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":43 9A0 text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":44 9AB text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":46 9B7 text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":47 9B8 text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":48 9BB text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":49 9BF text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":50 9C2 text17 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":82 9C3 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":84 9C4 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":87 9C5 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":88 9CD text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":89 9D6 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":92 9D7 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":93 9DF text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":96 9E0 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":97 9E8 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":100 9E9 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":102 9F1 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":84 9F2 text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":103 9FD text14 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":179 9FE text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":181 9FE text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":182 A08 text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":184 A13 text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":185 A1F text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":187 A28 text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":188 A34 text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":189 A3D text7 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":82 A3E text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":84 A41 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":87 A42 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":88 A4A text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":89 A55 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":92 A56 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":93 A60 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":96 A61 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":97 A6B text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":100 A6C text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":102 A76 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":84 A77 text2 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":103 A84 text2 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":6 A85 text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":13 A85 text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":14 A8D text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":15 A8F text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":16 A91 text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":17 A9A text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":15 A9E text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":20 A9F text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":21 AAF text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":22 ABD text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":23 AC6 text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c":25 ACA text22 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":6 AD3 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":13 AD3 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":14 AD6 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":15 AD8 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":16 ADD text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":18 ADF text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":19 AE1 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":20 AE6 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":21 AEA text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":22 AEC text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":23 AEE text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":24 AF5 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":22 AF9 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":27 AFA text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":28 B02 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":29 B08 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":30 B0F text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":32 B13 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":33 B16 text34 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c":34 B1B text34 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":39 B22 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":41 B25 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":42 B34 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":43 B46 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":44 B59 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":46 B6D text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":47 B6E text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":48 B71 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":49 B77 text9 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":50 B7A text9 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":6 B7B text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":14 B7B text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":15 B7C text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":16 B7E text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":17 B83 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":19 B85 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":20 B87 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":21 B8C text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":23 B90 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":24 B92 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":25 B96 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":26 B98 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":27 B9A text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":28 BA1 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":26 BA5 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":31 BA6 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":32 BAD text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":33 BB5 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":34 BBB text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":36 BBC text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":37 BC3 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":39 BC7 text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":40 BCA text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c":41 BCF text35 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":4 BD6 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":6 BD6 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":7 BD8 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":8 BFD text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":9 BFF text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":10 C24 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":11 C26 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c":12 C28 text30 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":6 C33 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":14 C33 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":15 C3B text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":16 C41 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":17 C43 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":18 C45 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":19 C4E text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":17 C52 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":22 C53 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":23 C5C text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":24 C6C text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":25 C7A text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":27 C7B text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":28 C84 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c":30 C88 text23 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":6 C91 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":10 C91 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":11 C94 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":12 C95 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":13 C98 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":14 C99 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":15 C9C text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":16 C9D text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":17 C9E text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":18 C9F text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":19 CA2 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":20 CA3 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":21 CA4 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":23 CA5 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":25 CB0 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":27 CB7 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":28 CBD text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":25 CC8 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":30 CD2 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":32 CD8 text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":34 CDF text4 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":32 CF0 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":62 CF7 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":64 CF7 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":65 CFF text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":67 D06 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":68 D0A text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":66 D12 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":71 D17 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":72 D1B text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":73 D25 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":70 D2D text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":74 D2D text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":76 D32 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":77 D34 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":75 D3C text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":79 D3E text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":80 D40 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":81 D46 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":82 D48 text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":83 D5A text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":84 D5D text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c":86 D5E text33 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":44 D5F text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":49 D5F text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":50 D70 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":51 D79 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":52 D8B text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":53 D8C text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":54 D92 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":55 D99 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":56 D9B text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":57 D9D text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":58 DA2 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":60 DAB text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":61 DB4 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":63 DBB text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":64 DBF text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":66 DC8 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":67 DD1 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":65 DD3 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":70 DD6 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":71 DD9 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c":72 DE4 text25 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":241 DED maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":242 DED maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":243 DF1 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":244 DF4 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":245 DF7 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":246 DFA maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":247 DFD maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":249 E00 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":250 E03 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":251 E04 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":252 E05 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":253 E06 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":254 E09 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":255 E17 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":256 E1C maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":257 E2A maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":258 E2B maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":259 E2C maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":260 E3B maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":261 E40 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":262 E4B maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":263 E56 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":264 E65 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":267 E6A maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":268 E75 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":269 E84 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":270 E89 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":271 E89 maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":272 E8A maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":270 E8B maintext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":273 E8B maintext CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":49 E8E text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":55 E8E text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":56 E9F text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":57 EA6 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":58 EB5 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":59 EBC text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":60 EC2 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":61 EC7 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":62 ED9 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":63 EEB text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":64 EEF text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":65 EF0 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":66 EF6 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":67 EF7 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":68 EFD text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":70 F01 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":71 F09 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":72 F15 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":73 F1F text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":75 F20 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":76 F28 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c":77 F2C text31 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":6 F46 text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":9 F46 text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":12 F4C text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":13 F5F text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":14 F6C text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":16 F7F text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":17 F96 text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":18 FBE text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":19 FE6 text18 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftoa.c":20 FFE text18 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":55 177E text38 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":56 177F text38 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":57 1783 text38 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":58 1785 text38 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c":15 1786 text28 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c":17 1786 text28 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c":18 178B text28 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c":20 178D text28 CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":745 178E clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":746 178E clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":747 178F clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":748 178F clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":749 1790 clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":750 1791 clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":751 1792 clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":752 1793 clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":753 1794 clrtext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":754 1795 clrtext CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c":8 1796 text20 CODE
-"C:\Program Files\Microchip\xc8\v1.32\sources\common\isdigit.c":14 1797 text20 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":55 17A4 text6 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":56 17A7 text6 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":57 17AB text6 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":58 17B1 text6 CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":774 17C2 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":775 17C2 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":776 17C3 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":777 17C4 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":778 17C5 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":785 17C6 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":786 17C6 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":787 17C9 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":788 17CA inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":789 17CB inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":790 17CC inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":791 17CD inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":792 17CE inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":793 17CF inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":794 17D0 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":795 17D1 inittext CODE
-"C:\Users\Alan\AppData\Local\Temp\s1q4.":796 17D2 inittext CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":97 17D3 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":99 17D3 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":100 17D6 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":101 17D7 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":102 17D8 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":103 17D9 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":106 17DA text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":107 17DD text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":111 17DE text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":114 17DF text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":115 17E2 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\main.c":116 17E5 text11 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":70 17E6 text15 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":74 17E7 text15 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":75 17F0 text15 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":77 17F1 text15 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":78 17F6 text15 CODE
-"Z:\6 Semestre\Sistemas Embarcados\www\BOIA.X\lcd_4bit.c":79 17FF text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":168 4 intentry CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":708 15 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":711 15 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":765 15 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":766 16 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":767 17 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":768 18 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":769 19 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":772 1E cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":773 1F cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":774 20 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":775 21 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":807 26 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":808 27 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":809 28 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":810 29 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":811 2A cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":812 2B cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":813 2C cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":814 2D cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":815 2E cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":819 33 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":820 38 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":821 39 cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":822 3C cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":828 3D cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":829 3D cinit CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":830 3E cinit CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":168 41 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":172 41 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":174 43 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":188 4B text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":190 4D text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":192 64 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":193 96 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":197 B6 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":198 CE text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":199 F5 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":200 11C text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":202 134 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":203 13C text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":204 145 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":205 14D text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":206 191 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":207 1B1 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":209 1BA text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":211 1C2 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":212 1CA text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":213 1D3 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":214 1DA text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":215 20B text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":218 22E text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":219 239 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":220 23C text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":223 23D text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":224 24A text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":225 24D text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":229 24E text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":230 252 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":231 25F text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":232 267 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":229 26D text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":234 26E text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":236 276 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":259 27F text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":261 28E text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":264 291 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":265 293 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":266 29C text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":267 2A5 text13 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":270 2AF text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":492 2BC text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":542 2BF text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":545 2C3 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":547 2D3 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":550 2D7 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":551 2E2 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":555 2E3 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":557 2E5 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":606 2E6 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":607 2F4 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":609 2F8 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":610 311 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":611 328 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":620 336 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":622 342 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":630 346 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":631 348 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":632 356 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":631 383 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":635 384 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":644 388 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":650 389 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":652 389 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":653 38A text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":827 38B text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":831 38F text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":644 390 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":831 3A7 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1290 3A7 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1291 3A9 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1295 3B9 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1299 3CB text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1300 3D5 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1314 3DB text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1315 3E1 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1314 415 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1348 41D text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1349 42E text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1350 435 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1351 448 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1390 44F text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1391 462 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1393 470 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1437 474 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1439 478 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1440 483 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1498 48A text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1533 4D9 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1483 4E4 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\doprnt.c":1547 4F3 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":86 4F8 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":90 4F8 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":91 506 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":92 512 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":93 521 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":94 528 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":96 537 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":97 53B text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":98 53C text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":99 53D text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":100 53E text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":101 53F text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":102 540 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":103 546 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":104 547 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":106 54D text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":110 551 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":111 559 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":112 55B text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":114 566 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":115 56E text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":113 572 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":117 577 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":121 57B text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":122 583 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":123 585 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":125 590 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":126 598 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":124 59C text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":129 5A0 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":131 5A2 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":132 5A8 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":134 5B2 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":136 5B4 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":137 5BA text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":139 5C4 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":140 5C5 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":141 5D3 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":142 5D5 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":143 5DB text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":144 5E5 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c":146 5E7 text29 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":62 5FF text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":67 5FF text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":68 610 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":69 617 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":70 626 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":71 62D text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":72 632 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":73 644 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":74 656 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":75 65A text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":77 65B text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":78 65C text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":79 662 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":134 668 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":136 66C text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":137 66E text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":138 67C text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":139 684 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":140 68C text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":143 690 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":145 694 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":146 696 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":147 6A4 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":148 6AC text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":149 6B4 text31 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c":156 6B8 text31 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":124 6D2 text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":126 6D2 text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":127 6E4 text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":128 6F2 text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":129 6F9 text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":130 6FC text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":132 6FD text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":130 6FE text12 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":53 7CB text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":55 7CE text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":56 7D1 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":58 7D8 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":59 7E1 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":61 7E4 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":63 7E5 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":65 7E8 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":66 7F8 text9 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":67 7FF text9 CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":752 805 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":753 805 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":754 806 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":755 806 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":756 807 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":757 808 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":758 809 clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":759 80A clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":760 80B clrtext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":761 80C clrtext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":70 80D text39 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":72 80D text39 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":74 81B text39 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":75 82B text39 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":72 82F text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":15 830 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":43 830 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":45 832 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":46 834 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":47 83A text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":48 841 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":49 848 text23 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c":52 84C text23 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":168 853 text14 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":170 853 text14 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":172 861 text14 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":173 871 text14 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":170 875 text14 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":302 876 maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":304 876 maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":307 87B maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":308 886 maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":309 895 maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":310 89A maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":311 89A maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":312 89B maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":310 89C maintext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":313 89C maintext CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":35 89F text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":38 89F text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":41 8A3 text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":42 8A7 text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":43 8B0 text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":41 8B4 text26 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c":45 8B5 text26 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":53 8CA text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":55 8CB text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":56 8CE text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":58 8D3 text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":59 8DA text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":61 8DD text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":63 8DE text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":65 8E1 text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":66 8EF text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":67 8F4 text17 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":70 8F5 text6 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":72 8F5 text6 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":74 909 text6 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":75 91F text6 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":72 925 text6 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":168 926 text2 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":170 926 text2 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":172 93A text2 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":173 950 text2 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":170 956 text2 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":39 957 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":41 958 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":42 963 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":43 96D text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":44 978 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":46 984 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":47 985 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":48 988 text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":49 98C text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":50 98F text18 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":82 990 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":84 991 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":87 992 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":88 99A text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":89 9A3 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":92 9A4 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":93 9AC text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":96 9AD text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":97 9B5 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":100 9B6 text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":102 9BE text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":84 9BF text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":103 9CA text15 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":179 9CB text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":181 9CB text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":182 9D5 text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":184 9E0 text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":185 9EC text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":187 9F5 text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":188 A01 text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":189 A0A text8 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":82 A0B text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":84 A0E text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":87 A0F text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":88 A17 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":89 A22 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":92 A23 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":93 A2D text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":96 A2E text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":97 A38 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":100 A39 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":102 A43 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":84 A44 text3 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":103 A51 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":6 A52 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":13 A52 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":14 A5A text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":15 A5C text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":16 A5E text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":17 A67 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":15 A6B text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":20 A6C text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":21 A7C text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":22 A8A text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":23 A93 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c":25 A97 text24 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":6 AA0 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":13 AA0 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":14 AA3 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":15 AA5 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":16 AAA text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":18 AAC text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":19 AAE text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":20 AB3 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":21 AB7 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":22 AB9 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":23 ABB text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":24 AC2 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":22 AC6 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":27 AC7 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":28 ACF text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":29 AD5 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":30 ADC text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":32 AE0 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":33 AE3 text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c":34 AE8 text36 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":138 AEF text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":139 AF2 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":143 AF4 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":144 AFA text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":145 AFE text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":146 B02 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":147 B04 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":148 B09 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":150 B11 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":152 B12 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":153 B1C text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":154 B20 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":143 B26 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":158 B27 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":159 B32 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":162 B39 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":163 B3F text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":164 B46 text19 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":39 B47 text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":41 B4A text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":42 B59 text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":43 B6B text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":44 B7E text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":46 B92 text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":47 B93 text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":48 B96 text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":49 B9C text10 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":50 B9F text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":6 BA0 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":14 BA0 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":15 BA1 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":16 BA3 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":17 BA8 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":19 BAA text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":20 BAC text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":21 BB1 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":23 BB5 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":24 BB7 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":25 BBB text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":26 BBD text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":27 BBF text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":28 BC6 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":26 BCA text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":31 BCB text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":32 BD2 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":33 BDA text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":34 BE0 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":36 BE1 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":37 BE8 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":39 BEC text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":40 BEF text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c":41 BF4 text37 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":4 BFB text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":6 BFB text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":7 BFD text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":8 C22 text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":9 C24 text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":10 C49 text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":11 C4B text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c":12 C4D text32 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":6 C58 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":14 C58 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":15 C60 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":16 C66 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":17 C68 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":18 C6A text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":19 C73 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":17 C77 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":22 C78 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":23 C81 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":24 C91 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":25 C9F text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":27 CA0 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":28 CA9 text25 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":30 CAD text25 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":6 CB6 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":10 CB6 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":11 CB9 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":12 CBA text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":13 CBD text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":14 CBE text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":15 CC1 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":16 CC2 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":17 CC3 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":18 CC4 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":19 CC7 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":20 CC8 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":21 CC9 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":23 CCA text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":25 CD5 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":27 CDC text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":28 CE2 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":25 CED text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":30 CF7 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":32 CFD text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":34 D04 text5 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":32 D15 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":62 D1C text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":64 D1C text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":65 D24 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":67 D2B text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":68 D2F text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":66 D37 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":71 D3C text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":72 D40 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":73 D4A text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":70 D52 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":74 D52 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":76 D57 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":77 D59 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":75 D61 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":79 D63 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":80 D65 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":81 D6B text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":82 D6D text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":83 D7F text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":84 D82 text35 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c":86 D83 text35 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":276 D84 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":277 D84 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":278 D88 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":279 D8B text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":280 D8E text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":281 D91 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":282 D94 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":284 D97 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":285 D9A text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":286 D9B text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":287 D9C text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":288 D9D text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":289 DA0 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":290 DAE text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":291 DB3 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":292 DC1 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":293 DC2 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":294 DC3 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":295 DD2 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":296 DD7 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":297 DE2 text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":298 DED text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":299 DFC text1 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":300 DFF text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":44 E00 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":49 E00 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":50 E11 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":51 E1A text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":52 E2C text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":53 E2D text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":54 E33 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":55 E3A text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":56 E3C text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":57 E3E text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":58 E43 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":60 E4C text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":61 E55 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":63 E5C text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":64 E60 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":66 E69 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":67 E72 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":65 E74 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":70 E77 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":71 E7A text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c":72 E85 text27 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":49 E8E text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":55 E8E text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":56 E9F text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":57 EA6 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":58 EB5 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":59 EBC text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":60 EC2 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":61 EC7 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":62 ED9 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":63 EEB text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":64 EEF text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":65 EF0 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":66 EF6 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":67 EF7 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":68 EFD text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":70 F01 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":71 F09 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":72 F15 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":73 F1F text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":75 F20 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":76 F28 text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c":77 F2C text33 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":6 F46 text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":9 F46 text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":12 F4C text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":13 F5F text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":14 F6C text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":16 F7F text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":17 F96 text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":18 FBE text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":19 FE6 text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftoa.c":20 FFE text20 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":63 1712 text40 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":64 1713 text40 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":65 1717 text40 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":66 1719 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c":15 171A text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c":17 171A text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c":18 171F text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c":20 1721 text30 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\isdigit.c":8 1722 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\isdigit.c":14 1723 text22 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":63 1730 text7 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":64 1733 text7 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":65 1737 text7 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":66 173D text7 CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":781 174E inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":782 174E inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":783 174F inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":784 1750 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":785 1751 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":792 1752 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":793 1752 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":794 1755 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":795 1756 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":796 1757 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":797 1758 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":798 1759 inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":799 175A inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":800 175B inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":801 175C inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":802 175D inittext CODE
+"C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.":803 175E inittext CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":105 175F text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":107 175F text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":108 1762 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":109 1763 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":110 1764 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":111 1765 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":114 1766 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":115 1769 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":116 176A text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":119 176B text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":120 176E text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":121 1771 text11 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":70 1772 text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":74 1773 text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":75 177C text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":77 177D text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":78 1782 text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":79 178B text16 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":81 178C text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":84 178C text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":86 1790 text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":89 1795 text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":91 179C text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":92 179F text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":93 17A3 text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":94 17A4 text38 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\main.c":97 17A5 text38 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c":18 17A7 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c":23 17A7 text28 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c":24 17AB text28 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":70 17C3 text4 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":74 17C6 text4 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":75 17CF text4 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":77 17D0 text4 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":78 17D5 text4 CODE
+"D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\VersãoAntiga\BOIA.X\lcd_4bit.c":79 17DE text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":32 17DF text34 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":36 17DF text34 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":37 17E0 text34 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":38 17E2 text34 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":39 17E7 text34 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c":41 17E9 text34 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -732,24 +761,26 @@ $dist/default/production\BOIA.X.production.obj
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __size_ofi1_lcd_escreve_string 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
+__size_of_sendString 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 sprintf@f 2A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___lltoft@c 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ___awtoft@c 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_of___ftneg 2F1C 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
+__end_of___ftneg 2E44 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
+_isdigit$879 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __S0 2008 0 ABS 0 - -
-__S1 1A1 0 ABS 0 - -
+__S1 1A4 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_ISR 82 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
+_ISR 82 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
 __Hintentry 24 0 CODE 0 intentry -
 __Lintentry 8 0 CODE 0 intentry -
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __pintentry 8 0 CODE 0 intentry dist/default/production\BOIA.X.production.obj
 ___ftadd@f1 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_of___awdiv 17AC 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
+__end_of___awdiv 17F6 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
 __CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_of___ftsub 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftneg@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
@@ -757,29 +788,30 @@ _OERR C1 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftadd@f2 7B 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ISR@i BA 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
 ___ftsub@f1 2A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-__end_of_LCDClear 147C 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
-_ftoa 1E8C 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
-_main 1BDA 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+__end_of_LCDClear 1416 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
+_ftoa 1E8C 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
+_main 10EC 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
+__size_of_inicialize 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 btemp 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-start 24 0 CODE 0 init C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+start 24 0 CODE 0 init C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 lcd_gotoxy@x 197 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 ?___ftadd 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ADCRead@ch 190 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 ___fttol@f1 30 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-_lcd_gotoxy 1070 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
+_lcd_gotoxy 2F86 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
 ___ftsub@f2 27 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___ftmul@f1 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___fttol@lval 39 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___ftdiv@f1 33 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-i1_USARTWriteChar 2EFC 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
+i1_USARTWriteChar 2E24 0 CODE 0 text40 dist/default/production\BOIA.X.production.obj
 _RCREG 1A 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _TRISA 85 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _TXREG 19 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 _SPBRG 99 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 i1lcd_escreve_string@y 7C 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ltemp0 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
@@ -804,29 +836,29 @@ interrupt_function 8 0 CODE 0 intentry dist/default/production\BOIA.X.production
 __Hconfig 4010 0 CONFIG 0 config -
 __Lconfig 400E 0 CONFIG 0 config -
 ?___ftneg 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-___ftpack 19EE 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
+___ftpack 1A38 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
 lcd_gotoxy@y 195 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 ?___llmod 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ftoa@f 44 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ?___awmod 79 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __end_of__stringtab E20 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
-_LCDClear 13FC 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
+_LCDClear 1396 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
 ftoa@l 4D 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 i1lcd_envia_byte@n 72 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ___ftdiv@f3 3B 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __Hram 0 0 ABS 0 ram -
 ?___ftsub 27 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __Lram 0 0 ABS 0 ram -
-_lcd_putc 147C 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
+_lcd_putc 1416 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
 USARTWriteChar@USARTData 190 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
-__end_of_lcd_putc 150A 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
+__end_of_lcd_putc 14A4 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
 __end_of__stringdata F96 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 ___ftge@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ?_sprintf 2A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___ftmul@cntr 2E 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of_ISR 57E 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
-_USARTReceiveChar 1002 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
+__end_of_ISR 578 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
+_USARTReceiveChar 2F18 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
 ___ftdiv@cntr 3A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __Hfunctab 0 0 CODE 0 functab -
 __Lfunctab 0 0 CODE 0 functab -
@@ -841,17 +873,17 @@ __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 _PIR1bits C 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ?___ftmul 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 sprintf@ap 39 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 ?___lldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ?___ftdiv 30 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-___lltoft 11FA 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
-___awtoft 10E6 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
+___lltoft 113E 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
+___awtoft 2FBE 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
 _ADRESH 1E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Labs1 0 0 ABS 0 abs1 -
 _ADRESL 9E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_ofi1_USARTWriteString 116E 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
+__end_ofi1_USARTWriteString 1060 0 CODE 0 text39 dist/default/production\BOIA.X.production.obj
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
@@ -862,40 +894,41 @@ __Hsfr3 0 0 ABS 0 sfr3 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 ___ftmul@f3_as_product 2B 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ISR@input BD 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-__end_of_ADCInit 2FCC 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
-__end_of___ftpack 1ABE 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
+__end_of_ADCInit 2EE4 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
+sendString@envio 48 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
+__end_of___ftpack 1B08 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
 ?___ftpack 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-_USARTWriteChar 2F48 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
+_USARTWriteChar 2E60 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
 __size_of_USARTWriteString 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __end_of_dpowers E70 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 __size_of___fttol 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of___awmod 1644 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
+__end_of___awmod 15DE 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
 __size_ofi1_lcd_envia_nibble 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftadd@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-init_fetch0 2F84 0 CODE 0 inittext dist/default/production\BOIA.X.production.obj
+init_fetch0 2E9C 0 CODE 0 inittext dist/default/production\BOIA.X.production.obj
 __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
 ftoa@cp 51 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ISR@buf B0 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
 ISR@pre B5 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-i1_lcd_envia_byte DAA 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
-___ftge 17AC 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
+i1_lcd_envia_byte 1194 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
+___ftge 17F6 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
 __size_of_lcd_envia_nibble 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-stackhi 0 0 ABS 0 - C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+stackhi 0 0 ABS 0 - C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 sprintf@sp 3E 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ISR@per C3 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___awmod@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-stacklo 0 0 ABS 0 - C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+stacklo 0 0 ABS 0 - C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 saved_w 7E 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __Hinit 24 0 CODE 0 init -
 __Linit 24 0 CODE 0 init -
-___wmul 116E 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
+___wmul 1060 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
 ISR@aux A0 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-__end_of_main 1D1C 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
+__end_of_main 113E 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
 __Htext 0 0 ABS 0 text -
 __Ltext 0 0 ABS 0 text -
 i1lcd_gotoxy@x 77 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
@@ -903,28 +936,29 @@ sprintf@width 3F 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
-__pdataBANK0 6B 0 BANK0 1 dataBANK0 dist/default/production\BOIA.X.production.obj
-__end_of_lcd_envia_nibble 16F6 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
+__pdataBANK0 6D 0 BANK0 1 dataBANK0 dist/default/production\BOIA.X.production.obj
+__end_of_lcd_envia_nibble 1740 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
 __size_of___ftneg 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftmul@sign 2F 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 end_of_initialization 7A 0 CODE 0 cinit dist/default/production\BOIA.X.production.obj
 ___ftdiv@sign 3F 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __size_of_ISR 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-i1_lcd_gotoxy 2FCC 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
+i1_lcd_gotoxy 2EE4 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
+__end_of_inicialize 1C00 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
 ___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 init_lcd_4bit@i 197 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 __stringtab E00 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 __size_of___awtoft 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
-__end_ofi1_lcd_envia_byte E00 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
+__end_ofi1_lcd_envia_byte 11EA 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
 __pdataBANK1 C4 0 BANK1 1 dataBANK1 dist/default/production\BOIA.X.production.obj
 __size_of_init_lcd_4bit 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _RCSTAbits 18 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _TRISBbits 86 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of___ftadd C04 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
-__end_of___lltoft 1250 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
+__end_of___ftadd BFE 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
+__end_of___lltoft 1194 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
 _TRISCbits 87 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _PORTAbits 5 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _TRISDbits 88 0 ABS 0 - dist/default/production\BOIA.X.production.obj
@@ -937,7 +971,7 @@ __Lstrings 0 0 ABS 0 strings -
 __pstrings E00 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 ?___lltoft 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 ?___awtoft 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-i1_lcd_escreve_string 11B4 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
+i1_lcd_escreve_string 10A6 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
 ISR@preint B8 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
 __size_of___lltoft 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
@@ -951,107 +985,111 @@ __Hbank3 0 0 ABS 0 bank3 -
 __Lbank3 0 0 ABS 0 bank3 -
 ___latbits 2 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftmul@exp 2A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-_init_lcd_4bit 1922 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
+_init_lcd_4bit 196C 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
 ___ftdiv@exp 3E 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __Lpowerup 0 0 CODE 0 powerup -
 __end_of_LCD_INIT_STRING E78 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 ISR@result BC 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-_lcd_escreve_string 12B2 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
-__end_of_lcd_escreve_string 1314 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
-__ptext1 12B2 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
-__ptext2 147C 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
-__ptext3 1070 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
-__ptext4 1922 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
+__end_of_sendString 168E 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
+_lcd_escreve_string 124C 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
+__end_of_lcd_escreve_string 12AE 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
+__ptext1 1B08 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
+__ptext2 124C 0 CODE 0 text2 dist/default/production\BOIA.X.production.obj
+__ptext3 1416 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
+__ptext4 2F86 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
 ISR@status B1 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-__ptext5 1250 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
-__ptext6 2F48 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
-__ptext7 13FC 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
+__ptext5 196C 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
+__ptext6 11EA 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
+__ptext7 2E60 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
-__ptext8 F96 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
-__ptext9 1644 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
+__ptext8 1396 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
+__ptext9 F96 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lclrtext 0 0 ABS 0 clrtext -
-i1_lcd_envia_nibble 1314 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
-_USARTWriteString 1250 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
+i1_lcd_envia_nibble 12AE 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
+_USARTWriteString 11EA 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
 lcd_envia_byte@n 192 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 i1lcd_gotoxy@y 75 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_ofi1_lcd_escreve_string 11FA 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
+__end_ofi1_lcd_escreve_string 10EC 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
 __size_ofi1_lcd_putc 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_of_lcd_gotoxy 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __end_of__initialization 7A 0 CODE 0 cinit dist/default/production\BOIA.X.production.obj
-__end_of_lcd_envia_byte 1000 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
-_ADCRead 10A8 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
+__end_of_lcd_envia_byte 1000 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
+_ADCRead DA4 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
 ISR@status2 B3 0 BANK1 1 cstackBANK1 dist/default/production\BOIA.X.production.obj
-___ftadd 9F6 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
+___ftadd 9F0 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
 __size_of_USARTWriteChar 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of_lcd_gotoxy 10A8 0 CODE 0 text3 dist/default/production\BOIA.X.production.obj
+__end_of_lcd_gotoxy 2FBE 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
+_sendString 15DE 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
 __size_of_ftoa 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of_USARTWriteString 12B2 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
+__end_of_USARTWriteString 124C 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
 __Hidloc 0 0 IDLOC 0 idloc -
-ftoa@buf 5A 0 BANK0 1 bssBANK0 dist/default/production\BOIA.X.production.obj
+ftoa@buf 5C 0 BANK0 1 bssBANK0 dist/default/production\BOIA.X.production.obj
 __Lidloc 0 0 IDLOC 0 idloc -
-_flag_an 6B 0 BANK0 1 dataBANK0 dist/default/production\BOIA.X.production.obj
+ISR@F1351 C4 0 BANK1 1 dataBANK1 dist/default/production\BOIA.X.production.obj
+_flag_an 6D 0 BANK0 1 dataBANK0 dist/default/production\BOIA.X.production.obj
 __Hstack 0 0 STACK 2 stack -
 __Lstack 0 0 STACK 2 stack -
-___ftneg 2F0C 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
+___ftneg 2E34 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
 _LCD_INIT_STRING E70 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 ftoa@rem 49 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-___llmod 150A 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
-_lcd_envia_byte F96 0 CODE 0 text8 dist/default/production\BOIA.X.production.obj
-__end_of___lldiv 1922 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
-___awmod 15A6 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
-i1_lcd_putc 1386 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
+___llmod 14A4 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
+_lcd_envia_byte F96 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
+__end_of___lldiv 196C 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
+___awmod 1540 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
+i1_lcd_putc 1320 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
+_recipiente 5A 0 BANK0 1 bssBANK0 dist/default/production\BOIA.X.production.obj
 __Hspace_0 2008 0 ABS 0 - -
 __Lspace_0 0 0 ABS 0 - -
-___ftsub 1038 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
+___ftsub 2F4E 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
 ___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-ISR@F1345 C4 0 BANK1 1 dataBANK1 dist/default/production\BOIA.X.production.obj
-_ADCInit 2FA6 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
-_sprintf 57E 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
-__Hspace_1 1A1 0 ABS 0 - -
+_ADCInit 2EBE 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
+_sprintf 578 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
+__Hspace_1 1A4 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 ___ftadd@exp1 26 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 i1lcd_gotoxy@address 78 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __Hspace_2 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
-___fttol 1ABE 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
+___fttol 1C00 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-_isdigit 2F2C 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
+_isdigit 2E44 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
 __Hcinit 82 0 CODE 0 cinit -
-___ftmul C04 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
+___ftmul BFE 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
 __Lcinit 2A 0 CODE 0 cinit -
 __CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-___lldiv 1866 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
+___lldiv 18B0 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
 lcd_gotoxy@address 198 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
-___ftdiv 1D1C 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
-___awdiv 16F6 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
+___ftdiv 1D1C 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
+___awdiv 1740 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
 __Hspace_3 0 0 ABS 0 - -
+sendString@send 49 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __Lspace_3 0 0 ABS 0 - -
 _Display D4 0 BANK1 1 bssBANK1 dist/default/production\BOIA.X.production.obj
 i1USARTWriteChar@USARTData 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _dpowers E20 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
-__end_ofi1_lcd_envia_nibble 1386 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
+_inicialize 1B08 0 CODE 0 text1 dist/default/production\BOIA.X.production.obj
+__end_ofi1_lcd_envia_nibble 1320 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
 __size_ofi1_lcd_gotoxy 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___fttol@exp1 3D 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 USARTWriteString@str 191 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
-__pidataBANK0 2EF8 0 CODE 0 idataBANK0 dist/default/production\BOIA.X.production.obj
-_isdigit$870 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
+__pidataBANK0 1006 0 CODE 0 idataBANK0 dist/default/production\BOIA.X.production.obj
 USARTReceiveChar@USARTData 74 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_of_isdigit 2F48 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
-__end_of_sprintf 9F6 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
+__end_of_isdigit 2E60 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
+__end_of_sprintf 9F0 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
 ___awtoft@sign 7D 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-clear_ram0 2F1C 0 CODE 0 clrtext dist/default/production\BOIA.X.production.obj
+clear_ram0 100A 0 CODE 0 clrtext dist/default/production\BOIA.X.production.obj
 __size_of_lcd_envia_byte 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___ftpack@arg 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __size_of_lcd_escreve_string 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_ofi1_lcd_gotoxy 3000 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
+__end_ofi1_lcd_gotoxy 2F18 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
 ___ftadd@exp2 25 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
@@ -1060,54 +1098,56 @@ __pbssBANK0 5A 0 BANK0 1 bssBANK0 dist/default/production\BOIA.X.production.obj
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 lcd_envia_byte@address 194 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 sprintf@flag 38 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-i1_USARTWriteString 1128 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
+i1_USARTWriteString 101A 0 CODE 0 text39 dist/default/production\BOIA.X.production.obj
 __size_of_lcd_putc 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
 __pbssBANK1 D4 0 BANK1 1 bssBANK1 dist/default/production\BOIA.X.production.obj
-__end_of_USARTWriteChar 2F64 0 CODE 0 text6 dist/default/production\BOIA.X.production.obj
-__end_of_ADCRead 10E6 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
-__ptext10 10A8 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
-__ptext20 2F2C 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
-__ptext11 2FA6 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
-__ptext30 17AC 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
-__ptext21 116E 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
-__ptext12 82 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
-__ptext31 1D1C 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
-__ptext22 150A 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
-__ptext13 11B4 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
-__ptext32 10E6 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
+__end_of_USARTWriteChar 2E7C 0 CODE 0 text7 dist/default/production\BOIA.X.production.obj
+__end_of_ADCRead DFE 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
+__ptext10 168E 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
+__ptext20 1E8C 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
+__ptext11 2EBE 0 CODE 0 text11 dist/default/production\BOIA.X.production.obj
+__ptext30 2E34 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
+__ptext21 578 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
+__ptext40 2E24 0 CODE 0 text40 dist/default/production\BOIA.X.production.obj
+__ptext12 DA4 0 CODE 0 text12 dist/default/production\BOIA.X.production.obj
+__ptext31 BFE 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
+__ptext22 2E44 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
+__ptext13 82 0 CODE 0 text13 dist/default/production\BOIA.X.production.obj
+__ptext32 17F6 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
 _ADCON0bits 1F 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 _ADCON1bits 9F 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__ptext23 1866 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
+__ptext23 1060 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
 sprintf@prec 41 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __HidataBANK1 0 0 ABS 0 idataBANK1 -
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
-__ptext14 1386 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
-__ptext33 19EE 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
+__ptext14 10A6 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
+__ptext33 1D1C 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
 i1USARTWriteString@str 71 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__pidataBANK1 2F64 0 CODE 0 idataBANK1 dist/default/production\BOIA.X.production.obj
-__ptext24 11FA 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
+__pidataBANK1 2E7C 0 CODE 0 idataBANK1 dist/default/production\BOIA.X.production.obj
+__ptext24 14A4 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
 i1lcd_envia_byte@address 74 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__ptext15 2FCC 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
-__ptext34 15A6 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
-__ptext25 1ABE 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
-__ptext16 DAA 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
-__ptext35 16F6 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
-__ptext26 1038 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
+__ptext15 1320 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
+__ptext34 2FBE 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
+__ptext25 18B0 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
+__ptext16 2EE4 0 CODE 0 text16 dist/default/production\BOIA.X.production.obj
+__ptext35 1A38 0 CODE 0 text35 dist/default/production\BOIA.X.production.obj
+__ptext26 113E 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
 ___llmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-__ptext17 1314 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
-__ptext36 1002 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
+__ptext17 1194 0 CODE 0 text17 dist/default/production\BOIA.X.production.obj
+__ptext36 1540 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
 ___awmod@divisor 79 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__ptext27 9F6 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
-__ptext18 1E8C 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
-__ptext37 1128 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
-__ptext28 2F0C 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
+__ptext27 1C00 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
+__ptext18 12AE 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
+__ptext37 1740 0 CODE 0 text37 dist/default/production\BOIA.X.production.obj
+__ptext28 2F4E 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
 ___fttol@sign1 38 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-__ptext19 57E 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
-__ptext38 2EFC 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
-__ptext29 C04 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
+__ptext19 15DE 0 CODE 0 text19 dist/default/production\BOIA.X.production.obj
+__ptext38 2F18 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
+__ptext29 9F0 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
+__ptext39 101A 0 CODE 0 text39 dist/default/production\BOIA.X.production.obj
 _INTCONbits B 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_ofi1_lcd_envia_byte 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __Hend_init 2A 0 CODE 0 end_init -
@@ -1117,12 +1157,12 @@ ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.produ
 ___ftpack@exp 73 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_of_ftoa 2000 0 CODE 0 text18 dist/default/production\BOIA.X.production.obj
-__end_ofi1_USARTWriteChar 2F0C 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
-__end_of___ftmul DAA 0 CODE 0 text29 dist/default/production\BOIA.X.production.obj
-__end_of___llmod 15A6 0 CODE 0 text22 dist/default/production\BOIA.X.production.obj
-__end_of_init_lcd_4bit 19EE 0 CODE 0 text4 dist/default/production\BOIA.X.production.obj
-__end_ofi1_lcd_putc 13FC 0 CODE 0 text14 dist/default/production\BOIA.X.production.obj
+__end_of_ftoa 2000 0 CODE 0 text20 dist/default/production\BOIA.X.production.obj
+__end_ofi1_USARTWriteChar 2E34 0 CODE 0 text40 dist/default/production\BOIA.X.production.obj
+__end_of___ftmul DA4 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
+__end_of___llmod 1540 0 CODE 0 text24 dist/default/production\BOIA.X.production.obj
+__end_of_init_lcd_4bit 1A38 0 CODE 0 text5 dist/default/production\BOIA.X.production.obj
+__end_ofi1_lcd_putc 1396 0 CODE 0 text15 dist/default/production\BOIA.X.production.obj
 __size_of_USARTReceiveChar 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __Hreset_vec 6 0 CODE 0 reset_vec -
@@ -1131,25 +1171,27 @@ __HcstackBANK3 0 0 ABS 0 cstackBANK3 -
 __LcstackBANK3 0 0 ABS 0 cstackBANK3 -
 __pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 __size_of_ADCRead 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
+sendString@x 4A 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 __stringdata E78 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
-init_ram0 2F8C 0 CODE 0 inittext dist/default/production\BOIA.X.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+init_ram0 2EA4 0 CODE 0 inittext dist/default/production\BOIA.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 __size_ofi1_USARTWriteString 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
-__end_of___awtoft 1128 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
+sendString@array 20 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
+__end_of___awtoft 3000 0 CODE 0 text34 dist/default/production\BOIA.X.production.obj
 ___lltoft@exp 7D 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
 __size_of_ADCInit 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Alan\AppData\Local\Temp\s1q4.obj
-_lcd_envia_nibble 1644 0 CODE 0 text9 dist/default/production\BOIA.X.production.obj
-__end_of_USARTReceiveChar 1038 0 CODE 0 text36 dist/default/production\BOIA.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DIOVAN~1\AppData\Local\Temp\s4lg.obj
+_lcd_envia_nibble 168E 0 CODE 0 text10 dist/default/production\BOIA.X.production.obj
+__end_of_USARTReceiveChar 2F4E 0 CODE 0 text38 dist/default/production\BOIA.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
-__end_of___wmul 11B4 0 CODE 0 text21 dist/default/production\BOIA.X.production.obj
+__end_of___wmul 10A6 0 CODE 0 text23 dist/default/production\BOIA.X.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 start_initialization 2A 0 CODE 0 cinit dist/default/production\BOIA.X.production.obj
 ___lldiv@quotient 79 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
@@ -1159,16 +1201,16 @@ __size_of___ftge 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 i1lcd_putc@c 7B 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 __Hmaintext 0 0 ABS 0 maintext -
 __Lmaintext 0 0 ABS 0 maintext -
-__pmaintext 1BDA 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
-__end_of___fttol 1BDA 0 CODE 0 text25 dist/default/production\BOIA.X.production.obj
+__pmaintext 10EC 0 CODE 0 maintext dist/default/production\BOIA.X.production.obj
+__end_of___fttol 1D1C 0 CODE 0 text27 dist/default/production\BOIA.X.production.obj
 lcd_envia_nibble@n 191 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.obj
 __Hinittext 0 0 ABS 0 inittext -
 __Linittext 0 0 ABS 0 inittext -
 __size_of_sprintf 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
-__end_of___ftsub 1070 0 CODE 0 text26 dist/default/production\BOIA.X.production.obj
+__end_of___ftsub 2F86 0 CODE 0 text28 dist/default/production\BOIA.X.production.obj
 __initialization 2A 0 CODE 0 cinit dist/default/production\BOIA.X.production.obj
-__end_of___ftge 1866 0 CODE 0 text30 dist/default/production\BOIA.X.production.obj
+__end_of___ftge 18B0 0 CODE 0 text32 dist/default/production\BOIA.X.production.obj
 __stringbase E1E 0 STRING 0 strings dist/default/production\BOIA.X.production.obj
 ___llmod@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
 ___awmod@dividend 7B 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
@@ -1182,7 +1224,7 @@ lcd_putc@c 19B 0 BANK3 1 cstackBANK3 dist/default/production\BOIA.X.production.o
 __size_of___ftmul 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 sprintf@c 43 0 BANK0 1 cstackBANK0 dist/default/production\BOIA.X.production.obj
-__end_of___ftdiv 1E8C 0 CODE 0 text31 dist/default/production\BOIA.X.production.obj
+__end_of___ftdiv 1E8C 0 CODE 0 text33 dist/default/production\BOIA.X.production.obj
 __size_of___llmod 0 0 ABS 0 - dist/default/production\BOIA.X.production.obj
 ___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
 isdigit@c 71 0 COMMON 1 cstackCOMMON dist/default/production\BOIA.X.production.obj
@@ -1214,48 +1256,50 @@ __size_ofi1_USARTWriteChar 0 0 ABS 0 - dist/default/production\BOIA.X.production
 # All other numeric quantities are in decimal.
 %SEGMENTS
 reset_vec 0 0 0 3 2
-intentry 0 4 8 6FC 2
+intentry 0 4 8 6FB 2
 config 0 2007 400E 1 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 4D 1
+cstackBANK0 1 20 20 4F 1
 cstackBANK1 1 A0 A0 3D 1
-cstackBANK3 1 190 190 11 1
+cstackBANK3 1 190 190 14 1
 strings 0 700 E00 CB 2
-text18 0 F46 1E8C BA 2
-text31 0 E8E 1D1C B8 2
-maintext 0 DED 1BDA A1 2
-text25 0 D5F 1ABE 8E 2
-text33 0 CF7 19EE 68 2
-text4 0 C91 1922 66 2
-text23 0 C33 1866 5E 2
-text30 0 BD6 17AC 5D 2
-text35 0 B7B 16F6 5B 2
-text9 0 B22 1644 59 2
-text34 0 AD3 15A6 4F 2
-text22 0 A85 150A 4E 2
-text2 0 A3E 147C 47 2
-text7 0 9FE 13FC 40 2
-text14 0 9C3 1386 3B 2
-text17 0 98A 1314 39 2
-text8 0 7CB F96 35 2
-text1 0 959 12B2 31 2
-text5 0 928 1250 31 2
-text24 0 8FD 11FA 2B 2
-text13 0 8DA 11B4 23 2
-text21 0 8B7 116E 23 2
-text37 0 894 1128 23 2
-text32 0 873 10E6 21 2
-text10 0 854 10A8 1F 2
-text3 0 838 1070 1C 2
-text26 0 81C 1038 1C 2
-text36 0 801 1002 1B 2
-text15 0 17E6 2FCC 1A 2
-text11 0 17D3 2FA6 13 2
-inittext 0 17C2 2F84 11 2
-idataBANK1 0 17B2 2F64 10 2
-text6 0 17A4 2F48 E 2
-text20 0 1796 2F2C E 2
-clrtext 0 178E 2F1C 8 2
-text28 0 1786 2F0C 8 2
-text38 0 177E 2EFC 8 2
-idataBANK0 0 177C 2EF8 2 2
+text20 0 F46 1E8C BA 2
+text33 0 E8E 1D1C B8 2
+text27 0 E00 1C00 8E 2
+text1 0 D84 1B08 7C 2
+text35 0 D1C 1A38 68 2
+text5 0 CB6 196C 66 2
+text25 0 C58 18B0 5E 2
+text32 0 BFB 17F6 5D 2
+text37 0 BA0 1740 5B 2
+text10 0 B47 168E 59 2
+text19 0 AEF 15DE 58 2
+text36 0 AA0 1540 4F 2
+text24 0 A52 14A4 4E 2
+text3 0 A0B 1416 47 2
+text8 0 9CB 1396 40 2
+text15 0 990 1320 3B 2
+text18 0 957 12AE 39 2
+text9 0 7CB F96 35 2
+text2 0 926 124C 31 2
+text6 0 8F5 11EA 31 2
+text17 0 8CA 1194 2B 2
+text26 0 89F 113E 2B 2
+maintext 0 876 10EC 29 2
+text14 0 853 10A6 23 2
+text23 0 830 1060 23 2
+text39 0 80D 101A 23 2
+text34 0 17DF 2FBE 21 2
+text4 0 17C3 2F86 1C 2
+text28 0 17A7 2F4E 1C 2
+text38 0 178C 2F18 1B 2
+text16 0 1772 2EE4 1A 2
+text11 0 175F 2EBE 13 2
+inittext 0 174E 2E9C 11 2
+idataBANK1 0 173E 2E7C 10 2
+text7 0 1730 2E60 E 2
+text22 0 1722 2E44 E 2
+clrtext 0 805 100A 8 2
+text30 0 171A 2E34 8 2
+text40 0 1712 2E24 8 2
+idataBANK0 0 803 1006 2 2
