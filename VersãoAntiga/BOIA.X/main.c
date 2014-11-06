@@ -17,7 +17,7 @@
 #define RELE_BOMBA PORTDbits.RD2
 #define LED_BOMBA PORTDbits.RD3
 #define RELE_MOTOR PORTDbits.RD6
-#define BOTAO_LIGAR_DESLIGAR PORTDbits.RD7
+#define BOTAO_LIGAR_DESLIGAR PORTCbits.RC0
 
 //Variáveis Globais de Controle.
 int ADCResult = 0;
@@ -155,20 +155,21 @@ void active(char input) {
         LED_BOMBA = 0;
         USARTWriteChar(DESLIGAR_BOMBA); // escrevo no canal serial
 
-    } else if (input = LIGAR_MOTOR) {
+    } else if (input == LIGAR_MOTOR) {
 
         RELE_MOTOR = 0;
-    
+        USARTWriteChar(LIGAR_MOTOR); // escrevo no canal serial
+
     } else if (input == DESLIGAR_MOTOR) {
 
         RELE_MOTOR = 1;
         USARTWriteChar(DESLIGAR_MOTOR); // escrevo no canal serial
-    
+
     } else if (input == LIGAR) {
 
         BOTAO_LIGAR_DESLIGAR = 1;
         USARTWriteChar(LIGAR); // escrevo no canal serial
-   
+
     } else if (input == DESLIGAR) {
 
         BOTAO_LIGAR_DESLIGAR = 0;
@@ -243,7 +244,7 @@ void interrupt ISR(void) {
         char * buf;
         char * per;
         //char * teste;
-       // char * qtdc;
+        // char * qtdc;
         float input;
         float input2;
         float pre;
@@ -287,7 +288,7 @@ void interrupt ISR(void) {
             PORTDbits.RD2 = 1;
             PORTDbits.RD3 = 0;
         }
-        
+
         progressBar(preint); //chamada a funcao que irá pintar a barra de progresso
 
         PIR1bits.ADIF = 0; // Limpa a flag da interrupção do conversor A/D.
@@ -312,9 +313,11 @@ void inicialize(void) {
     PORTDbits.RD3 = 0;
     //Botoes
     TRISCbits.TRISC0 = 1;
-    TRISCbits.TRISC1 = 1;
-    TRISCbits.TRISC2 = 1;
-    TRISCbits.TRISC3 = 1;
+    BOTAO_LIGAR_DESLIGAR = 0;
+    //TRISCbits.TRISC1 = 1;
+    // TRISCbits.TRISC2 = 1;
+    // TRISCbits.TRISC3 = 1;
+
     PORTCbits.RC3 = 0;
     __delay_ms(2000);
     init_lcd_4bit();
@@ -324,24 +327,49 @@ void inicialize(void) {
     __delay_ms(1000);
     ADCInit();
     lcd_escreve_string("\fLoading PIC...");
-    USARTWriteString("\fLoading PIC...");
+    //USARTWriteString("\fLoading PIC...");
     __delay_ms(5000);
     LCDClear();
 }
 
 void main(void) {
 
-    inicialize(); // funcao que irá configurar a utilizacao dos PORTS
+    //inicialize(); // funcao que irá configurar a utilizacao dos PORTS
+    TRISA = 0b11111111;
+    PORTAbits.RA0 = 0;
+    TRISDbits.TRISD2 = 0;
+    PORTDbits.RD2 = 1;
+    TRISDbits.TRISD3 = 0;
+    PORTDbits.RD3 = 0;
+    //Botoes
+    TRISCbits.TRISC0 = 1;
+    BOTAO_LIGAR_DESLIGAR = 0;
+    //TRISCbits.TRISC1 = 1;
+    // TRISCbits.TRISC2 = 1;
+    // TRISCbits.TRISC3 = 1;
 
-    while (1) {
-        ADCRead(SUPERIOR); // realizo a leitura do nivel d'agua do recipiente superior
-        __delay_ms(300);
-        if (PORTCbits.RC3 == 1) {
-            while (PORTCbits.RC3 == 1) {
-                PORTDbits.RD2 = 1;
-                PORTDbits.RD3 = 0;
-            }
+    PORTCbits.RC3 = 0;
+    __delay_ms(2000);
+    init_lcd_4bit();
+    __delay_ms(2000);
+    INTCONbits.PEIE = 1; // Habilita Interrupção de Periféricos do Microcontrolador.
+    INTCONbits.GIE = 1; // Habilita Interrupção Global.
+    __delay_ms(1000);
+    ADCInit();
+    lcd_escreve_string("\fLoading PIC...");
+    //USARTWriteString("\fLoading PIC...");
+    __delay_ms(5000);
+    LCDClear();
+    
+    if (BOTAO_LIGAR_DESLIGAR == 1) {
+        while (1) {
+            USARTWriteString("loop");
+            //ADCRead(SUPERIOR); // realizo a leitura do nivel d'agua do recipiente superior
+            //__delay_ms(300);
+            //PORTDbits.RD2 = 1;
+            //PORTDbits.RD3 = 0;
         }
     }
 }
+
 

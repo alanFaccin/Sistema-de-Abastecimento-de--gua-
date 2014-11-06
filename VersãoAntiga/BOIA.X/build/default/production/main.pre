@@ -1,12 +1,12 @@
 
 # 1 "main.c"
 
-# 8 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdio.h"
+# 8 "C:\Program Files\Microchip\xc8\v1.32\include\stdio.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdarg.h"
+# 7 "C:\Program Files\Microchip\xc8\v1.32\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -15,7 +15,7 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 23 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdio.h"
+# 23 "C:\Program Files\Microchip\xc8\v1.32\include\stdio.h"
 extern int errno;
 
 # 54
@@ -25,7 +25,7 @@ char * ptr;
 void (* func)(char);
 };
 
-# 17 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\conio.h"
+# 17 "C:\Program Files\Microchip\xc8\v1.32\include\conio.h"
 extern int errno;
 
 
@@ -42,7 +42,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 99 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdio.h"
+# 99 "C:\Program Files\Microchip\xc8\v1.32\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -69,7 +69,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 27 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdlib.h"
+# 27 "C:\Program Files\Microchip\xc8\v1.32\include\stdlib.h"
 typedef struct {
 int rem;
 int quot;
@@ -137,13 +137,13 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 21 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\htc.h"
+# 21 "C:\Program Files\Microchip\xc8\v1.32\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 47 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h"
+# 47 "C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h"
 extern volatile unsigned char INDF @ 0x000;
 
 asm("INDF equ 00h");
@@ -1543,21 +1543,21 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
 
-# 27 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic.h"
+# 27 "C:\Program Files\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(__nop)
 extern void __nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\eeprom_routines.h"
+# 41 "C:\Program Files\Microchip\xc8\v1.32\include\eeprom_routines.h"
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, __eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic.h"
+# 153 "C:\Program Files\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(_delay)
 extern __nonreentrant void _delay(unsigned long);
 
@@ -1572,7 +1572,7 @@ extern __nonreentrant void _delay(unsigned long);
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
-# 103 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdlib.h"
+# 103 "C:\Program Files\Microchip\xc8\v1.32\include\stdlib.h"
 extern char * itoa(char * buf, int val, int base);
 extern char * utoa(char * buf, unsigned val, int base);
 
@@ -1731,9 +1731,10 @@ PORTDbits.RD2 = 1;
 PORTDbits.RD3 = 0;
 USARTWriteChar('b');
 
-} else if (input = 'M') {
+} else if (input == 'M') {
 
 PORTDbits.RD6 = 0;
+USARTWriteChar('M');
 
 } else if (input == 'm') {
 
@@ -1742,18 +1743,18 @@ USARTWriteChar('m');
 
 } else if (input == 'L') {
 
-PORTDbits.RD7 = 1;
+PORTCbits.RC0 = 1;
 USARTWriteChar('L');
 
 } else if (input == 'l') {
 
-PORTDbits.RD7 = 0;
+PORTCbits.RC0 = 0;
 USARTWriteChar('l');
 
 }
 }
 
-# 184
+# 185
 void sendString(const char *send) {
 int x = 0;
 char array[40];
@@ -1782,7 +1783,7 @@ envio = &array;
 USARTWriteString(envio);
 }
 
-# 216
+# 217
 void progressBar(int preint) {
 int i = 0;
 unsigned char *result;
@@ -1869,7 +1870,7 @@ active(USARTReceiveChar());
 }
 }
 
-# 306
+# 307
 void inicialize(void) {
 TRISA = 0b11111111;
 PORTAbits.RA0 = 0;
@@ -1879,9 +1880,11 @@ TRISDbits.TRISD3 = 0;
 PORTDbits.RD3 = 0;
 
 TRISCbits.TRISC0 = 1;
-TRISCbits.TRISC1 = 1;
-TRISCbits.TRISC2 = 1;
-TRISCbits.TRISC3 = 1;
+PORTCbits.RC0 = 0;
+
+
+
+
 PORTCbits.RC3 = 0;
 _delay((unsigned long)((2000)*(20000000/4000.0)));
 init_lcd_4bit();
@@ -1891,23 +1894,47 @@ INTCONbits.GIE = 1;
 _delay((unsigned long)((1000)*(20000000/4000.0)));
 ADCInit();
 lcd_escreve_string("\fLoading PIC...");
-USARTWriteString("\fLoading PIC...");
+
 _delay((unsigned long)((5000)*(20000000/4000.0)));
 LCDClear();
 }
 
 void main(void) {
 
-inicialize();
 
-while (1) {
-ADCRead(0);
-_delay((unsigned long)((300)*(20000000/4000.0)));
-if (PORTCbits.RC3 == 1) {
-while (PORTCbits.RC3 == 1) {
+TRISA = 0b11111111;
+PORTAbits.RA0 = 0;
+TRISDbits.TRISD2 = 0;
 PORTDbits.RD2 = 1;
+TRISDbits.TRISD3 = 0;
 PORTDbits.RD3 = 0;
-}
+
+TRISCbits.TRISC0 = 1;
+PORTCbits.RC0 = 0;
+
+
+
+
+PORTCbits.RC3 = 0;
+_delay((unsigned long)((2000)*(20000000/4000.0)));
+init_lcd_4bit();
+_delay((unsigned long)((2000)*(20000000/4000.0)));
+INTCONbits.PEIE = 1;
+INTCONbits.GIE = 1;
+_delay((unsigned long)((1000)*(20000000/4000.0)));
+ADCInit();
+lcd_escreve_string("\fLoading PIC...");
+
+_delay((unsigned long)((5000)*(20000000/4000.0)));
+LCDClear();
+
+if (PORTCbits.RC0 == 1) {
+while (1) {
+USARTWriteString("loop");
+
+
+
+
 }
 }
 }
