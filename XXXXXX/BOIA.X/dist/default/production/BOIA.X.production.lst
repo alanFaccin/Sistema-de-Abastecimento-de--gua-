@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.32 build 58300 
-                                                                                               Thu Nov 06 07:48:38 2014
+                                                                                               Thu Nov 06 08:11:34 2014
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 58300
      1                           	processor	16F877A
@@ -1183,7 +1183,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1177 ;;
   1178 ;; *************** function _main *****************
   1179 ;; Defined at:
-  1180 ;;		line 360 in file "main.c"
+  1180 ;;		line 362 in file "main.c"
   1181 ;; Parameters:    Size  Location     Type
   1182 ;;		None
   1183 ;; Auto vars:     Size  Location     Type
@@ -1215,17 +1215,17 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1209                           ;psect for function _main
   1210  1659                     _main:	
   1211                           
-  1212                           ;main.c: 362: inicialize();
+  1212                           ;main.c: 364: inicialize();
   1213                           
   1214                           ;incstack = 0
   1215 ;; hardware stack exceeded
   1216                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
   1217  1659  120A  158A  254F  160A  118A  	fcall	_inicialize
   1218  165E                     l2955:	
-  1219                           ;main.c: 364: while (1) {
+  1219                           ;main.c: 366: while (1) {
   1220                           
   1221                           
-  1222                           ;main.c: 365: ativar();
+  1222                           ;main.c: 367: ativar();
   1223  165E  120A  158A  24DB  160A  118A  	fcall	_ativar
   1224  1663  2E5E               	goto	l2955
   1225  1664                     __end_of_main:	
@@ -1234,7 +1234,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1228  0D4F                     __ptext1:	
   1229 ;; *************** function _inicialize *****************
   1230 ;; Defined at:
-  1231 ;;		line 331 in file "main.c"
+  1231 ;;		line 333 in file "main.c"
   1232 ;; Parameters:    Size  Location     Type
   1233 ;;		None
   1234 ;; Auto vars:     Size  Location     Type
@@ -1270,7 +1270,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1264                           ;psect for function _inicialize
   1265  0D4F                     _inicialize:	
   1266                           
-  1267                           ;main.c: 333: USARTInit(57600, 1);
+  1267                           ;main.c: 335: USARTInit(57600, 1);
   1268                           
   1269                           ;incstack = 0
   1270 ;; hardware stack exceeded
@@ -1291,45 +1291,45 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1285  0D5C  00B4               	movwf	(USARTInit@Mode^(0+128)+1)
   1286  0D5D  120A  158A  240F  120A  158A  	fcall	_USARTInit
   1287                           
-  1288                           ;main.c: 335: TRISA = 0b11111111;
+  1288                           ;main.c: 337: TRISA = 0b11111111;
   1289  0D62  30FF               	movlw	255
   1290  0D63  1683               	bsf	3,5	;RP0=1, select bank1
   1291  0D64  1303               	bcf	3,6	;RP1=0, select bank1
   1292  0D65  0085               	movwf	5	;volatile
   1293                           
-  1294                           ;main.c: 336: TRISDbits.TRISD3 = 0;
+  1294                           ;main.c: 338: TRISDbits.TRISD3 = 0;
   1295  0D66  1188               	bcf	8,3	;volatile
   1296                           
-  1297                           ;main.c: 337: TRISDbits.TRISD2 = 0;
+  1297                           ;main.c: 339: TRISDbits.TRISD2 = 0;
   1298  0D67  1108               	bcf	8,2	;volatile
   1299                           
-  1300                           ;main.c: 338: TRISCbits.TRISC0 = 1;
+  1300                           ;main.c: 340: TRISCbits.TRISC0 = 1;
   1301  0D68  1407               	bsf	7,0	;volatile
   1302                           
-  1303                           ;main.c: 339: TRISCbits.TRISC1 = 1;
+  1303                           ;main.c: 341: TRISCbits.TRISC1 = 1;
   1304  0D69  1487               	bsf	7,1	;volatile
   1305                           
-  1306                           ;main.c: 340: TRISCbits.TRISC2 = 1;
+  1306                           ;main.c: 342: TRISCbits.TRISC2 = 1;
   1307  0D6A  1507               	bsf	7,2	;volatile
   1308                           
-  1309                           ;main.c: 341: TRISCbits.TRISC3 = 1;
+  1309                           ;main.c: 343: TRISCbits.TRISC3 = 1;
   1310  0D6B  1587               	bsf	7,3	;volatile
   1311                           
-  1312                           ;main.c: 343: PORTAbits.RA0 = 0;
+  1312                           ;main.c: 345: PORTAbits.RA0 = 0;
   1313  0D6C  1283               	bcf	3,5	;RP0=0, select bank0
   1314  0D6D  1303               	bcf	3,6	;RP1=0, select bank0
   1315  0D6E  1005               	bcf	5,0	;volatile
   1316                           
-  1317                           ;main.c: 344: PORTDbits.RD2 = 1;
+  1317                           ;main.c: 346: PORTDbits.RD2 = 1;
   1318  0D6F  1508               	bsf	8,2	;volatile
   1319                           
-  1320                           ;main.c: 345: PORTDbits.RD3 = 0;
+  1320                           ;main.c: 347: PORTDbits.RD3 = 0;
   1321  0D70  1188               	bcf	8,3	;volatile
   1322                           
-  1323                           ;main.c: 346: PORTCbits.RC3 = 0;
+  1323                           ;main.c: 348: PORTCbits.RC3 = 0;
   1324  0D71  1187               	bcf	7,3	;volatile
   1325                           
-  1326                           ;main.c: 347: _delay((unsigned long)((2000)*(20000000/4000.0)));
+  1326                           ;main.c: 349: _delay((unsigned long)((2000)*(20000000/4000.0)));
   1327  0D72  3033               	movlw	51
   1328  0D73  1683               	bsf	3,5	;RP0=1, select bank1
   1329  0D74  1303               	bcf	3,6	;RP1=0, select bank1
@@ -1346,10 +1346,10 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1340  0D7E  0BBD               	decfsz	(??_inicialize^(0+128)+2),f
   1341  0D7F  2D7A               	goto	u3917
   1342                           
-  1343                           ;main.c: 349: init_lcd_4bit();
+  1343                           ;main.c: 351: init_lcd_4bit();
   1344  0D80  120A  158A  2475  120A  158A  	fcall	_init_lcd_4bit
   1345                           
-  1346                           ;main.c: 350: _delay((unsigned long)((2000)*(20000000/4000.0)));
+  1346                           ;main.c: 352: _delay((unsigned long)((2000)*(20000000/4000.0)));
   1347  0D85  3033               	movlw	51
   1348  0D86  1683               	bsf	3,5	;RP0=1, select bank1
   1349  0D87  1303               	bcf	3,6	;RP1=0, select bank1
@@ -1366,13 +1366,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1360  0D91  0BBD               	decfsz	(??_inicialize^(0+128)+2),f
   1361  0D92  2D8D               	goto	u3927
   1362                           
-  1363                           ;main.c: 351: INTCONbits.PEIE = 1;
+  1363                           ;main.c: 353: INTCONbits.PEIE = 1;
   1364  0D93  170B               	bsf	11,6	;volatile
   1365                           
-  1366                           ;main.c: 352: INTCONbits.GIE = 1;
+  1366                           ;main.c: 354: INTCONbits.GIE = 1;
   1367  0D94  178B               	bsf	11,7	;volatile
   1368                           
-  1369                           ;main.c: 353: _delay((unsigned long)((1000)*(20000000/4000.0)));
+  1369                           ;main.c: 355: _delay((unsigned long)((1000)*(20000000/4000.0)));
   1370  0D95  301A               	movlw	26
   1371  0D96  1683               	bsf	3,5	;RP0=1, select bank1
   1372  0D97  1303               	bcf	3,6	;RP1=0, select bank1
@@ -1390,10 +1390,10 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1384  0DA2  2D9D               	goto	u3937
   1385  0DA3  0000               	nop
   1386                           
-  1387                           ;main.c: 354: ADCInit();
+  1387                           ;main.c: 356: ADCInit();
   1388  0DA4  160A  118A  26A0  120A  158A  	fcall	_ADCInit
   1389                           
-  1390                           ;main.c: 355: lcd_escreve_string("\fLoading PIC...");
+  1390                           ;main.c: 357: lcd_escreve_string("\fLoading PIC...");
   1391  0DA9  305B               	movlw	low (STR_4-__stringbase)
   1392  0DAA  1683               	bsf	3,5	;RP0=1, select bank1
   1393  0DAB  1303               	bcf	3,6	;RP1=0, select bank1
@@ -1402,7 +1402,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1396  0DAE  00AD               	movwf	(lcd_escreve_string@y+1)^(0+128)
   1397  0DAF  120A  158A  20C1  120A  158A  	fcall	_lcd_escreve_string
   1398                           
-  1399                           ;main.c: 356: _delay((unsigned long)((5000)*(20000000/4000.0)));
+  1399                           ;main.c: 358: _delay((unsigned long)((5000)*(20000000/4000.0)));
   1400  0DB4  307F               	movlw	127
   1401  0DB5  1683               	bsf	3,5	;RP0=1, select bank1
   1402  0DB6  1303               	bcf	3,6	;RP1=0, select bank1
@@ -1420,7 +1420,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1414  0DC1  2DBC               	goto	u3947
   1415  0DC2  2DC3               	nop2
   1416                           
-  1417                           ;main.c: 357: LCDClear();
+  1417                           ;main.c: 359: LCDClear();
   1418  0DC3  120A  158A  21DA   	fcall	_LCDClear
   1419  0DC6  0008               	return
   1420  0DC7                     __end_of_inicialize:	
@@ -1924,7 +1924,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1918  0C0F                     __ptext6:	
   1919 ;; *************** function _USARTInit *****************
   1920 ;; Defined at:
-  1921 ;;		line 34 in file "main.c"
+  1921 ;;		line 36 in file "main.c"
   1922 ;; Parameters:    Size  Location     Type
   1923 ;;  BaudRate        4   15[BANK1 ] long 
   1924 ;;  Mode            2   19[BANK1 ] int 
@@ -1957,7 +1957,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1951                           ;psect for function _USARTInit
   1952  0C0F                     _USARTInit:	
   1953                           
-  1954                           ;main.c: 35: int BR = 0;
+  1954                           ;main.c: 37: int BR = 0;
   1955                           
   1956                           ;incstack = 0
   1957 ;; hardware stack exceeded
@@ -1967,14 +1967,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1961  0C11  01B9               	clrf	USARTInit@BR^(0+128)
   1962  0C12  01BA               	clrf	(USARTInit@BR+1)^(0+128)
   1963                           
-  1964                           ;main.c: 38: if (Mode == 0)
+  1964                           ;main.c: 40: if (Mode == 0)
   1965  0C13  0834               	movf	(USARTInit@Mode+1)^(0+128),w
   1966  0C14  0433               	iorwf	USARTInit@Mode^(0+128),w
   1967  0C15  1D03               	skipz
   1968  0C16  2C29               	goto	l2253
   1969                           
-  1970                           ;main.c: 39: {
-  1971                           ;main.c: 40: BR = (20000000 / (64 * BaudRate)) - 1;
+  1970                           ;main.c: 41: {
+  1971                           ;main.c: 42: BR = (20000000 / (64 * BaudRate)) - 1;
   1972  0C17  082F               	movf	USARTInit@BaudRate^(0+128),w
   1973  0C18  00B5               	movwf	??_USARTInit^(0+128)
   1974  0C19  0830               	movf	(USARTInit@BaudRate+1)^(0+128),w
@@ -1995,13 +1995,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   1989  0C27  2C20               	goto	u2695
   1990  0C28  2C3A               	goto	L2
   1991  0C29                     l2253:	
-  1992                           ;main.c: 42: } else
+  1992                           ;main.c: 44: } else
   1993                           
-  1994                           ;main.c: 41: SPBRG = BR;
+  1994                           ;main.c: 43: SPBRG = BR;
   1995                           
   1996                           
-  1997                           ;main.c: 43: {
-  1998                           ;main.c: 44: BR = (20000000 / (16 * BaudRate)) - 1;
+  1997                           ;main.c: 45: {
+  1998                           ;main.c: 46: BR = (20000000 / (16 * BaudRate)) - 1;
   1999  0C29  082F               	movf	USARTInit@BaudRate^(0+128),w
   2000  0C2A  00B5               	movwf	??_USARTInit^(0+128)
   2001  0C2B  0830               	movf	(USARTInit@BaudRate+1)^(0+128),w
@@ -2049,68 +2049,68 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2043  0C55  3EFF               	addlw	255
   2044  0C56  00BA               	movwf	(USARTInit@BR+1)^(0+128)
   2045                           
-  2046                           ;main.c: 45: SPBRG = BR;
+  2046                           ;main.c: 47: SPBRG = BR;
   2047  0C57  0839               	movf	USARTInit@BR^(0+128),w
   2048  0C58  0099               	movwf	25	;volatile
   2049                           
-  2050                           ;main.c: 46: }
-  2051                           ;main.c: 49: TXSTAbits.CSRC = 1;
+  2050                           ;main.c: 48: }
+  2051                           ;main.c: 51: TXSTAbits.CSRC = 1;
   2052  0C59  1798               	bsf	24,7	;volatile
   2053                           
-  2054                           ;main.c: 50: TXSTAbits.TX9 = 0;
+  2054                           ;main.c: 52: TXSTAbits.TX9 = 0;
   2055  0C5A  1318               	bcf	24,6	;volatile
   2056                           
-  2057                           ;main.c: 51: TXSTAbits.TXEN = 1;
+  2057                           ;main.c: 53: TXSTAbits.TXEN = 1;
   2058  0C5B  1698               	bsf	24,5	;volatile
   2059                           
-  2060                           ;main.c: 52: TXSTAbits.SYNC = 0;
+  2060                           ;main.c: 54: TXSTAbits.SYNC = 0;
   2061  0C5C  1218               	bcf	24,4	;volatile
   2062                           
-  2063                           ;main.c: 53: TXSTAbits.BRGH = Mode;
+  2063                           ;main.c: 55: TXSTAbits.BRGH = Mode;
   2064  0C5D  0833               	movf	USARTInit@Mode^(0+128),w
   2065  0C5E  1D03               	skipz
   2066  0C5F  1518               	bsf	24,2	;volatile
   2067  0C60  1903               	skipnz
   2068  0C61  1118               	bcf	24,2	;volatile
   2069                           
-  2070                           ;main.c: 54: TXSTAbits.TRMT = 1;
+  2070                           ;main.c: 56: TXSTAbits.TRMT = 1;
   2071  0C62  1498               	bsf	24,1	;volatile
   2072                           
-  2073                           ;main.c: 55: TXSTAbits.TX9D = 0;
+  2073                           ;main.c: 57: TXSTAbits.TX9D = 0;
   2074  0C63  1018               	bcf	24,0	;volatile
   2075                           
-  2076                           ;main.c: 58: RCSTAbits.SPEN = 1;
+  2076                           ;main.c: 60: RCSTAbits.SPEN = 1;
   2077  0C64  1283               	bcf	3,5	;RP0=0, select bank0
   2078  0C65  1303               	bcf	3,6	;RP1=0, select bank0
   2079  0C66  1798               	bsf	24,7	;volatile
   2080                           
-  2081                           ;main.c: 59: RCSTAbits.RX9 = 0;
+  2081                           ;main.c: 61: RCSTAbits.RX9 = 0;
   2082  0C67  1318               	bcf	24,6	;volatile
   2083                           
-  2084                           ;main.c: 60: RCSTAbits.SREN = 0;
+  2084                           ;main.c: 62: RCSTAbits.SREN = 0;
   2085  0C68  1298               	bcf	24,5	;volatile
   2086                           
-  2087                           ;main.c: 61: RCSTAbits.CREN = 1;
+  2087                           ;main.c: 63: RCSTAbits.CREN = 1;
   2088  0C69  1618               	bsf	24,4	;volatile
   2089                           
-  2090                           ;main.c: 62: RCSTAbits.ADDEN = 0;
+  2090                           ;main.c: 64: RCSTAbits.ADDEN = 0;
   2091  0C6A  1198               	bcf	24,3	;volatile
   2092                           
-  2093                           ;main.c: 63: RCSTAbits.FERR = 0;
+  2093                           ;main.c: 65: RCSTAbits.FERR = 0;
   2094  0C6B  1118               	bcf	24,2	;volatile
   2095                           
-  2096                           ;main.c: 64: RCSTAbits.OERR = 0;
+  2096                           ;main.c: 66: RCSTAbits.OERR = 0;
   2097  0C6C  1098               	bcf	24,1	;volatile
   2098                           
-  2099                           ;main.c: 65: RCSTAbits.RX9D = 0;
+  2099                           ;main.c: 67: RCSTAbits.RX9D = 0;
   2100  0C6D  1018               	bcf	24,0	;volatile
   2101                           
-  2102                           ;main.c: 68: PIE1bits.RCIE = 1;
+  2102                           ;main.c: 70: PIE1bits.RCIE = 1;
   2103  0C6E  1683               	bsf	3,5	;RP0=1, select bank1
   2104  0C6F  1303               	bcf	3,6	;RP1=0, select bank1
   2105  0C70  168C               	bsf	12,5	;volatile
   2106                           
-  2107                           ;main.c: 69: PIR1bits.RCIF = 0;
+  2107                           ;main.c: 71: PIR1bits.RCIF = 0;
   2108  0C71  1283               	bcf	3,5	;RP0=0, select bank0
   2109  0C72  1303               	bcf	3,6	;RP1=0, select bank0
   2110  0C73  128C               	bcf	12,5	;volatile
@@ -2689,7 +2689,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2683  16A0                     __ptext11:	
   2684 ;; *************** function _ADCInit *****************
   2685 ;; Defined at:
-  2686 ;;		line 229 in file "main.c"
+  2686 ;;		line 231 in file "main.c"
   2687 ;; Parameters:    Size  Location     Type
   2688 ;;		None
   2689 ;; Auto vars:     Size  Location     Type
@@ -2721,7 +2721,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2715                           ;psect for function _ADCInit
   2716  16A0                     _ADCInit:	
   2717                           
-  2718                           ;main.c: 231: ADCON1bits.ADFM = 1;
+  2718                           ;main.c: 233: ADCON1bits.ADFM = 1;
   2719                           
   2720                           ;incstack = 0
   2721 ;; hardware stack exceeded
@@ -2730,35 +2730,35 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2724  16A1  1303               	bcf	3,6	;RP1=0, select bank1
   2725  16A2  179F               	bsf	31,7	;volatile
   2726                           
-  2727                           ;main.c: 232: ADCON1bits.PCFG3 = 0;
+  2727                           ;main.c: 234: ADCON1bits.PCFG3 = 0;
   2728  16A3  119F               	bcf	31,3	;volatile
   2729                           
-  2730                           ;main.c: 233: ADCON1bits.PCFG2 = 0;
+  2730                           ;main.c: 235: ADCON1bits.PCFG2 = 0;
   2731  16A4  111F               	bcf	31,2	;volatile
   2732                           
-  2733                           ;main.c: 234: ADCON1bits.PCFG1 = 0;
+  2733                           ;main.c: 236: ADCON1bits.PCFG1 = 0;
   2734  16A5  109F               	bcf	31,1	;volatile
   2735                           
-  2736                           ;main.c: 235: ADCON1bits.PCFG0 = 0;
+  2736                           ;main.c: 237: ADCON1bits.PCFG0 = 0;
   2737  16A6  101F               	bcf	31,0	;volatile
   2738                           
-  2739                           ;main.c: 237: ADCON0bits.ADCS1 = 1;
+  2739                           ;main.c: 239: ADCON0bits.ADCS1 = 1;
   2740  16A7  1283               	bcf	3,5	;RP0=0, select bank0
   2741  16A8  1303               	bcf	3,6	;RP1=0, select bank0
   2742  16A9  179F               	bsf	31,7	;volatile
   2743                           
-  2744                           ;main.c: 238: ADCON0bits.ADCS0 = 0;
+  2744                           ;main.c: 240: ADCON0bits.ADCS0 = 0;
   2745  16AA  131F               	bcf	31,6	;volatile
   2746                           
-  2747                           ;main.c: 239: ADCON0bits.ADON = 1;
+  2747                           ;main.c: 241: ADCON0bits.ADON = 1;
   2748  16AB  141F               	bsf	31,0	;volatile
   2749                           
-  2750                           ;main.c: 241: PIE1bits.ADIE = 1;
+  2750                           ;main.c: 243: PIE1bits.ADIE = 1;
   2751  16AC  1683               	bsf	3,5	;RP0=1, select bank1
   2752  16AD  1303               	bcf	3,6	;RP1=0, select bank1
   2753  16AE  170C               	bsf	12,6	;volatile
   2754                           
-  2755                           ;main.c: 242: PIR1bits.ADIF = 0;
+  2755                           ;main.c: 244: PIR1bits.ADIF = 0;
   2756  16AF  1283               	bcf	3,5	;RP0=0, select bank0
   2757  16B0  1303               	bcf	3,6	;RP1=0, select bank0
   2758  16B1  130C               	bcf	12,6	;volatile
@@ -2769,7 +2769,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2763  0CDB                     __ptext12:	
   2764 ;; *************** function _ativar *****************
   2765 ;; Defined at:
-  2766 ;;		line 307 in file "main.c"
+  2766 ;;		line 309 in file "main.c"
   2767 ;; Parameters:    Size  Location     Type
   2768 ;;		None
   2769 ;; Auto vars:     Size  Location     Type
@@ -2802,7 +2802,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2796                           ;psect for function _ativar
   2797  0CDB                     _ativar:	
   2798                           
-  2799                           ;main.c: 308: if (PORTCbits.RC3 == 1) {
+  2799                           ;main.c: 310: if (PORTCbits.RC3 == 1) {
   2800                           
   2801                           ;incstack = 0
   2802 ;; hardware stack exceeded
@@ -2812,7 +2812,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2806  0CDD  1D87               	btfss	7,3	;volatile
   2807  0CDE  2D15               	goto	l2805
   2808                           
-  2809                           ;main.c: 309: _delay((unsigned long)((300)*(20000000/4000.0)));
+  2809                           ;main.c: 311: _delay((unsigned long)((300)*(20000000/4000.0)));
   2810  0CDF  3008               	movlw	8
   2811  0CE0  1683               	bsf	3,5	;RP0=1, select bank1
   2812  0CE1  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2830,7 +2830,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2824  0CEC  2CE7               	goto	u4037
   2825  0CED  2CEE               	nop2
   2826                           
-  2827                           ;main.c: 310: if (flag_Start == 0) {
+  2827                           ;main.c: 312: if (flag_Start == 0) {
   2828  0CEE  1683               	bsf	3,5	;RP0=1, select bank1
   2829  0CEF  1303               	bcf	3,6	;RP1=0, select bank1
   2830  0CF0  083F               	movf	(_flag_Start+1)^(0+128),w
@@ -2838,13 +2838,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2832  0CF2  1D03               	skipz
   2833  0CF3  2D07               	goto	l2801
   2834                           
-  2835                           ;main.c: 311: Ativar(LIGAR);
+  2835                           ;main.c: 313: Ativar(LIGAR);
   2836  0CF4  3030               	movlw	_LIGAR-__stringbase
   2837  0CF5  0084               	movwf	4
   2838  0CF6  120A  158A  200A  120A  158A  	fcall	stringdir
   2839  0CFB  120A  118A  26EB  120A  158A  	fcall	_Ativar
   2840                           
-  2841                           ;main.c: 312: flag_Start = 1;
+  2841                           ;main.c: 314: flag_Start = 1;
   2842  0D00  3001               	movlw	1
   2843  0D01  1683               	bsf	3,5	;RP0=1, select bank1
   2844  0D02  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2852,24 +2852,24 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2846  0D04  3000               	movlw	0
   2847  0D05  00BF               	movwf	(_flag_Start^(0+128)+1)
   2848                           
-  2849                           ;main.c: 313: } else {
+  2849                           ;main.c: 315: } else {
   2850  0D06  2D15               	goto	l2805
   2851  0D07                     l2801:	
   2852                           
-  2853                           ;main.c: 314: flag_Start = 0;
+  2853                           ;main.c: 316: flag_Start = 0;
   2854  0D07  01BE               	clrf	_flag_Start^(0+128)
   2855  0D08  01BF               	clrf	(_flag_Start+1)^(0+128)
   2856                           
-  2857                           ;main.c: 315: Ativar(DESLIGAR);
+  2857                           ;main.c: 317: Ativar(DESLIGAR);
   2858  0D09  302D               	movlw	_DESLIGAR-__stringbase
   2859  0D0A  0084               	movwf	4
   2860  0D0B  120A  158A  200A  120A  158A  	fcall	stringdir
   2861  0D10  120A  118A  26EB  120A  158A  	fcall	_Ativar
   2862  0D15                     l2805:	
   2863                           
-  2864                           ;main.c: 316: }
-  2865                           ;main.c: 317: }
-  2866                           ;main.c: 319: if (flag_Start == 1) {
+  2864                           ;main.c: 318: }
+  2865                           ;main.c: 319: }
+  2866                           ;main.c: 321: if (flag_Start == 1) {
   2867  0D15  3001               	movlw	1
   2868  0D16  1683               	bsf	3,5	;RP0=1, select bank1
   2869  0D17  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2878,14 +2878,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2872  0D1A  1D03               	skipz
   2873  0D1B  0008               	return
   2874                           
-  2875                           ;main.c: 320: ADCRead(0);
+  2875                           ;main.c: 322: ADCRead(0);
   2876  0D1C  3000               	movlw	0
   2877  0D1D  00A0               	movwf	ADCRead@ch^(0+128)
   2878  0D1E  3000               	movlw	0
   2879  0D1F  00A1               	movwf	(ADCRead@ch^(0+128)+1)
   2880  0D20  120A  158A  2094  120A  158A  	fcall	_ADCRead
   2881                           
-  2882                           ;main.c: 321: _delay((unsigned long)((300)*(20000000/4000.0)));
+  2882                           ;main.c: 323: _delay((unsigned long)((300)*(20000000/4000.0)));
   2883  0D25  3008               	movlw	8
   2884  0D26  1683               	bsf	3,5	;RP0=1, select bank1
   2885  0D27  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2903,7 +2903,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2897  0D32  2D2D               	goto	u4047
   2898  0D33  2D34               	nop2
   2899                           
-  2900                           ;main.c: 322: ADCRead(1);
+  2900                           ;main.c: 324: ADCRead(1);
   2901  0D34  3001               	movlw	1
   2902  0D35  1683               	bsf	3,5	;RP0=1, select bank1
   2903  0D36  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2912,7 +2912,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2906  0D39  00A1               	movwf	(ADCRead@ch^(0+128)+1)
   2907  0D3A  120A  158A  2094  120A  158A  	fcall	_ADCRead
   2908                           
-  2909                           ;main.c: 323: _delay((unsigned long)((300)*(20000000/4000.0)));
+  2909                           ;main.c: 325: _delay((unsigned long)((300)*(20000000/4000.0)));
   2910  0D3F  3008               	movlw	8
   2911  0D40  1683               	bsf	3,5	;RP0=1, select bank1
   2912  0D41  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2936,7 +2936,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2930  06EB                     __ptext13:	
   2931 ;; *************** function _Ativar *****************
   2932 ;; Defined at:
-  2933 ;;		line 123 in file "main.c"
+  2933 ;;		line 125 in file "main.c"
   2934 ;; Parameters:    Size  Location     Type
   2935 ;;  comando         1    wreg     unsigned char 
   2936 ;; Auto vars:     Size  Location     Type
@@ -2976,7 +2976,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2970  06EC  1303               	bcf	3,6	;RP1=0, select bank1
   2971  06ED  00A2               	movwf	Ativar@comando^(0+128)
   2972                           
-  2973                           ;main.c: 124: if (comando == LIGAR_BOMBA) {
+  2973                           ;main.c: 126: if (comando == LIGAR_BOMBA) {
   2974  06EE  3031               	movlw	_LIGAR_BOMBA-__stringbase
   2975  06EF  0084               	movwf	4
   2976  06F0  120A  158A  200A  120A  118A  	fcall	stringdir
@@ -2986,21 +2986,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   2980  06F8  1D03               	skipz
   2981  06F9  2F09               	goto	l2305
   2982                           
-  2983                           ;main.c: 125: PORTDbits.RD2 = 0;
+  2983                           ;main.c: 127: PORTDbits.RD2 = 0;
   2984  06FA  1283               	bcf	3,5	;RP0=0, select bank0
   2985  06FB  1303               	bcf	3,6	;RP1=0, select bank0
   2986  06FC  1108               	bcf	8,2	;volatile
   2987                           
-  2988                           ;main.c: 126: PORTDbits.RD3 = 1;
+  2988                           ;main.c: 128: PORTDbits.RD3 = 1;
   2989  06FD  1588               	bsf	8,3	;volatile
   2990                           
-  2991                           ;main.c: 127: USARTWriteChar(LIGAR_BOMBA);
+  2991                           ;main.c: 129: USARTWriteChar(LIGAR_BOMBA);
   2992  06FE  3031               	movlw	_LIGAR_BOMBA-__stringbase
   2993  06FF  0084               	movwf	4
   2994  0700  120A  158A  200A  120A  118A  	fcall	stringdir
   2995  0705  160A  118A  2664   	fcall	_USARTWriteChar
   2996                           
-  2997                           ;main.c: 128: } else if (comando == DESLIGAR_BOMBA) {
+  2997                           ;main.c: 130: } else if (comando == DESLIGAR_BOMBA) {
   2998  0708  0008               	return
   2999  0709                     l2305:	
   3000  0709  302E               	movlw	_DESLIGAR_BOMBA-__stringbase
@@ -3014,21 +3014,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3008  0715  1D03               	skipz
   3009  0716  2F26               	goto	l2311
   3010                           
-  3011                           ;main.c: 129: PORTDbits.RD2 = 1;
+  3011                           ;main.c: 131: PORTDbits.RD2 = 1;
   3012  0717  1283               	bcf	3,5	;RP0=0, select bank0
   3013  0718  1303               	bcf	3,6	;RP1=0, select bank0
   3014  0719  1508               	bsf	8,2	;volatile
   3015                           
-  3016                           ;main.c: 130: PORTDbits.RD3 = 0;
+  3016                           ;main.c: 132: PORTDbits.RD3 = 0;
   3017  071A  1188               	bcf	8,3	;volatile
   3018                           
-  3019                           ;main.c: 131: USARTWriteChar(DESLIGAR_BOMBA);
+  3019                           ;main.c: 133: USARTWriteChar(DESLIGAR_BOMBA);
   3020  071B  302E               	movlw	_DESLIGAR_BOMBA-__stringbase
   3021  071C  0084               	movwf	4
   3022  071D  120A  158A  200A  120A  118A  	fcall	stringdir
   3023  0722  160A  118A  2664   	fcall	_USARTWriteChar
   3024                           
-  3025                           ;main.c: 132: } else if (comando == LIGAR_MOTOR) {
+  3025                           ;main.c: 134: } else if (comando == LIGAR_MOTOR) {
   3026  0725  0008               	return
   3027  0726                     l2311:	
   3028  0726  3032               	movlw	_LIGAR_MOTOR-__stringbase
@@ -3042,18 +3042,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3036  0732  1D03               	skipz
   3037  0733  2F42               	goto	l2317
   3038                           
-  3039                           ;main.c: 133: PORTDbits.RD4 = 1;
+  3039                           ;main.c: 135: PORTDbits.RD4 = 1;
   3040  0734  1283               	bcf	3,5	;RP0=0, select bank0
   3041  0735  1303               	bcf	3,6	;RP1=0, select bank0
   3042  0736  1608               	bsf	8,4	;volatile
   3043                           
-  3044                           ;main.c: 134: USARTWriteChar(LIGAR_MOTOR);
+  3044                           ;main.c: 136: USARTWriteChar(LIGAR_MOTOR);
   3045  0737  3032               	movlw	_LIGAR_MOTOR-__stringbase
   3046  0738  0084               	movwf	4
   3047  0739  120A  158A  200A  120A  118A  	fcall	stringdir
   3048  073E  160A  118A  2664   	fcall	_USARTWriteChar
   3049                           
-  3050                           ;main.c: 135: } else if (comando == DESLIGAR_MOTOR) {
+  3050                           ;main.c: 137: } else if (comando == DESLIGAR_MOTOR) {
   3051  0741  0008               	return
   3052  0742                     l2317:	
   3053  0742  302F               	movlw	_DESLIGAR_MOTOR-__stringbase
@@ -3067,18 +3067,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3061  074E  1D03               	skipz
   3062  074F  2F5E               	goto	l2323
   3063                           
-  3064                           ;main.c: 136: PORTDbits.RD4 = 0;
+  3064                           ;main.c: 138: PORTDbits.RD4 = 0;
   3065  0750  1283               	bcf	3,5	;RP0=0, select bank0
   3066  0751  1303               	bcf	3,6	;RP1=0, select bank0
   3067  0752  1208               	bcf	8,4	;volatile
   3068                           
-  3069                           ;main.c: 137: USARTWriteChar(DESLIGAR_MOTOR);
+  3069                           ;main.c: 139: USARTWriteChar(DESLIGAR_MOTOR);
   3070  0753  302F               	movlw	_DESLIGAR_MOTOR-__stringbase
   3071  0754  0084               	movwf	4
   3072  0755  120A  158A  200A  120A  118A  	fcall	stringdir
   3073  075A  160A  118A  2664   	fcall	_USARTWriteChar
   3074                           
-  3075                           ;main.c: 138: } else if (comando == LIGAR) {
+  3075                           ;main.c: 140: } else if (comando == LIGAR) {
   3076  075D  0008               	return
   3077  075E                     l2323:	
   3078  075E  3030               	movlw	_LIGAR-__stringbase
@@ -3092,19 +3092,19 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3086  076A  1D03               	skipz
   3087  076B  2F7B               	goto	l2329
   3088                           
-  3089                           ;main.c: 139: flag_Start = 1;
+  3089                           ;main.c: 141: flag_Start = 1;
   3090  076C  3001               	movlw	1
   3091  076D  00BE               	movwf	_flag_Start^(0+128)
   3092  076E  3000               	movlw	0
   3093  076F  00BF               	movwf	(_flag_Start^(0+128)+1)
   3094                           
-  3095                           ;main.c: 140: USARTWriteChar(LIGAR);
+  3095                           ;main.c: 142: USARTWriteChar(LIGAR);
   3096  0770  3030               	movlw	_LIGAR-__stringbase
   3097  0771  0084               	movwf	4
   3098  0772  120A  158A  200A  120A  118A  	fcall	stringdir
   3099  0777  160A  118A  2664   	fcall	_USARTWriteChar
   3100                           
-  3101                           ;main.c: 141: } else if (comando == DESLIGAR) {
+  3101                           ;main.c: 143: } else if (comando == DESLIGAR) {
   3102  077A  0008               	return
   3103  077B                     l2329:	
   3104  077B  302D               	movlw	_DESLIGAR-__stringbase
@@ -3118,11 +3118,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3112  0787  1D03               	skipz
   3113  0788  0008               	return
   3114                           
-  3115                           ;main.c: 142: flag_Start = 0;
+  3115                           ;main.c: 144: flag_Start = 0;
   3116  0789  01BE               	clrf	_flag_Start^(0+128)
   3117  078A  01BF               	clrf	(_flag_Start+1)^(0+128)
   3118                           
-  3119                           ;main.c: 143: USARTWriteChar(DESLIGAR);
+  3119                           ;main.c: 145: USARTWriteChar(DESLIGAR);
   3120  078B  302D               	movlw	_DESLIGAR-__stringbase
   3121  078C  0084               	movwf	4
   3122  078D  120A  158A  200A  120A  118A  	fcall	stringdir
@@ -3134,7 +3134,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3128  1664                     __ptext14:	
   3129 ;; *************** function _USARTWriteChar *****************
   3130 ;; Defined at:
-  3131 ;;		line 76 in file "main.c"
+  3131 ;;		line 78 in file "main.c"
   3132 ;; Parameters:    Size  Location     Type
   3133 ;;  USARTData       1    wreg     unsigned char 
   3134 ;; Auto vars:     Size  Location     Type
@@ -3174,13 +3174,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3168  1665  1303               	bcf	3,6	;RP1=0, select bank1
   3169  1666  00A0               	movwf	USARTWriteChar@USARTData^(0+128)
   3170  1667                     l86:	
-  3171                           ;main.c: 77: while (!PIR1bits.TXIF);
+  3171                           ;main.c: 79: while (!PIR1bits.TXIF);
   3172                           
   3173  1667  1283               	bcf	3,5	;RP0=0, select bank0
   3174  1668  1E0C               	btfss	12,4	;volatile
   3175  1669  2E67               	goto	l86
   3176                           
-  3177                           ;main.c: 78: TXREG = USARTData;
+  3177                           ;main.c: 80: TXREG = USARTData;
   3178  166A  1683               	bsf	3,5	;RP0=1, select bank1
   3179  166B  1303               	bcf	3,6	;RP1=0, select bank1
   3180  166C  0820               	movf	USARTWriteChar@USARTData^(0+128),w
@@ -3194,7 +3194,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3188  0894                     __ptext15:	
   3189 ;; *************** function _ADCRead *****************
   3190 ;; Defined at:
-  3191 ;;		line 249 in file "main.c"
+  3191 ;;		line 251 in file "main.c"
   3192 ;; Parameters:    Size  Location     Type
   3193 ;;  ch              2    0[BANK1 ] int 
   3194 ;; Auto vars:     Size  Location     Type
@@ -3226,7 +3226,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3220                           ;psect for function _ADCRead
   3221  0894                     _ADCRead:	
   3222                           
-  3223                           ;main.c: 251: ADCON0bits.CHS = ch;
+  3223                           ;main.c: 253: ADCON0bits.CHS = ch;
   3224                           
   3225                           ;incstack = 0
   3226 ;; hardware stack exceeded
@@ -3250,7 +3250,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3244  08A4  1303               	bcf	3,6	;RP1=0, select bank0
   3245  08A5  009F               	movwf	31	;volatile
   3246                           
-  3247                           ;main.c: 252: recipiente = ch;
+  3247                           ;main.c: 254: recipiente = ch;
   3248  08A6  1683               	bsf	3,5	;RP0=1, select bank1
   3249  08A7  1303               	bcf	3,6	;RP1=0, select bank1
   3250  08A8  0821               	movf	(ADCRead@ch+1)^(0+128),w
@@ -3266,7 +3266,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3260  08B2  01ED               	clrf	_recipiente
   3261  08B3  07ED               	addwf	_recipiente,f
   3262                           
-  3263                           ;main.c: 253: _delay((unsigned long)((25)*(20000000/4000000.0)));
+  3263                           ;main.c: 255: _delay((unsigned long)((25)*(20000000/4000000.0)));
   3264  08B4  3029               	movlw	41
   3265  08B5  1683               	bsf	3,5	;RP0=1, select bank1
   3266  08B6  1303               	bcf	3,6	;RP1=0, select bank1
@@ -3276,12 +3276,12 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3270  08B9  28B8               	goto	u4067
   3271  08BA  0000               	nop
   3272                           
-  3273                           ;main.c: 254: ADCON0bits.GO = 1;
+  3273                           ;main.c: 256: ADCON0bits.GO = 1;
   3274  08BB  1283               	bcf	3,5	;RP0=0, select bank0
   3275  08BC  1303               	bcf	3,6	;RP1=0, select bank0
   3276  08BD  151F               	bsf	31,2	;volatile
   3277  08BE                     l148:	
-  3278                           ;main.c: 255: while (ADCON0bits.GO_DONE);
+  3278                           ;main.c: 257: while (ADCON0bits.GO_DONE);
   3279                           
   3280  08BE  1D1F               	btfss	31,2	;volatile
   3281  08BF  0008               	return
@@ -3292,7 +3292,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3286  0271                     __ptext16:	
   3287 ;; *************** function _ISR *****************
   3288 ;; Defined at:
-  3289 ;;		line 261 in file "main.c"
+  3289 ;;		line 263 in file "main.c"
   3290 ;; Parameters:    Size  Location     Type
   3291 ;;		None
   3292 ;; Auto vars:     Size  Location     Type
@@ -3344,11 +3344,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3338                           ;psect for function _ISR
   3339  0271                     _ISR:	
   3340                           
-  3341                           ;main.c: 263: if (PIR1bits.ADIF) {
+  3341                           ;main.c: 265: if (PIR1bits.ADIF) {
   3342  0271  1F0C               	btfss	12,6	;volatile
   3343  0272  2B7C               	goto	i1l2949
   3344                           
-  3345                           ;main.c: 265: ADCResult = ((ADRESH << 8) + ADRESL);
+  3345                           ;main.c: 267: ADCResult = ((ADRESH << 8) + ADRESL);
   3346  0273  081E               	movf	30,w	;volatile
   3347  0274  01E8               	clrf	_ADCResult+1
   3348  0275  07E8               	addwf	_ADCResult+1,f
@@ -3360,11 +3360,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3354  027B  01E7               	clrf	_ADCResult
   3355  027C  07E7               	addwf	_ADCResult,f
   3356                           
-  3357                           ;main.c: 267: char * buf, * per;
-  3358                           ;main.c: 268: float input, input2;
-  3359                           ;main.c: 269: float pre;
-  3360                           ;main.c: 270: int preint, status;
-  3361                           ;main.c: 272: input = ADCResult * 0.0048828125;
+  3357                           ;main.c: 269: char * buf, * per;
+  3358                           ;main.c: 270: float input, input2;
+  3359                           ;main.c: 271: float pre;
+  3360                           ;main.c: 272: int preint, status;
+  3361                           ;main.c: 274: input = ADCResult * 0.0048828125;
   3362  027D  3000               	movlw	0
   3363  027E  00A0               	movwf	___ftmul@f1
   3364  027F  30A0               	movlw	160
@@ -3396,7 +3396,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3390  02A1  0822               	movf	?___ftmul+2,w
   3391  02A2  00E2               	movwf	ISR@input+2
   3392                           
-  3393                           ;main.c: 273: buf = ftoa(input, &status);
+  3393                           ;main.c: 275: buf = ftoa(input, &status);
   3394  02A3  0860               	movf	ISR@input,w
   3395  02A4  00C4               	movwf	ftoa@f
   3396  02A5  0861               	movf	ISR@input+1,w
@@ -3414,26 +3414,26 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3408  02B5  0853               	movf	??_ISR+1,w
   3409  02B6  00D8               	movwf	ISR@buf
   3410                           
-  3411                           ;main.c: 275: lcd_gotoxy(0, 1);
+  3411                           ;main.c: 277: lcd_gotoxy(0, 1);
   3412  02B7  01F5               	clrf	i1lcd_gotoxy@y
   3413  02B8  0AF5               	incf	i1lcd_gotoxy@y,f
   3414  02B9  3000               	movlw	0
   3415  02BA  160A  118A  26B3  120A  118A  	fcall	i1_lcd_gotoxy
   3416                           
-  3417                           ;main.c: 276: lcd_escreve_string("Nivel:");
+  3417                           ;main.c: 278: lcd_escreve_string("Nivel:");
   3418  02BF  3076               	movlw	low (STR_2-__stringbase)
   3419  02C0  00FC               	movwf	i1lcd_escreve_string@y
   3420  02C1  3080               	movlw	128
   3421  02C2  00FD               	movwf	i1lcd_escreve_string@y+1
   3422  02C3  160A  118A  2787  120A  118A  	fcall	i1_lcd_escreve_string
   3423                           
-  3424                           ;main.c: 277: lcd_gotoxy(7, 1);
+  3424                           ;main.c: 279: lcd_gotoxy(7, 1);
   3425  02C8  01F5               	clrf	i1lcd_gotoxy@y
   3426  02C9  0AF5               	incf	i1lcd_gotoxy@y,f
   3427  02CA  3007               	movlw	7
   3428  02CB  160A  118A  26B3  120A  118A  	fcall	i1_lcd_gotoxy
   3429                           
-  3430                           ;main.c: 279: input2 = ((input * 100) / 1);
+  3430                           ;main.c: 281: input2 = ((input * 100) / 1);
   3431  02D0  3000               	movlw	0
   3432  02D1  1283               	bcf	3,5	;RP0=0, select bank0
   3433  02D2  1303               	bcf	3,6	;RP1=0, select bank0
@@ -3473,7 +3473,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3467  02FC  0832               	movf	?___ftdiv+2,w
   3468  02FD  00E5               	movwf	ISR@input2+2
   3469                           
-  3470                           ;main.c: 280: per = ftoa(input2, &status);
+  3470                           ;main.c: 282: per = ftoa(input2, &status);
   3471  02FE  0863               	movf	ISR@input2,w
   3472  02FF  00C4               	movwf	ftoa@f
   3473  0300  0864               	movf	ISR@input2+1,w
@@ -3491,32 +3491,32 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3485  0310  0853               	movf	??_ISR+1,w
   3486  0311  00E6               	movwf	ISR@per
   3487                           
-  3488                           ;main.c: 282: lcd_escreve_string(per);
+  3488                           ;main.c: 284: lcd_escreve_string(per);
   3489  0312  0866               	movf	ISR@per,w
   3490  0313  00FC               	movwf	i1lcd_escreve_string@y
   3491  0314  3000               	movlw	0
   3492  0315  00FD               	movwf	i1lcd_escreve_string@y+1
   3493  0316  160A  118A  2787  120A  118A  	fcall	i1_lcd_escreve_string
   3494                           
-  3495                           ;main.c: 283: lcd_gotoxy(16, 1);
+  3495                           ;main.c: 285: lcd_gotoxy(16, 1);
   3496  031B  01F5               	clrf	i1lcd_gotoxy@y
   3497  031C  0AF5               	incf	i1lcd_gotoxy@y,f
   3498  031D  3010               	movlw	16
   3499  031E  160A  118A  26B3  120A  118A  	fcall	i1_lcd_gotoxy
   3500                           
-  3501                           ;main.c: 284: lcd_escreve_string("%");
+  3501                           ;main.c: 286: lcd_escreve_string("%");
   3502  0323  307D               	movlw	low (STR_3-__stringbase)
   3503  0324  00FC               	movwf	i1lcd_escreve_string@y
   3504  0325  3080               	movlw	128
   3505  0326  00FD               	movwf	i1lcd_escreve_string@y+1
   3506  0327  160A  118A  2787  120A  118A  	fcall	i1_lcd_escreve_string
   3507                           
-  3508                           ;main.c: 285: lcd_gotoxy(0, 0);
+  3508                           ;main.c: 287: lcd_gotoxy(0, 0);
   3509  032C  01F5               	clrf	i1lcd_gotoxy@y
   3510  032D  3000               	movlw	0
   3511  032E  160A  118A  26B3  120A  118A  	fcall	i1_lcd_gotoxy
   3512                           
-  3513                           ;main.c: 287: pre = input2 * 0.16;
+  3513                           ;main.c: 289: pre = input2 * 0.16;
   3514  0333  30D7               	movlw	215
   3515  0334  1283               	bcf	3,5	;RP0=0, select bank0
   3516  0335  1303               	bcf	3,6	;RP1=0, select bank0
@@ -3541,7 +3541,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3535  034C  0822               	movf	?___ftmul+2,w
   3536  034D  00DB               	movwf	ISR@pre+2
   3537                           
-  3538                           ;main.c: 288: preint = (int) pre;
+  3538                           ;main.c: 290: preint = (int) pre;
   3539  034E  0859               	movf	ISR@pre,w
   3540  034F  00B0               	movwf	___fttol@f1
   3541  0350  085A               	movf	ISR@pre+1,w
@@ -3558,11 +3558,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3552  035F  01DC               	clrf	ISR@preint
   3553  0360  07DC               	addwf	ISR@preint,f
   3554                           
-  3555                           ;main.c: 290: sendSerial(per);
+  3555                           ;main.c: 292: sendSerial(per);
   3556  0361  0866               	movf	ISR@per,w
   3557  0362  120A  158A  219B  120A  118A  	fcall	_sendSerial
   3558                           
-  3559                           ;main.c: 291: progressBar(preint);
+  3559                           ;main.c: 293: progressBar(preint);
   3560  0367  1283               	bcf	3,5	;RP0=0, select bank0
   3561  0368  1303               	bcf	3,6	;RP1=0, select bank0
   3562  0369  085D               	movf	ISR@preint+1,w
@@ -3573,25 +3573,25 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3567  036E  07A0               	addwf	progressBar@preint,f
   3568  036F  120A  158A  2261  120A  118A  	fcall	_progressBar
   3569                           
-  3570                           ;main.c: 292: refresh();
+  3570                           ;main.c: 294: refresh();
   3571  0374  120A  158A  25C7  120A  118A  	fcall	_refresh
   3572                           
-  3573                           ;main.c: 294: PIR1bits.ADIF = 0;
+  3573                           ;main.c: 296: PIR1bits.ADIF = 0;
   3574  0379  1283               	bcf	3,5	;RP0=0, select bank0
   3575  037A  1303               	bcf	3,6	;RP1=0, select bank0
   3576  037B  130C               	bcf	12,6	;volatile
   3577  037C                     i1l2949:	
   3578                           
-  3579                           ;main.c: 295: }
-  3580                           ;main.c: 297: if (PIR1bits.RCIF) {
+  3579                           ;main.c: 297: }
+  3580                           ;main.c: 299: if (PIR1bits.RCIF) {
   3581  037C  1E8C               	btfss	12,5	;volatile
   3582  037D  2B92               	goto	i1l156
   3583                           
-  3584                           ;main.c: 298: USARTWriteChar(USARTReceiveChar());
+  3584                           ;main.c: 300: USARTWriteChar(USARTReceiveChar());
   3585  037E  160A  118A  26CD  120A  118A  	fcall	_USARTReceiveChar
   3586  0383  160A  118A  2641  120A  118A  	fcall	i1_USARTWriteChar
   3587                           
-  3588                           ;main.c: 299: Ativar(USARTReceiveChar());
+  3588                           ;main.c: 301: Ativar(USARTReceiveChar());
   3589  0388  160A  118A  26CD  120A  118A  	fcall	_USARTReceiveChar
   3590  038D  120A  158A  275D  120A  118A  	fcall	i1_Ativar
   3591  0392                     i1l156:	
@@ -3635,7 +3635,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3629  099B                     __ptext17:	
   3630 ;; *************** function _sendSerial *****************
   3631 ;; Defined at:
-  3632 ;;		line 151 in file "main.c"
+  3632 ;;		line 153 in file "main.c"
   3633 ;; Parameters:    Size  Location     Type
   3634 ;;  nivelRecipie    1    wreg     PTR unsigned char 
   3635 ;;		 -> ftoa@buf(17), 
@@ -3681,13 +3681,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3675  099C  1303               	bcf	3,6	;RP1=0, select bank0
   3676  099D  00C9               	movwf	sendSerial@nivelRecipiente
   3677                           
-  3678                           ;main.c: 152: int x = 0;
+  3678                           ;main.c: 154: int x = 0;
   3679  099E  01CA               	clrf	sendSerial@x
   3680  099F  01CB               	clrf	sendSerial@x+1
   3681  09A0                     i1l2717:	
-  3682                           ;main.c: 153: char origem [40];
-  3683                           ;main.c: 154: const char * envio;
-  3684                           ;main.c: 156: while (*nivelRecipiente != '\0') {
+  3682                           ;main.c: 155: char origem [40];
+  3683                           ;main.c: 156: const char * envio;
+  3684                           ;main.c: 158: while (*nivelRecipiente != '\0') {
   3685                           
   3686  09A0  0849               	movf	sendSerial@nivelRecipiente,w
   3687  09A1  0084               	movwf	4
@@ -3696,26 +3696,26 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3690  09A4  1903               	btfsc	3,2
   3691  09A5  29CE               	goto	i1l2719
   3692                           
-  3693                           ;main.c: 157: if ((x == 0)) {
+  3693                           ;main.c: 159: if ((x == 0)) {
   3694  09A6  084B               	movf	sendSerial@x+1,w
   3695  09A7  044A               	iorwf	sendSerial@x,w
   3696  09A8  1D03               	skipz
   3697  09A9  29B9               	goto	i1l2711
   3698                           
-  3699                           ;main.c: 158: if (recipiente == 0) {
+  3699                           ;main.c: 160: if (recipiente == 0) {
   3700  09AA  086E               	movf	_recipiente+1,w
   3701  09AB  046D               	iorwf	_recipiente,w
   3702  09AC  1D03               	skipz
   3703  09AD  29B0               	goto	i1l2707
   3704                           
-  3705                           ;main.c: 159: origem[x] = 'S';
+  3705                           ;main.c: 161: origem[x] = 'S';
   3706  09AE  3053               	movlw	83
   3707  09AF  29B1               	goto	L3
   3708  09B0                     i1l2707:	
-  3709                           ;main.c: 160: } else {
+  3709                           ;main.c: 162: } else {
   3710                           
   3711                           
-  3712                           ;main.c: 161: origem[x] = 'I';
+  3712                           ;main.c: 163: origem[x] = 'I';
   3713  09B0  3049               	movlw	73
   3714  09B1                     L3:	
   3715  09B1  00F3               	movwf	??_sendSerial
@@ -3727,13 +3727,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3721  09B7  0080               	movwf	0
   3722  09B8  29C7               	goto	i1l2715
   3723  09B9                     i1l2711:	
-  3724                           ;main.c: 164: } else {
+  3724                           ;main.c: 166: } else {
   3725                           
-  3726                           ;main.c: 162: }
-  3727                           ;main.c: 163: x++;
+  3726                           ;main.c: 164: }
+  3727                           ;main.c: 165: x++;
   3728                           
   3729                           
-  3730                           ;main.c: 165: origem[x] = *nivelRecipiente;
+  3730                           ;main.c: 167: origem[x] = *nivelRecipiente;
   3731  09B9  0849               	movf	sendSerial@nivelRecipiente,w
   3732  09BA  0084               	movwf	4
   3733  09BB  1383               	bcf	3,7	;select IRP bank0
@@ -3745,14 +3745,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3739  09C1  0873               	movf	??_sendSerial,w
   3740  09C2  0080               	movwf	0
   3741                           
-  3742                           ;main.c: 166: *nivelRecipiente++;
+  3742                           ;main.c: 168: *nivelRecipiente++;
   3743  09C3  3001               	movlw	1
   3744  09C4  00F3               	movwf	??_sendSerial
   3745  09C5  0873               	movf	??_sendSerial,w
   3746  09C6  07C9               	addwf	sendSerial@nivelRecipiente,f
   3747  09C7                     i1l2715:	
   3748                           
-  3749                           ;main.c: 167: x++;
+  3749                           ;main.c: 169: x++;
   3750  09C7  3001               	movlw	1
   3751  09C8  07CA               	addwf	sendSerial@x,f
   3752  09C9  1803               	skipnc
@@ -3762,15 +3762,15 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3756  09CD  29A0               	goto	i1l2717
   3757  09CE                     i1l2719:	
   3758                           
-  3759                           ;main.c: 168: }
-  3760                           ;main.c: 169: }
-  3761                           ;main.c: 170: envio = &origem;
+  3759                           ;main.c: 170: }
+  3760                           ;main.c: 171: }
+  3761                           ;main.c: 172: envio = &origem;
   3762  09CE  3020               	movlw	sendSerial@origem& (0+255)
   3763  09CF  00F3               	movwf	??_sendSerial
   3764  09D0  0873               	movf	??_sendSerial,w
   3765  09D1  00C8               	movwf	sendSerial@envio
   3766                           
-  3767                           ;main.c: 171: USARTWriteString(envio);
+  3767                           ;main.c: 173: USARTWriteString(envio);
   3768  09D2  0848               	movf	sendSerial@envio,w
   3769  09D3  00F1               	movwf	USARTWriteString@str
   3770  09D4  3000               	movlw	0
@@ -3783,7 +3783,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3777  0DC7                     __ptext18:	
   3778 ;; *************** function _refresh *****************
   3779 ;; Defined at:
-  3780 ;;		line 199 in file "main.c"
+  3780 ;;		line 201 in file "main.c"
   3781 ;; Parameters:    Size  Location     Type
   3782 ;;		None
   3783 ;; Auto vars:     Size  Location     Type
@@ -3815,7 +3815,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3809                           ;psect for function _refresh
   3810  0DC7                     _refresh:	
   3811                           
-  3812                           ;main.c: 200: if (recipiente == 0) {
+  3812                           ;main.c: 202: if (recipiente == 0) {
   3813                           
   3814                           ;incstack = 0
   3815 ;; hardware stack exceeded
@@ -3827,7 +3827,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3821  0DCB  1D03               	skipz
   3822  0DCC  2E04               	goto	i1l2755
   3823                           
-  3824                           ;main.c: 201: if (ADCResult < 80) {
+  3824                           ;main.c: 203: if (ADCResult < 80) {
   3825  0DCD  0868               	movf	_ADCResult+1,w
   3826  0DCE  3A80               	xorlw	128
   3827  0DCF  00FF               	movwf	127
@@ -3841,23 +3841,23 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3835  0DD6  1803               	skipnc
   3836  0DD7  2DE8               	goto	i1l2749
   3837                           
-  3838                           ;main.c: 202: PORTDbits.RD2 = 0;
+  3838                           ;main.c: 204: PORTDbits.RD2 = 0;
   3839  0DD8  1283               	bcf	3,5	;RP0=0, select bank0
   3840  0DD9  1303               	bcf	3,6	;RP1=0, select bank0
   3841  0DDA  1108               	bcf	8,2	;volatile
   3842                           
-  3843                           ;main.c: 203: PORTDbits.RD3 = 1;
+  3843                           ;main.c: 205: PORTDbits.RD3 = 1;
   3844  0DDB  1588               	bsf	8,3	;volatile
   3845                           
-  3846                           ;main.c: 204: Ativar(LIGAR_BOMBA);
+  3846                           ;main.c: 206: Ativar(LIGAR_BOMBA);
   3847  0DDC  3031               	movlw	_LIGAR_BOMBA-__stringbase
   3848  0DDD  0084               	movwf	4
   3849  0DDE  120A  158A  200A  120A  158A  	fcall	stringdir
   3850  0DE3  120A  158A  275D  120A  158A  	fcall	i1_Ativar
   3851  0DE8                     i1l2749:	
   3852                           
-  3853                           ;main.c: 205: }
-  3854                           ;main.c: 207: if (ADCResult > 200) {
+  3853                           ;main.c: 207: }
+  3854                           ;main.c: 209: if (ADCResult > 200) {
   3855  0DE8  1283               	bcf	3,5	;RP0=0, select bank0
   3856  0DE9  1303               	bcf	3,6	;RP1=0, select bank0
   3857  0DEA  0868               	movf	_ADCResult+1,w
@@ -3873,22 +3873,22 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3867  0DF3  1C03               	skipc
   3868  0DF4  0008               	return
   3869                           
-  3870                           ;main.c: 208: PORTDbits.RD2 = 1;
+  3870                           ;main.c: 210: PORTDbits.RD2 = 1;
   3871  0DF5  1283               	bcf	3,5	;RP0=0, select bank0
   3872  0DF6  1303               	bcf	3,6	;RP1=0, select bank0
   3873  0DF7  1508               	bsf	8,2	;volatile
   3874                           
-  3875                           ;main.c: 209: PORTDbits.RD3 = 0;
+  3875                           ;main.c: 211: PORTDbits.RD3 = 0;
   3876  0DF8  1188               	bcf	8,3	;volatile
   3877                           
-  3878                           ;main.c: 210: Ativar(DESLIGAR_BOMBA);
+  3878                           ;main.c: 212: Ativar(DESLIGAR_BOMBA);
   3879  0DF9  302E               	movlw	_DESLIGAR_BOMBA-__stringbase
   3880  0DFA  0084               	movwf	4
   3881  0DFB  120A  158A  200A  120A  158A  	fcall	stringdir
   3882  0E00  120A  158A  275D   	fcall	i1_Ativar
   3883                           
-  3884                           ;main.c: 211: }
-  3885                           ;main.c: 212: } else if (recipiente == 1) {
+  3884                           ;main.c: 213: }
+  3885                           ;main.c: 214: } else if (recipiente == 1) {
   3886  0E03  0008               	return
   3887  0E04                     i1l2755:	
   3888  0E04  3001               	movlw	1
@@ -3899,7 +3899,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3893  0E09  1D03               	skipz
   3894  0E0A  0008               	return
   3895                           
-  3896                           ;main.c: 214: if (ADCResult < 80) {
+  3896                           ;main.c: 216: if (ADCResult < 80) {
   3897  0E0B  0868               	movf	_ADCResult+1,w
   3898  0E0C  3A80               	xorlw	128
   3899  0E0D  00FF               	movwf	127
@@ -3913,20 +3913,20 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3907  0E14  1803               	skipnc
   3908  0E15  2E25               	goto	i1l2763
   3909                           
-  3910                           ;main.c: 215: PORTDbits.RD4 = 0;
+  3910                           ;main.c: 217: PORTDbits.RD4 = 0;
   3911  0E16  1283               	bcf	3,5	;RP0=0, select bank0
   3912  0E17  1303               	bcf	3,6	;RP1=0, select bank0
   3913  0E18  1208               	bcf	8,4	;volatile
   3914                           
-  3915                           ;main.c: 216: Ativar(LIGAR_MOTOR);
+  3915                           ;main.c: 218: Ativar(LIGAR_MOTOR);
   3916  0E19  3032               	movlw	_LIGAR_MOTOR-__stringbase
   3917  0E1A  0084               	movwf	4
   3918  0E1B  120A  158A  200A  120A  158A  	fcall	stringdir
   3919  0E20  120A  158A  275D  120A  158A  	fcall	i1_Ativar
   3920  0E25                     i1l2763:	
   3921                           
-  3922                           ;main.c: 217: }
-  3923                           ;main.c: 219: if (ADCResult > 200) {
+  3922                           ;main.c: 219: }
+  3923                           ;main.c: 221: if (ADCResult > 200) {
   3924  0E25  1283               	bcf	3,5	;RP0=0, select bank0
   3925  0E26  1303               	bcf	3,6	;RP1=0, select bank0
   3926  0E27  0868               	movf	_ADCResult+1,w
@@ -3942,12 +3942,12 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3936  0E30  1C03               	skipc
   3937  0E31  0008               	return
   3938                           
-  3939                           ;main.c: 220: PORTDbits.RD4 = 1;
+  3939                           ;main.c: 222: PORTDbits.RD4 = 1;
   3940  0E32  1283               	bcf	3,5	;RP0=0, select bank0
   3941  0E33  1303               	bcf	3,6	;RP1=0, select bank0
   3942  0E34  1608               	bsf	8,4	;volatile
   3943                           
-  3944                           ;main.c: 221: Ativar(DESLIGAR_MOTOR);
+  3944                           ;main.c: 223: Ativar(DESLIGAR_MOTOR);
   3945  0E35  302F               	movlw	_DESLIGAR_MOTOR-__stringbase
   3946  0E36  0084               	movwf	4
   3947  0E37  120A  158A  200A  120A  158A  	fcall	stringdir
@@ -3959,7 +3959,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3953  0F5D                     __ptext19:	
   3954 ;; *************** function i1_Ativar *****************
   3955 ;; Defined at:
-  3956 ;;		line 123 in file "main.c"
+  3956 ;;		line 125 in file "main.c"
   3957 ;; Parameters:    Size  Location     Type
   3958 ;;  comando         1    wreg     unsigned char 
   3959 ;; Auto vars:     Size  Location     Type
@@ -3998,7 +3998,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   3992                           ;i1Ativar@comando stored from wreg
   3993  0F5D  00F2               	movwf	i1Ativar@comando
   3994                           
-  3995                           ;main.c: 124: if (comando == LIGAR_BOMBA) {
+  3995                           ;main.c: 126: if (comando == LIGAR_BOMBA) {
   3996  0F5E  3031               	movlw	_LIGAR_BOMBA-__stringbase
   3997  0F5F  0084               	movwf	4
   3998  0F60  120A  158A  200A  120A  158A  	fcall	stringdir
@@ -4008,21 +4008,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4002  0F68  1D03               	skipz
   4003  0F69  2F79               	goto	i1l2641
   4004                           
-  4005                           ;main.c: 125: PORTDbits.RD2 = 0;
+  4005                           ;main.c: 127: PORTDbits.RD2 = 0;
   4006  0F6A  1283               	bcf	3,5	;RP0=0, select bank0
   4007  0F6B  1303               	bcf	3,6	;RP1=0, select bank0
   4008  0F6C  1108               	bcf	8,2	;volatile
   4009                           
-  4010                           ;main.c: 126: PORTDbits.RD3 = 1;
+  4010                           ;main.c: 128: PORTDbits.RD3 = 1;
   4011  0F6D  1588               	bsf	8,3	;volatile
   4012                           
-  4013                           ;main.c: 127: USARTWriteChar(LIGAR_BOMBA);
+  4013                           ;main.c: 129: USARTWriteChar(LIGAR_BOMBA);
   4014  0F6E  3031               	movlw	_LIGAR_BOMBA-__stringbase
   4015  0F6F  0084               	movwf	4
   4016  0F70  120A  158A  200A  120A  158A  	fcall	stringdir
   4017  0F75  160A  118A  2641   	fcall	i1_USARTWriteChar
   4018                           
-  4019                           ;main.c: 128: } else if (comando == DESLIGAR_BOMBA) {
+  4019                           ;main.c: 130: } else if (comando == DESLIGAR_BOMBA) {
   4020  0F78  0008               	return
   4021  0F79                     i1l2641:	
   4022  0F79  302E               	movlw	_DESLIGAR_BOMBA-__stringbase
@@ -4034,21 +4034,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4028  0F83  1D03               	skipz
   4029  0F84  2F94               	goto	i1l2647
   4030                           
-  4031                           ;main.c: 129: PORTDbits.RD2 = 1;
+  4031                           ;main.c: 131: PORTDbits.RD2 = 1;
   4032  0F85  1283               	bcf	3,5	;RP0=0, select bank0
   4033  0F86  1303               	bcf	3,6	;RP1=0, select bank0
   4034  0F87  1508               	bsf	8,2	;volatile
   4035                           
-  4036                           ;main.c: 130: PORTDbits.RD3 = 0;
+  4036                           ;main.c: 132: PORTDbits.RD3 = 0;
   4037  0F88  1188               	bcf	8,3	;volatile
   4038                           
-  4039                           ;main.c: 131: USARTWriteChar(DESLIGAR_BOMBA);
+  4039                           ;main.c: 133: USARTWriteChar(DESLIGAR_BOMBA);
   4040  0F89  302E               	movlw	_DESLIGAR_BOMBA-__stringbase
   4041  0F8A  0084               	movwf	4
   4042  0F8B  120A  158A  200A  120A  158A  	fcall	stringdir
   4043  0F90  160A  118A  2641   	fcall	i1_USARTWriteChar
   4044                           
-  4045                           ;main.c: 132: } else if (comando == LIGAR_MOTOR) {
+  4045                           ;main.c: 134: } else if (comando == LIGAR_MOTOR) {
   4046  0F93  0008               	return
   4047  0F94                     i1l2647:	
   4048  0F94  3032               	movlw	_LIGAR_MOTOR-__stringbase
@@ -4060,18 +4060,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4054  0F9E  1D03               	skipz
   4055  0F9F  2FAE               	goto	i1l2653
   4056                           
-  4057                           ;main.c: 133: PORTDbits.RD4 = 1;
+  4057                           ;main.c: 135: PORTDbits.RD4 = 1;
   4058  0FA0  1283               	bcf	3,5	;RP0=0, select bank0
   4059  0FA1  1303               	bcf	3,6	;RP1=0, select bank0
   4060  0FA2  1608               	bsf	8,4	;volatile
   4061                           
-  4062                           ;main.c: 134: USARTWriteChar(LIGAR_MOTOR);
+  4062                           ;main.c: 136: USARTWriteChar(LIGAR_MOTOR);
   4063  0FA3  3032               	movlw	_LIGAR_MOTOR-__stringbase
   4064  0FA4  0084               	movwf	4
   4065  0FA5  120A  158A  200A  120A  158A  	fcall	stringdir
   4066  0FAA  160A  118A  2641   	fcall	i1_USARTWriteChar
   4067                           
-  4068                           ;main.c: 135: } else if (comando == DESLIGAR_MOTOR) {
+  4068                           ;main.c: 137: } else if (comando == DESLIGAR_MOTOR) {
   4069  0FAD  0008               	return
   4070  0FAE                     i1l2653:	
   4071  0FAE  302F               	movlw	_DESLIGAR_MOTOR-__stringbase
@@ -4083,18 +4083,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4077  0FB8  1D03               	skipz
   4078  0FB9  2FC8               	goto	i1l2659
   4079                           
-  4080                           ;main.c: 136: PORTDbits.RD4 = 0;
+  4080                           ;main.c: 138: PORTDbits.RD4 = 0;
   4081  0FBA  1283               	bcf	3,5	;RP0=0, select bank0
   4082  0FBB  1303               	bcf	3,6	;RP1=0, select bank0
   4083  0FBC  1208               	bcf	8,4	;volatile
   4084                           
-  4085                           ;main.c: 137: USARTWriteChar(DESLIGAR_MOTOR);
+  4085                           ;main.c: 139: USARTWriteChar(DESLIGAR_MOTOR);
   4086  0FBD  302F               	movlw	_DESLIGAR_MOTOR-__stringbase
   4087  0FBE  0084               	movwf	4
   4088  0FBF  120A  158A  200A  120A  158A  	fcall	stringdir
   4089  0FC4  160A  118A  2641   	fcall	i1_USARTWriteChar
   4090                           
-  4091                           ;main.c: 138: } else if (comando == LIGAR) {
+  4091                           ;main.c: 140: } else if (comando == LIGAR) {
   4092  0FC7  0008               	return
   4093  0FC8                     i1l2659:	
   4094  0FC8  3030               	movlw	_LIGAR-__stringbase
@@ -4106,7 +4106,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4100  0FD2  1D03               	skipz
   4101  0FD3  2FE5               	goto	i1l2665
   4102                           
-  4103                           ;main.c: 139: flag_Start = 1;
+  4103                           ;main.c: 141: flag_Start = 1;
   4104  0FD4  3001               	movlw	1
   4105  0FD5  1683               	bsf	3,5	;RP0=1, select bank1
   4106  0FD6  1303               	bcf	3,6	;RP1=0, select bank1
@@ -4114,13 +4114,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4108  0FD8  3000               	movlw	0
   4109  0FD9  00BF               	movwf	(_flag_Start^(0+128)+1)
   4110                           
-  4111                           ;main.c: 140: USARTWriteChar(LIGAR);
+  4111                           ;main.c: 142: USARTWriteChar(LIGAR);
   4112  0FDA  3030               	movlw	_LIGAR-__stringbase
   4113  0FDB  0084               	movwf	4
   4114  0FDC  120A  158A  200A  120A  158A  	fcall	stringdir
   4115  0FE1  160A  118A  2641   	fcall	i1_USARTWriteChar
   4116                           
-  4117                           ;main.c: 141: } else if (comando == DESLIGAR) {
+  4117                           ;main.c: 143: } else if (comando == DESLIGAR) {
   4118  0FE4  0008               	return
   4119  0FE5                     i1l2665:	
   4120  0FE5  302D               	movlw	_DESLIGAR-__stringbase
@@ -4132,13 +4132,13 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4126  0FEF  1D03               	skipz
   4127  0FF0  0008               	return
   4128                           
-  4129                           ;main.c: 142: flag_Start = 0;
+  4129                           ;main.c: 144: flag_Start = 0;
   4130  0FF1  1683               	bsf	3,5	;RP0=1, select bank1
   4131  0FF2  1303               	bcf	3,6	;RP1=0, select bank1
   4132  0FF3  01BE               	clrf	_flag_Start^(0+128)
   4133  0FF4  01BF               	clrf	(_flag_Start+1)^(0+128)
   4134                           
-  4135                           ;main.c: 143: USARTWriteChar(DESLIGAR);
+  4135                           ;main.c: 145: USARTWriteChar(DESLIGAR);
   4136  0FF5  302D               	movlw	_DESLIGAR-__stringbase
   4137  0FF6  0084               	movwf	4
   4138  0FF7  120A  158A  200A  120A  158A  	fcall	stringdir
@@ -4150,7 +4150,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4144  0A61                     __ptext20:	
   4145 ;; *************** function _progressBar *****************
   4146 ;; Defined at:
-  4147 ;;		line 178 in file "main.c"
+  4147 ;;		line 180 in file "main.c"
   4148 ;; Parameters:    Size  Location     Type
   4149 ;;  preint          2    0[BANK0 ] int 
   4150 ;; Auto vars:     Size  Location     Type
@@ -4185,7 +4185,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4179                           ;psect for function _progressBar
   4180  0A61                     _progressBar:	
   4181                           
-  4182                           ;main.c: 179: int i = 0;
+  4182                           ;main.c: 181: int i = 0;
   4183                           
   4184                           ;incstack = 0
   4185 ;; hardware stack exceeded
@@ -4195,9 +4195,9 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4189  0A63  01B6               	clrf	progressBar@i
   4190  0A64  01B7               	clrf	progressBar@i+1
   4191                           
-  4192                           ;main.c: 180: unsigned char *result;
-  4193                           ;main.c: 181: unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ',
-  4194                           ;main.c: 182: ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+  4192                           ;main.c: 182: unsigned char *result;
+  4193                           ;main.c: 183: unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ',
+  4194                           ;main.c: 184: ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
   4195  0A65  3026               	movlw	progressBar@aux& (0+255)
   4196  0A66  0084               	movwf	4
   4197  0A67  30D5               	movlw	low progressBar@F1346
@@ -4221,12 +4221,12 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4215  0A78  0BA4               	decfsz	??_progressBar+2,f
   4216  0A79  2A6D               	goto	u347_20
   4217  0A7A                     i1l2733:	
-  4218                           ;main.c: 184: while (preint >= 0) {
+  4218                           ;main.c: 186: while (preint >= 0) {
   4219                           
   4220  0A7A  1BA1               	btfsc	progressBar@preint+1,7
   4221  0A7B  2A90               	goto	i1l2735
   4222                           
-  4223                           ;main.c: 185: aux[i] = 0xFF;
+  4223                           ;main.c: 187: aux[i] = 0xFF;
   4224  0A7C  30FF               	movlw	255
   4225  0A7D  00A2               	movwf	??_progressBar
   4226  0A7E  0836               	movf	progressBar@i,w
@@ -4235,7 +4235,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4229  0A81  0822               	movf	??_progressBar,w
   4230  0A82  0080               	movwf	0
   4231                           
-  4232                           ;main.c: 186: preint--;
+  4232                           ;main.c: 188: preint--;
   4233  0A83  30FF               	movlw	255
   4234  0A84  07A0               	addwf	progressBar@preint,f
   4235  0A85  1803               	skipnc
@@ -4243,7 +4243,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4237  0A87  30FF               	movlw	255
   4238  0A88  07A1               	addwf	progressBar@preint+1,f
   4239                           
-  4240                           ;main.c: 187: i++;
+  4240                           ;main.c: 189: i++;
   4241  0A89  3001               	movlw	1
   4242  0A8A  07B6               	addwf	progressBar@i,f
   4243  0A8B  1803               	skipnc
@@ -4253,21 +4253,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   4247  0A8F  2A7A               	goto	i1l2733
   4248  0A90                     i1l2735:	
   4249                           
-  4250                           ;main.c: 188: }
-  4251                           ;main.c: 189: result = &aux;
+  4250                           ;main.c: 190: }
+  4251                           ;main.c: 191: result = &aux;
   4252  0A90  3026               	movlw	progressBar@aux& (0+255)
   4253  0A91  00A2               	movwf	??_progressBar
   4254  0A92  0822               	movf	??_progressBar,w
   4255  0A93  00B8               	movwf	progressBar@result
   4256                           
-  4257                           ;main.c: 190: lcd_escreve_string(result);
+  4257                           ;main.c: 192: lcd_escreve_string(result);
   4258  0A94  0838               	movf	progressBar@result,w
   4259  0A95  00FC               	movwf	i1lcd_escreve_string@y
   4260  0A96  3000               	movlw	0
   4261  0A97  00FD               	movwf	i1lcd_escreve_string@y+1
   4262  0A98  160A  118A  2787  120A  158A  	fcall	i1_lcd_escreve_string
   4263                           
-  4264                           ;main.c: 191: _delay((unsigned long)((200)*(20000000/4000.0)));
+  4264                           ;main.c: 193: _delay((unsigned long)((200)*(20000000/4000.0)));
   4265  0A9D  3006               	movlw	6
   4266  0A9E  1283               	bcf	3,5	;RP0=0, select bank0
   4267  0A9F  1303               	bcf	3,6	;RP1=0, select bank0
@@ -7737,7 +7737,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7729  16CD                     __ptext42:	
   7730 ;; *************** function _USARTReceiveChar *****************
   7731 ;; Defined at:
-  7732 ;;		line 98 in file "main.c"
+  7732 ;;		line 100 in file "main.c"
   7733 ;; Parameters:    Size  Location     Type
   7734 ;;		None
   7735 ;; Auto vars:     Size  Location     Type
@@ -7769,8 +7769,8 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7761                           ;psect for function _USARTReceiveChar
   7762  16CD                     _USARTReceiveChar:	
   7763                           
-  7764                           ;main.c: 100: unsigned char USARTData;
-  7765                           ;main.c: 102: if (!OERR)
+  7764                           ;main.c: 102: unsigned char USARTData;
+  7765                           ;main.c: 104: if (!OERR)
   7766                           
   7767                           ;incstack = 0
   7768 ;; hardware stack exceeded
@@ -7780,46 +7780,46 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7772  16CF  1898               	btfsc	24,1	;volatile
   7773  16D0  2ED6               	goto	i1l2685
   7774                           
-  7775                           ;main.c: 103: {
-  7776                           ;main.c: 104: USARTData = RCREG;
+  7775                           ;main.c: 105: {
+  7776                           ;main.c: 106: USARTData = RCREG;
   7777  16D1  081A               	movf	26,w	;volatile
   7778  16D2  00F3               	movwf	??_USARTReceiveChar
   7779  16D3  0873               	movf	??_USARTReceiveChar,w
   7780  16D4  00F4               	movwf	USARTReceiveChar@USARTData
   7781  16D5  2EE5               	goto	i1l2693
   7782  16D6                     i1l2685:	
-  7783                           ;main.c: 106: } else {
+  7783                           ;main.c: 108: } else {
   7784                           
-  7785                           ;main.c: 105: PIR1bits.RCIF = 0;
+  7785                           ;main.c: 107: PIR1bits.RCIF = 0;
   7786                           
   7787                           
-  7788                           ;main.c: 107: USARTWriteString("\n\r ------- ESTOURO DE PILHA ------- \n\r ");
+  7788                           ;main.c: 109: USARTWriteString("\n\r ------- ESTOURO DE PILHA ------- \n\r ");
   7789  16D6  3033               	movlw	low (STR_1-__stringbase)
   7790  16D7  00F1               	movwf	USARTWriteString@str
   7791  16D8  3080               	movlw	128
   7792  16D9  00F2               	movwf	USARTWriteString@str+1
   7793  16DA  160A  118A  2741   	fcall	_USARTWriteString
   7794                           
-  7795                           ;main.c: 109: RCSTAbits.CREN = 0;
+  7795                           ;main.c: 111: RCSTAbits.CREN = 0;
   7796  16DD  1283               	bcf	3,5	;RP0=0, select bank0
   7797  16DE  1303               	bcf	3,6	;RP1=0, select bank0
   7798  16DF  1218               	bcf	24,4	;volatile
   7799                           
-  7800                           ;main.c: 110: USARTData = RCREG;
+  7800                           ;main.c: 112: USARTData = RCREG;
   7801  16E0  081A               	movf	26,w	;volatile
   7802  16E1  00F3               	movwf	??_USARTReceiveChar
   7803  16E2  0873               	movf	??_USARTReceiveChar,w
   7804  16E3  00F4               	movwf	USARTReceiveChar@USARTData
   7805                           
-  7806                           ;main.c: 111: RCSTAbits.CREN = 1;
+  7806                           ;main.c: 113: RCSTAbits.CREN = 1;
   7807  16E4  1618               	bsf	24,4	;volatile
   7808  16E5                     i1l2693:	
   7809                           
-  7810                           ;main.c: 112: PIR1bits.RCIF = 0;
+  7810                           ;main.c: 114: PIR1bits.RCIF = 0;
   7811  16E5  128C               	bcf	12,5	;volatile
   7812                           
-  7813                           ;main.c: 113: }
-  7814                           ;main.c: 115: return (USARTData);
+  7813                           ;main.c: 115: }
+  7814                           ;main.c: 117: return (USARTData);
   7815  16E6  0874               	movf	USARTReceiveChar@USARTData,w
   7816  16E7  0008               	return
   7817  16E8                     __end_of_USARTReceiveChar:	
@@ -7828,7 +7828,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7820  1741                     __ptext43:	
   7821 ;; *************** function _USARTWriteString *****************
   7822 ;; Defined at:
-  7823 ;;		line 85 in file "main.c"
+  7823 ;;		line 87 in file "main.c"
   7824 ;; Parameters:    Size  Location     Type
   7825 ;;  str             2    1[COMMON] PTR const unsigned char 
   7826 ;;		 -> sendSerial@origem(40), STR_1(40), 
@@ -7862,7 +7862,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7854                           ;psect for function _USARTWriteString
   7855  1741                     _USARTWriteString:	
   7856  1741                     i1l2297:	
-  7857                           ;main.c: 87: while (*str != '\0') {
+  7857                           ;main.c: 89: while (*str != '\0') {
   7858                           
   7859                           ;incstack = 0
   7860 ;; hardware stack exceeded
@@ -7879,7 +7879,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7871  174D  1903               	btfsc	3,2
   7872  174E  0008               	return
   7873                           
-  7874                           ;main.c: 89: USARTWriteChar(*str);
+  7874                           ;main.c: 91: USARTWriteChar(*str);
   7875  174F  0872               	movf	USARTWriteString@str+1,w
   7876  1750  1283               	bcf	3,5	;RP0=0, select bank0
   7877  1751  1303               	bcf	3,6	;RP1=0, select bank0
@@ -7889,7 +7889,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7881  1755  120A  158A  2000  160A  118A  	fcall	stringtab
   7882  175A  160A  118A  2641  160A  118A  	fcall	i1_USARTWriteChar
   7883                           
-  7884                           ;main.c: 90: str++;
+  7884                           ;main.c: 92: str++;
   7885  175F  3001               	movlw	1
   7886  1760  07F1               	addwf	USARTWriteString@str,f
   7887  1761  1803               	skipnc
@@ -7901,7 +7901,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7893  1641                     __ptext44:	
   7894 ;; *************** function i1_USARTWriteChar *****************
   7895 ;; Defined at:
-  7896 ;;		line 76 in file "main.c"
+  7896 ;;		line 78 in file "main.c"
   7897 ;; Parameters:    Size  Location     Type
   7898 ;;  USARTData       1    wreg     unsigned char 
   7899 ;; Auto vars:     Size  Location     Type
@@ -7939,14 +7939,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 58300
   7931                           ;i1USARTWriteChar@USARTData stored from wreg
   7932  1641  00F0               	movwf	i1USARTWriteChar@USARTData
   7933  1642                     i1l86:	
-  7934                           ;main.c: 77: while (!PIR1bits.TXIF);
+  7934                           ;main.c: 79: while (!PIR1bits.TXIF);
   7935                           
   7936  1642  1283               	bcf	3,5	;RP0=0, select bank0
   7937  1643  1303               	bcf	3,6	;RP1=0, select bank0
   7938  1644  1E0C               	btfss	12,4	;volatile
   7939  1645  2E42               	goto	i1l86
   7940                           
-  7941                           ;main.c: 78: TXREG = USARTData;
+  7941                           ;main.c: 80: TXREG = USARTData;
   7942  1646  0870               	movf	i1USARTWriteChar@USARTData,w
   7943  1647  0099               	movwf	25	;volatile
   7944  1648  0008               	return
@@ -8458,7 +8458,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.32 build 58300 
-Symbol Table                                                                                   Thu Nov 06 07:48:38 2014
+Symbol Table                                                                                   Thu Nov 06 08:11:34 2014
 
                             pc 0002                    __CFG_CP$OFF 0000                             l86 1667  
                            fsr 0004            ___wmul@multiplicand 0072                i1Ativar@comando 0072  

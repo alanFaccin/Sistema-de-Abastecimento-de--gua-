@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+//#include <hardware.h>
+//#include <lcd_4bit.h>
 #include "hardware.h"
 #include "lcd_4bit.h"
 

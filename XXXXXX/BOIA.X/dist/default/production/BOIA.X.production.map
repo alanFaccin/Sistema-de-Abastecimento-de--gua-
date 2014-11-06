@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.32\dat\en_msgs.txt -cs \
   -h+dist/default/production\BOIA.X.production.sym \
   --cmf=dist/default/production\BOIA.X.production.cmf -z -Q16F877A \
-  -oC:\Users\DIOVAN~1\AppData\Local\Temp\s4eg.6 \
+  -oC:\Users\DIOVAN~1\AppData\Local\Temp\s3no.6 \
   -Mdist/default/production/BOIA.X.production.map -E1 -ver=XC8 \
   -ASTACK=0110h-016fh -pstack=STACK -ACONST=00h-0FFhx32 -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -AENTRY=00h-0FFhx32 -ASTRING=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\DIOVAN~1\AppData\Local\Temp\s4eg.obj \
+  -DENTRY=2 -k C:\Users\DIOVAN~1\AppData\Local\Temp\s3no.obj \
   dist/default/production\BOIA.X.production.obj 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\DIOVAN~1\AppData\Local\Temp\s4eg.obj
+C:\Users\DIOVAN~1\AppData\Local\Temp\s3no.obj
                 end_init                             12       12        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        1     400E       0
@@ -789,7 +789,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 360 in file "main.c"
+		line 362 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -819,7 +819,7 @@ Total ram usage:        0 bytes
 
  *************** function _inicialize *****************
  Defined at:
-		line 331 in file "main.c"
+		line 333 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -980,7 +980,7 @@ Total ram usage:        3 bytes
 
  *************** function _USARTInit *****************
  Defined at:
-		line 34 in file "main.c"
+		line 36 in file "main.c"
  Parameters:    Size  Location     Type
   BaudRate        4   15[BANK1 ] long 
   Mode            2   19[BANK1 ] int 
@@ -1139,7 +1139,7 @@ Total ram usage:        2 bytes
 
  *************** function _ADCInit *****************
  Defined at:
-		line 229 in file "main.c"
+		line 231 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1169,7 +1169,7 @@ Total ram usage:        0 bytes
 
  *************** function _ativar *****************
  Defined at:
-		line 307 in file "main.c"
+		line 309 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1200,7 +1200,7 @@ Total ram usage:        3 bytes
 
  *************** function _Ativar *****************
  Defined at:
-		line 123 in file "main.c"
+		line 125 in file "main.c"
  Parameters:    Size  Location     Type
   comando         1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1230,7 +1230,7 @@ Total ram usage:        2 bytes
 
  *************** function _USARTWriteChar *****************
  Defined at:
-		line 76 in file "main.c"
+		line 78 in file "main.c"
  Parameters:    Size  Location     Type
   USARTData       1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1260,7 +1260,7 @@ Total ram usage:        1 bytes
 
  *************** function _ADCRead *****************
  Defined at:
-		line 249 in file "main.c"
+		line 251 in file "main.c"
  Parameters:    Size  Location     Type
   ch              2    0[BANK1 ] int 
  Auto vars:     Size  Location     Type
@@ -1290,7 +1290,7 @@ Total ram usage:        3 bytes
 
  *************** function _ISR *****************
  Defined at:
-		line 261 in file "main.c"
+		line 263 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1340,7 +1340,7 @@ Total ram usage:       21 bytes
 
  *************** function _sendSerial *****************
  Defined at:
-		line 151 in file "main.c"
+		line 153 in file "main.c"
  Parameters:    Size  Location     Type
   nivelRecipie    1    wreg     PTR unsigned char 
 		 -> ftoa@buf(17), 
@@ -1376,7 +1376,7 @@ Total ram usage:       45 bytes
 
  *************** function _refresh *****************
  Defined at:
-		line 199 in file "main.c"
+		line 201 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1406,7 +1406,7 @@ Total ram usage:        0 bytes
 
  *************** function i1_Ativar *****************
  Defined at:
-		line 123 in file "main.c"
+		line 125 in file "main.c"
  Parameters:    Size  Location     Type
   comando         1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1437,7 +1437,7 @@ Total ram usage:        2 bytes
 
  *************** function _progressBar *****************
  Defined at:
-		line 178 in file "main.c"
+		line 180 in file "main.c"
  Parameters:    Size  Location     Type
   preint          2    0[BANK0 ] int 
  Auto vars:     Size  Location     Type
@@ -2152,7 +2152,7 @@ Total ram usage:        8 bytes
 
  *************** function _USARTReceiveChar *****************
  Defined at:
-		line 98 in file "main.c"
+		line 100 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2182,7 +2182,7 @@ Total ram usage:        2 bytes
 
  *************** function _USARTWriteString *****************
  Defined at:
-		line 85 in file "main.c"
+		line 87 in file "main.c"
  Parameters:    Size  Location     Type
   str             2    1[COMMON] PTR const unsigned char 
 		 -> sendSerial@origem(40), STR_1(40), 
@@ -2214,7 +2214,7 @@ Total ram usage:        2 bytes
 
  *************** function i1_USARTWriteChar *****************
  Defined at:
-		line 76 in file "main.c"
+		line 78 in file "main.c"
  Parameters:    Size  Location     Type
   USARTData       1    wreg     unsigned char 
  Auto vars:     Size  Location     Type

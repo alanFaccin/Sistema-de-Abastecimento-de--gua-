@@ -134,35 +134,35 @@
 [v i1_lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
 "179
 [v _LCDClear LCDClear `(v  1 e 0 0 ]
-"34 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
+"36 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
 [v _USARTInit USARTInit `(v  1 e 0 0 ]
-"76
+"78
 [v _USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 [v i1_USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
-"85
+"87
 [v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
-"98
+"100
 [v _USARTReceiveChar USARTReceiveChar `(uc  1 e 1 0 ]
-"123
+"125
 [v _Ativar Ativar `(v  1 e 0 0 ]
 [v i1_Ativar Ativar `(v  1 e 0 0 ]
-"151
+"153
 [v _sendSerial sendSerial `(v  1 e 0 0 ]
-"178
+"180
 [v _progressBar progressBar `(v  1 e 0 0 ]
-"199
+"201
 [v _refresh refresh `(v  1 e 0 0 ]
-"229
+"231
 [v _ADCInit ADCInit `(v  1 e 0 0 ]
-"249
+"251
 [v _ADCRead ADCRead `(v  1 e 0 0 ]
-"261
+"263
 [v _ISR ISR `II(v  1 e 0 0 ]
-"307
+"309
 [v _ativar ativar `(v  1 e 0 0 ]
-"331
+"333
 [v _inicialize inicialize `(v  1 e 0 0 ]
-"360
+"362
 [v _main main `(v  1 e 0 0 ]
 [s S326 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -330,41 +330,41 @@
 [v _dpowers dpowers `DCC[10]ul  1 s 40 dpowers ]
 "27 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\lcd_4bit.h
 [v _LCD_INIT_STRING LCD_INIT_STRING `DCC[4]uc  1 e 4 0 ]
-"13 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
+"15 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
 [v _LIGAR_BOMBA LIGAR_BOMBA `DCCuc  1 e 1 0 ]
-"14
-[v _DESLIGAR_BOMBA DESLIGAR_BOMBA `DCCuc  1 e 1 0 ]
-"15
-[v _LIGAR_MOTOR LIGAR_MOTOR `DCCuc  1 e 1 0 ]
 "16
-[v _DESLIGAR_MOTOR DESLIGAR_MOTOR `DCCuc  1 e 1 0 ]
+[v _DESLIGAR_BOMBA DESLIGAR_BOMBA `DCCuc  1 e 1 0 ]
 "17
-[v _LIGAR LIGAR `DCCuc  1 e 1 0 ]
+[v _LIGAR_MOTOR LIGAR_MOTOR `DCCuc  1 e 1 0 ]
 "18
-[v _DESLIGAR DESLIGAR `DCCuc  1 e 1 0 ]
+[v _DESLIGAR_MOTOR DESLIGAR_MOTOR `DCCuc  1 e 1 0 ]
+"19
+[v _LIGAR LIGAR `DCCuc  1 e 1 0 ]
 "20
-[v _ADCResult ADCResult `i  1 e 2 0 ]
+[v _DESLIGAR DESLIGAR `DCCuc  1 e 1 0 ]
 "22
-[v _flag_Start flag_Start `i  1 e 2 0 ]
-"23
-[v _recipiente recipiente `i  1 e 2 0 ]
+[v _ADCResult ADCResult `i  1 e 2 0 ]
 "24
-[v _countSuperior countSuperior `i  1 e 2 0 ]
+[v _flag_Start flag_Start `i  1 e 2 0 ]
 "25
-[v _countInferior countInferior `i  1 e 2 0 ]
+[v _recipiente recipiente `i  1 e 2 0 ]
 "26
-[v _nivelSuperior nivelSuperior `i  1 e 2 0 ]
+[v _countSuperior countSuperior `i  1 e 2 0 ]
 "27
+[v _countInferior countInferior `i  1 e 2 0 ]
+"28
+[v _nivelSuperior nivelSuperior `i  1 e 2 0 ]
+"29
 [v _nivelInferior nivelInferior `i  1 e 2 0 ]
-"360
+"362
 [v _main main `(v  1 e 0 0 ]
 {
-"367
+"369
 } 0
-"331
+"333
 [v _inicialize inicialize `(v  1 e 0 0 ]
 {
-"358
+"360
 } 0
 "168 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\lcd_4bit.c
 [v _lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
@@ -400,15 +400,15 @@
 [v init_lcd_4bit@i i `uc  1 a 1 7 ]
 "36
 } 0
-"34 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
+"36 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
 [v _USARTInit USARTInit `(v  1 e 0 0 ]
 {
-"35
+"37
 [v USARTInit@BR BR `i  1 a 2 25 ]
-"34
+"36
 [v USARTInit@BaudRate BaudRate `l  1 p 4 15 ]
 [v USARTInit@Mode Mode `i  1 p 2 19 ]
-"70
+"72
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
@@ -447,96 +447,96 @@
 [v lcd_envia_nibble@n n `uc  1 a 1 1 ]
 "50
 } 0
-"229 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
+"231 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
 [v _ADCInit ADCInit `(v  1 e 0 0 ]
 {
-"243
+"245
 } 0
-"307
+"309
 [v _ativar ativar `(v  1 e 0 0 ]
 {
-"325
+"327
 } 0
-"123
+"125
 [v _Ativar Ativar `(v  1 e 0 0 ]
 {
 [v Ativar@comando comando `uc  1 a 1 wreg ]
 [v Ativar@comando comando `uc  1 a 1 wreg ]
 [v Ativar@comando comando `uc  1 a 1 2 ]
-"145
+"147
 } 0
-"76
+"78
 [v _USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 {
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v USARTWriteChar@USARTData USARTData `uc  1 a 1 0 ]
-"79
+"81
 } 0
-"249
+"251
 [v _ADCRead ADCRead `(v  1 e 0 0 ]
 {
 [v ADCRead@ch ch `i  1 p 2 0 ]
-"256
+"258
 } 0
-"261
+"263
 [v _ISR ISR `II(v  1 e 0 0 ]
 {
-"268
+"270
 [v ISR@input2 input2 `f  1 a 3 67 ]
 [v ISR@input input `f  1 a 3 64 ]
-"269
+"271
 [v ISR@pre pre `f  1 a 3 57 ]
-"270
+"272
 [v ISR@status status `i  1 a 2 62 ]
 [v ISR@preint preint `i  1 a 2 60 ]
-"267
+"269
 [v ISR@per per `*.4uc  1 a 1 70 ]
 [v ISR@buf buf `*.4uc  1 a 1 56 ]
-"301
+"303
 } 0
-"151
+"153
 [v _sendSerial sendSerial `(v  1 e 0 0 ]
 {
 [v sendSerial@nivelRecipiente nivelRecipiente `*.4uc  1 a 1 wreg ]
-"153
+"155
 [v sendSerial@origem origem `[40]uc  1 a 40 0 ]
-"152
-[v sendSerial@x x `i  1 a 2 42 ]
 "154
+[v sendSerial@x x `i  1 a 2 42 ]
+"156
 [v sendSerial@envio envio `*.4DCCuc  1 a 1 40 ]
-"151
+"153
 [v sendSerial@nivelRecipiente nivelRecipiente `*.4uc  1 a 1 wreg ]
 [v sendSerial@nivelRecipiente nivelRecipiente `*.4uc  1 a 1 41 ]
-"172
+"174
 } 0
-"199
+"201
 [v _refresh refresh `(v  1 e 0 0 ]
 {
-"224
+"226
 } 0
-"123
+"125
 [v i1_Ativar Ativar `(v  1 e 0 0 ]
 {
 [v i1Ativar@comando comando `uc  1 a 1 wreg ]
 [v i1Ativar@comando comando `uc  1 a 1 wreg ]
 [v i1Ativar@comando comando `uc  1 a 1 2 ]
-"145
+"147
 } 0
-"178
+"180
 [v _progressBar progressBar `(v  1 e 0 0 ]
 {
-"181
+"183
 [v progressBar@aux aux `[16]uc  1 a 16 6 ]
-"179
+"181
 [v progressBar@i i `i  1 a 2 22 ]
-"180
+"182
 [v progressBar@result result `*.4uc  1 a 1 24 ]
-"178
-[v progressBar@preint preint `i  1 p 2 0 ]
 "180
+[v progressBar@preint preint `i  1 p 2 0 ]
+"182
 [v progressBar@F1346 F1346 `[16]uc  1 s 16 F1346 ]
-"193
+"195
 } 0
 "168 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\lcd_4bit.c
 [v i1_lcd_escreve_string lcd_escreve_string `(v  1 e 0 0 ]
@@ -761,24 +761,24 @@
 [v ___ftpack@sign sign `uc  1 p 1 4 ]
 "86
 } 0
-"98 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
+"100 D:\Dados Didho\Faculdade\6° Semestre\Microcontroladores e DSP Experimentais\Trabalho\Sistema_Abastecimento_Agua\XXXXXX\BOIA.X\main.c
 [v _USARTReceiveChar USARTReceiveChar `(uc  1 e 1 0 ]
 {
-"100
+"102
 [v USARTReceiveChar@USARTData USARTData `uc  1 a 1 4 ]
-"116
+"118
 } 0
-"85
+"87
 [v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
 {
 [v USARTWriteString@str str `*.26DCCuc  1 p 2 1 ]
-"92
+"94
 } 0
-"76
+"78
 [v i1_USARTWriteChar USARTWriteChar `(v  1 e 0 0 ]
 {
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 wreg ]
 [v i1USARTWriteChar@USARTData USARTData `uc  1 a 1 0 ]
-"79
+"81
 } 0
