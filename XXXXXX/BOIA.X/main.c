@@ -17,18 +17,20 @@ const char DESLIGAR_MOTOR = 'm';
 const char LIGAR = 'L';
 const char DESLIGAR = 'l';
 
-//Variáveis Globais de Controle.
-int ADCResult = 0;
-int flag_an = -1;
-int flag_Start = 0;
-int recipiente = 0;
-int countSuperior = 0;
-int countInferior = 0;
-int nivelSuperior = 0;
-int nivelInferior = 0;
+int ADCResult = 0; // variavel responsavel por armazenar o valor lido dos registradores ADCC
+//int flag_an = -1; //
+int flag_Start = 0; // variavel responsavel por controlar se deve ser iniciado a execução do sofrware
+int recipiente = 0; // variavel responsavel por armazenar de qual recipiente está sendo lido a leitura do nivel d'agua
+int countSuperior = 0; // variavel responsavel por armazenar o numero de amostras lidas para o recipiente superior
+int countInferior = 0; // variavel responsavel por armazenar o numero de amostras lidas para o recipiente inferior
+int nivelSuperior = 0; // variavel responsavel por armazenar os valores relativos ao nivel d'agua lido no recipiente superior
+int nivelInferior = 0; // variavel responsavel por armazenar os valores relativos ao nivel d'agua lido no recipiente inferior
 
-//-----------------------------------------------------------------------------
-
+/**
+ *  funcao responsavel por configurar a inicializar a comunicação serial do pic
+ * @param BaudRate informa qual será a taxa de transferencia
+ * @param Mode recebe o modo de transmissao
+ */
 void USARTInit(long BaudRate, int Mode) {
     int BR = 0;
 
@@ -67,15 +69,19 @@ void USARTInit(long BaudRate, int Mode) {
     PIR1bits.RCIF = 0; // Habilita a Interrupção Serial de Recepção.
 }
 
-//-----------------------------------------------------------------------------
-
+/**
+ *  Funcao responsavel por escrever um caractere que será enviado no canal serial do PIC16F877A
+ * @param USARTData recebe o caracttere a ser escrito
+ */
 void USARTWriteChar(unsigned char USARTData) {
     while (!PIR1bits.TXIF);
     TXREG = USARTData;
 }
 
-//-----------------------------------------------------------------------------
-
+/**
+ * Funcao responsavel por escrever uma String no canal serial do pic
+ * @param str recebe como parametro um ponteiro, que nada mais é do que uma String de caracter a ser enviada
+ */
 void USARTWriteString(const char *str) {
     // Efetua a transmissão da string para a USART.
     while (*str != '\0') {
@@ -85,8 +91,10 @@ void USARTWriteString(const char *str) {
     }
 }
 
-//-----------------------------------------------------------------------------
-
+/**
+ * Funcao responsavel por ler um caractere recebido no canal serial
+ * @return um caractere lido
+ */
 unsigned char USARTReceiveChar(void) {
 
     unsigned char USARTData;
@@ -113,7 +121,6 @@ unsigned char USARTReceiveChar(void) {
  * @param comando
  */
 void Ativar(char comando) {
-
     if (comando == LIGAR_BOMBA) {
         RELEBOMBA = 0;
         LEDBOMBA = 1;
@@ -129,8 +136,10 @@ void Ativar(char comando) {
         RELEMOTOR = 0;
         USARTWriteChar(DESLIGAR_MOTOR);
     } else if (comando == LIGAR) {
+        flag_Start = 1;
         USARTWriteChar(LIGAR);
     } else if (comando == DESLIGAR) {
+        flag_Start = 0;
         USARTWriteChar(DESLIGAR);
     }
 }
@@ -138,7 +147,6 @@ void Ativar(char comando) {
 /**
  *  Funcao responsavel por preparar o valor convertido da leitura em um valor que será enviado para a serial
  * @param preint o valor que sera enviado via serial
- * @param recipiente  informa de qual recipiente foi lido o valor
  */
 void sendSerial(char* nivelRecipiente) {
     int x = 0;
@@ -163,6 +171,10 @@ void sendSerial(char* nivelRecipiente) {
     USARTWriteString(envio); // envio para o supervisorio
 }
 
+/**
+ * Funcao responsavel por imprimir na barra de progresso o nivel de água do recipiente
+ * @param preint recebe como parametro o o numero de colunas que o mesmo deve pintar.Intervalo de 0 a 16
+ */
 void progressBar(int preint) {
     int i = 0;
     unsigned char *result;
@@ -180,6 +192,10 @@ void progressBar(int preint) {
 
 }
 
+/**
+ * Funcao responsavel por atualizar o estado dos ativos do circuito, sendo que essa
+ * funcao tem como objetivo ligar ou desligar um mecanismo de acordo com o nivel d'agua
+ */
 void refresh(void) {
     if (recipiente == SUPERIOR) {
         if (ADCResult < 80) {
@@ -194,23 +210,22 @@ void refresh(void) {
             Ativar(DESLIGAR_BOMBA);
         }
     } else if (recipiente == INFERIOR) {
-        
-            if (ADCResult < 80) {
-                RELEMOTOR = 0;
-                Ativar(LIGAR_MOTOR);
-            }
 
-            if (ADCResult > 200) {
-                RELEMOTOR = 1;
-                Ativar(DESLIGAR_MOTOR);
-            }
+        if (ADCResult < 80) {
+            RELEMOTOR = 0;
+            Ativar(LIGAR_MOTOR);
+        }
+
+        if (ADCResult > 200) {
+            RELEMOTOR = 1;
+            Ativar(DESLIGAR_MOTOR);
+        }
     }
 }
-//-----------------------------------------------------------------------------
 
-
-//-----------------------------------------------------------------------------
-
+/**
+ *  Funcao responsavel por configurar e inicializar o conversor Analogico-Digital do pic
+ */
 void ADCInit() {
     //Configuração do Registrador ADCON1 para a Conversão A/D.
     ADCON1bits.ADFM = 1; // Configuração dos Bits mais significativos a esquerda.
@@ -218,18 +233,19 @@ void ADCInit() {
     ADCON1bits.PCFG2 = 0; // Configuração dos pinos analógicos e tensões de referência.
     ADCON1bits.PCFG1 = 0; // Configuração dos pinos analógicos e tensões de referência.
     ADCON1bits.PCFG0 = 0; // Configuração dos pinos analógicos e tensões de referência.
-
     //Configuração do Registrador ADCON0 para a Conversão A/D.
     ADCON0bits.ADCS1 = 1; // Frequência de Trabalho (Fosc/32 - 1.6us).
     ADCON0bits.ADCS0 = 0; // Frequência de Trabalho (Fosc/32 - 1.6us).
     ADCON0bits.ADON = 1; // Ativa o Sistema de Conversão A/D.
-
     //Configuração dos Registradores PIE1 e PIR1 para a Conversão A/D.
     PIE1bits.ADIE = 1; // Interrupção do conversor A/D Habilitada.
     PIR1bits.ADIF = 0; // Limpa a Flag da Interrupção da Conversão A/D.
 }
-//-----------------------------------------------------------------------------
 
+/**
+ *  Funcao responsavel por realizar a leitura de um canal analogico do pic
+ * @param ch recebe como parametro o canal analogico a seril lido
+ */
 void ADCRead(int ch) {
 
     ADCON0bits.CHS = ch; // Configuração do Canal 0 (RA0/AN0).
@@ -239,8 +255,9 @@ void ADCRead(int ch) {
     while (ADCON0bits.GO_DONE);
 }
 
-//-----------------------------------------------------------------------------
-
+/**
+ * Funcao responsavel por tratar as interrupções geradas pelos perifericos do pic
+ */
 void interrupt ISR(void) {
     // Verificação se a Interrupção foi causada pela conversão A/D.
     if (PIR1bits.ADIF) {
@@ -283,6 +300,10 @@ void interrupt ISR(void) {
     }
 }
 
+/**
+ *  Funcao responsavel por inicializar o sistema caso seja pressionado botão
+ * para ligar/desligar o circuito
+ */
 void ativar(void) {
     if (BOTAO_LIGAR_DESLIGAR == 1) {
         __delay_ms(300);
@@ -303,30 +324,35 @@ void ativar(void) {
     }
 }
 
+/**
+ * Funcao responsavel por inicializar e configurar os PORTS usados pelo PIC,
+ * comunicacao Serial e conversor ADC
+ */
 void inicialize(void) {
 
-    USARTInit(57600, 1);
+    USARTInit(57600, 1); // inicializacao da comunicacao serial
 
     TRISA = 0b11111111;
-    PORTAbits.RA0 = 0;
-    TRISDbits.TRISD2 = 0;
-    RELEBOMBA = 1;
     TRISDbits.TRISD3 = 0;
-    LEDBOMBA = 0;
-    //Botoes
+    TRISDbits.TRISD2 = 0;
     TRISCbits.TRISC0 = 1;
     TRISCbits.TRISC1 = 1;
     TRISCbits.TRISC2 = 1;
     TRISCbits.TRISC3 = 1;
+
+    PORTAbits.RA0 = 0;
+    RELEBOMBA = 1;
+    LEDBOMBA = 0;
     BOTAO_LIGAR_DESLIGAR = 0;
     __delay_ms(2000);
-    init_lcd_4bit();
+
+    init_lcd_4bit(); // inicializacao do LCD
     __delay_ms(2000);
     INTCONbits.PEIE = 1; // Habilita Interrupção de Periféricos do Microcontrolador.
     INTCONbits.GIE = 1; // Habilita Interrupção Global.
     __delay_ms(1000);
-    ADCInit();
-    lcd_escreve_string("\fLoading PIC...");
+    ADCInit(); //inicializacao convertor ADC
+    lcd_escreve_string("\fLoading PIC..."); //escrita no LCD
     __delay_ms(5000);
     LCDClear();
 }
