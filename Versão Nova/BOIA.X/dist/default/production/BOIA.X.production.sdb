@@ -549,10 +549,10 @@
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@sp sp `*.5uc  1 a 1 wreg ]
-[s S679 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
+[s S678 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
 "533
-[u S682 . 4 `ul 1 _val 4 0 `S679 1 _str 4 0 ]
-[v sprintf@_val _val `S682  1 a 4 26 ]
+[u S681 . 4 `ul 1 _val 4 0 `S678 1 _str 4 0 ]
+[v sprintf@_val _val `S681  1 a 4 26 ]
 "504
 [v sprintf@prec prec `i  1 a 2 33 ]
 "501

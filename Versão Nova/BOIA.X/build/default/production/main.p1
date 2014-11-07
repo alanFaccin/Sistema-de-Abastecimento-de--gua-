@@ -1772,7 +1772,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 200: lcd_escreve_string(per);
 "200
 [e ( _lcd_escreve_string (1 -> _per `*Cuc ]
-[; ;main.c: 201: USARTWriteString("\rS");
+[; ;main.c: 201: USARTWriteString("\nS");
 "201
 [e ( _USARTWriteString (1 :s 3C ]
 [; ;main.c: 202: USARTWriteString(per);
@@ -1862,12 +1862,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "257
 [e $ ! != -> . . _PIR1bits 0 5 `i -> -> -> 0 `i `Vuc `i 127  ]
 {
-[; ;main.c: 258: USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
-"258
-[e ( _USARTWriteString (1 :s 5C ]
 [; ;main.c: 259: USARTWriteString("\n\r Caracter Digitado :");
 "259
-[e ( _USARTWriteString (1 :s 6C ]
+[e ( _USARTWriteString (1 :s 5C ]
 [; ;main.c: 260: USARTWriteChar(USARTReceiveChar());
 "260
 [e ( _USARTWriteChar (1 ( _USARTReceiveChar ..  ]
@@ -1944,7 +1941,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _ADCInit ..  ]
 [; ;main.c: 288: lcd_escreve_string("\fLoading PIC...");
 "288
-[e ( _lcd_escreve_string (1 :s 7C ]
+[e ( _lcd_escreve_string (1 :s 6C ]
 [; ;main.c: 289: _delay((unsigned long)((5000)*(20000000/4000.0)));
 "289
 [e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
@@ -2043,10 +2040,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "318
 [e :UE 134 ]
 }
-[a 5C 10 13 32 69 110 116 114 111 117 32 110 97 32 102 117 110 99 97 111 32 100 101 32 73 110 116 101 114 114 117 112 99 97 111 32 100 97 32 85 83 65 82 84 0 ]
-[a 3C 13 83 0 ]
+[a 3C 10 83 0 ]
 [a 2C 78 105 118 101 108 58 0 ]
-[a 6C 10 13 32 67 97 114 97 99 116 101 114 32 68 105 103 105 116 97 100 111 32 58 0 ]
-[a 7C 12 76 111 97 100 105 110 103 32 80 73 67 46 46 46 0 ]
+[a 5C 10 13 32 67 97 114 97 99 116 101 114 32 68 105 103 105 116 97 100 111 32 58 0 ]
+[a 6C 12 76 111 97 100 105 110 103 32 80 73 67 46 46 46 0 ]
 [a 4C 37 0 ]
 [a 1C 10 13 32 45 45 45 45 45 45 45 32 69 83 84 79 85 82 79 32 68 69 32 80 73 76 72 65 32 45 45 45 45 45 45 45 32 10 13 32 0 ]

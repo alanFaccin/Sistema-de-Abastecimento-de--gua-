@@ -198,7 +198,7 @@ void interrupt ISR(void) {
         input2 = ((input * 100) / 1);
         per = ftoa(input2, &status2);
         lcd_escreve_string(per);
-        USARTWriteString("\rS");
+        USARTWriteString("\nS");
         USARTWriteString(per);
         //USARTWriteString("\n");
         lcd_gotoxy(16, 1);
@@ -255,7 +255,7 @@ void interrupt ISR(void) {
     }
     //Verifica se a interrupção foi causada pela recepção de bytes.
     if (PIR1bits.RCIF) {
-        USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
+        //USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
         USARTWriteString("\n\r Caracter Digitado :");
         USARTWriteChar(USARTReceiveChar());
 
