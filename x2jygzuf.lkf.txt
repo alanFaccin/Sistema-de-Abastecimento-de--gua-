@@ -1,0 +1,45 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	Versão Nova/BOIA.X/build/default/production/main.pre
+	Versão Nova/BOIA.X/dist/default/production/BOIA.X.production.hxl
+	Versão Nova/BOIA.X/main.c
+	Versão Nova/BOIA.X/nbproject/Makefile-genesis.properties
+	VersãoAntiga/BOIA.X/nbproject/Makefile-genesis.properties
+	VersãoAntiga/BOIA.X/nbproject/private/private.xml
+	XXXXXX/BOIA.X/build/default/production/lcd_4bit.p1
+	XXXXXX/BOIA.X/build/default/production/lcd_4bit.pre
+	XXXXXX/BOIA.X/build/default/production/main.p1
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.cmf
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.elf
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.hex
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.lst
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.map
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.obj
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.rlf
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.sdb
+	XXXXXX/BOIA.X/dist/default/production/BOIA.X.production.sym
+	XXXXXX/BOIA.X/dist/default/production/doprnt.d
+	XXXXXX/BOIA.X/dist/default/production/doprnt.p1
+	XXXXXX/BOIA.X/dist/default/production/doprnt.pre
+	XXXXXX/BOIA.X/funclist
+	XXXXXX/BOIA.X/l.obj
+	XXXXXX/BOIA.X/nbproject/Makefile-local-default.mk
+	XXXXXX/BOIA.X/nbproject/private/configurations.xml
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 2 and 2 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+
