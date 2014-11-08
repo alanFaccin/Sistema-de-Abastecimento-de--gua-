@@ -9,6 +9,7 @@
 #define RELEMOTOR   PORTDbits.RD4
 #define SUPERIOR 0
 #define INFERIOR 1
+#define Aux         PORTDbits.RD5
 
 const char LIGAR_BOMBA = 'B';
 const char DESLIGAR_BOMBA = 'b';
@@ -21,6 +22,7 @@ const char DESLIGAR = 'l';
 int ADCResult = 0;
 int flag_an = -1;
 int flag_Start = 0;
+int flag_ch = -1;
 int recipiente = 0;
 int countSuperior = 0;
 int countInferior = 0;
@@ -33,6 +35,7 @@ unsigned char Display[7];
 
 
 //-----------------------------------------------------------------------------
+
 void USARTInit(long BaudRate, int Mode) {
     int BR = 0;
 
@@ -89,6 +92,28 @@ void USARTWriteString(const char *str) {
     }
 }
 
+char* FormatarValor(const char *str) {
+    // Efetua a transmissão da string para a USART.
+    char *retorno;
+    int posicao = 0;
+    char aux [40];
+    int i = 0;
+    while (*str != '.') {
+        // Envio da string byte a byte.
+        posicao++;
+        str++;
+    }
+
+    str -= posicao;
+
+    for (; i < posicao; i++) {
+        aux[i] = *str;
+        str++;
+    }
+    retorno = &aux;
+    return retorno;
+}
+
 //-----------------------------------------------------------------------------
 
 unsigned char USARTReceiveChar(void) {
@@ -140,7 +165,7 @@ void ADCInit() {
 void ADCRead(int ch) {
 
 
-
+    flag_ch = ch;
     ADCON0bits.CHS = ch; // Configuração do Canal 0 (RA0/AN0).
     //ADCON0bits.CHS1 = 0; // Configuração do Canal 0 (RA0/AN0).
     //ADCON0bits.CHS0 = 0; // Configuração do Canal 0 (RA0/AN0).
@@ -166,98 +191,106 @@ void interrupt ISR(void) {
         //Variáveis para a função ftoa funcionar corretamente.
         char * buf;
         char * per;
-        char * teste;
-        char * qtdc;
+        // char * teste;
+        // char * qtdc;
         float input;
         float input2;
         float pre;
         int preint;
         int status;
         int status2;
-        int status3;
+        //int status3;
         int i = 0;
         unsigned char *result;
         unsigned char aux[16] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
 
-        input = ADCResult * 0.0048828125;
-        buf = ftoa(input, &status); //Vetor buf armazena a tensão convertida.
+        // se estiver lendo o canal A0, concatena o S
+        if (flag_ch == SUPERIOR) {
+            input = ADCResult * 0.0048828125;
+            buf = ftoa(input, &status); //Vetor buf armazena a tensão convertida.
+            input2 = ((input * 100) / 1);
+            per = ftoa(input2, &status2);
+            lcd_gotoxy(0, 1);
+            lcd_escreve_string("N1:");
+            USARTWriteString("\nS");
+            USARTWriteString(FormatarValor(per));
+            lcd_gotoxy(4, 1);
+            lcd_escreve_string("   ");
+            lcd_gotoxy(4, 1);
+            lcd_escreve_string(FormatarValor(per));
+            lcd_gotoxy(7, 1);
+            lcd_escreve_string("%");
+            //BARRA DE PROGRESSO
+            lcd_gotoxy(0, 0);
+            pre = input2 * 0.16;
+            preint = (int) pre;
+            // imprime barra de progresso
+            while (preint >= 0) {
+                aux[i] = 0xFF;
+                preint--;
+                i++;
+            }
+            result = &aux;
+            lcd_escreve_string(result);
+            // fim da impressão da barrinha
+        }
+        // se estiver lendo o canal A1, concatena o S
+        if (flag_ch == INFERIOR) {
+            input = ADCResult * 0.0048828125;
+            // buf = ftoa(input, &status); //Vetor buf armazena a tensão convertida.
+            input2 = ((input * 100) / 1);
 
+            per = ftoa(input2, &status2);
+            lcd_gotoxy(9, 1);
 
-        // Monta o valor de 10 bits para mandar para LCD.
-        Display[0] = (ADCResult / 1000) + 48; // Obtém a milhar do valor.
-        Display[1] = ((ADCResult / 100) % 10) + 48; // Obtém a centena do valor.
-        Display[2] = ((ADCResult / 10) % 10) + 48; // Obtém a dezena do valor.
-        Display[3] = (ADCResult % 10) + 48; // Obtém a unidade do valor.
-
-        // Envia o valor formatado para o LCD.
-        // coluna e linha
-
-        lcd_gotoxy(0, 1);
-        lcd_escreve_string("Nivel:");
-        lcd_gotoxy(7, 1);
-        input2 = ((input * 100) / 1);
-        per = ftoa(input2, &status2);
-        lcd_escreve_string(per);
-        USARTWriteString("\nS");
-        USARTWriteString(per);
-        //USARTWriteString("\n");
-        lcd_gotoxy(16, 1);
-        lcd_escreve_string("%");
-        lcd_gotoxy(0, 0);
-        pre = input2 * 0.16;
-        preint = (int) pre;
-        //USARTWriteString(per);
+            lcd_escreve_string("N2:");
+            USARTWriteString("\nI");
+            USARTWriteString(FormatarValor(per));
+            lcd_gotoxy(13, 1);
+            lcd_escreve_string("   ");
+            lcd_gotoxy(13, 1);
+            lcd_escreve_string(FormatarValor(per));
+            lcd_gotoxy(16, 1);
+            lcd_escreve_string("%");
+        }
+        // lcd_gotoxy(16, 1);
+        // lcd_escreve_string("%");
+        //lcd_gotoxy(0, 0);
+        //pre = input2 * 0.16;
+        //preint = (int) pre;
         //Aciona o rele que starta a bomba quando o nivel esta baixo
-        if (ADCResult < 200) {
+        if (ADCResult < 50 && flag_ch == 0) {
             PORTDbits.RD2 = 0;
             PORTDbits.RD3 = 1;
         }
-
-        if (ADCResult > 200) {
+        if (ADCResult > 200 && flag_ch == 0) {
             PORTDbits.RD2 = 1;
             PORTDbits.RD3 = 0;
         }
-        // imprime barrinha
-
-        while (preint >= 0) {
-            aux[i] = 0xFF;
-            preint--;
-            i++;
-        }
-        result = &aux;
-        //        teste = ftoa(preint, &status2);
-        lcd_escreve_string(result);
-        //lcd_gotoxy(0, 0);
-
-
-        //if (ADCResult >= 769) {
-        //  LCDCursor(0, 9);
-        //  LCDWriteString("100%");
-        // }
-        // if (ADCResult >= 513 && ADCResult <= 768) {
-        //    LCDCursor(0,9);
-        //   LCDWriteString("75%");
-        // }
-
-        // if (ADCResult >= 257 && ADCResult <= 512) {
-        //    LCDCursor(0,9);
-        //    LCDWriteString("5%");
-        // }
-
-        // if (ADCResult >= 0 && ADCResult <= 256) {
-        //   LCDCursor(0,9);
-        //  LCDWriteString("25%");
-        // }
-
         __delay_ms(200);
-
         PIR1bits.ADIF = 0; // Limpa a flag da interrupção do conversor A/D.
+        flag_ch = -1;
     }
     //Verifica se a interrupção foi causada pela recepção de bytes.
     if (PIR1bits.RCIF) {
         //USARTWriteString("\n\r Entrou na funcao de Interrupcao da USART");
-        USARTWriteString("\n\r Caracter Digitado :");
+        //USARTWriteString("\n Caracter Digitado :");
+        char recebimento = USARTReceiveChar();
         USARTWriteChar(USARTReceiveChar());
+        if (recebimento == LIGAR_BOMBA) {
+            RELEBOMBA = 0;
+            LEDBOMBA = 1;
+        }
+        if (recebimento == DESLIGAR_BOMBA) {
+            RELEBOMBA = 1;
+            LEDBOMBA = 0;
+        }
+        if (recebimento == LIGAR) {
+            flag_Start=1;
+        }
+        if(recebimento == DESLIGAR){
+            flag_Start=0;
+        }
 
     }
 }
@@ -265,13 +298,15 @@ void interrupt ISR(void) {
 void inicialize(void) {
 
     USARTInit(57600, 1);
-
     TRISA = 0b11111111;
     PORTAbits.RA0 = 0;
+    PORTAbits.RA1 = 0;
     TRISDbits.TRISD2 = 0;
     RELEBOMBA = 1;
     TRISDbits.TRISD3 = 0;
     LEDBOMBA = 0;
+    TRISDbits.TRISD5 = 0;
+    Aux = 0;
     //Botoes
     TRISCbits.TRISC0 = 1;
     TRISCbits.TRISC1 = 1;
@@ -289,14 +324,17 @@ void inicialize(void) {
     __delay_ms(5000);
     LCDClear();
 }
+
 void ativar(void) {
     if (BOTAO_LIGAR_DESLIGAR == 1) {
         __delay_ms(300);
         if (flag_Start == 0) {
             //Ativar(LIGAR);
             flag_Start = 1;
+            USARTWriteString(LIGAR);
         } else {
             flag_Start = 0;
+            USARTWriteString(DESLIGAR);
             //Ativar(DESLIGAR);
         }
     }
