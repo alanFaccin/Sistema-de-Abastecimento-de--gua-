@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"1341 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"1341 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [s S62 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S62 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
 "1340
@@ -16,20 +16,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 "224
 [v _PORTBbits `VS13 ~T0 @X0 0 e@6 ]
 [v F1275 `(v ~T0 @X0 1 tf1`ul ]
-"154 C:\Program Files\Microchip\xc8\v1.32\include\pic.h
+"154 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic.h
 [v __delay `JF1275 ~T0 @X0 0 e ]
 [p i __delay ]
 "36 lcd_4bit.h
 [v _lcd_envia_nibble `(v ~T0 @X0 0 ef1`uc ]
 "37
 [v _lcd_envia_byte `(v ~T0 @X0 0 ef2`uc`uc ]
-"10 C:\Program Files\Microchip\xc8\v1.32\include\stdarg.h
+"10 C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdarg.h
 [v ___va_start `(*v ~T0 @X0 0 ef ]
 [p i ___va_start ]
 "13
 [v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
 [p i ___va_arg ]
-"103 C:\Program Files\Microchip\xc8\v1.32\include\stdlib.h
+"103 C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdlib.h
 [v _itoa `(*uc ~T0 @X0 0 ef3`*uc`i`i ]
 [; ;stdio.h: 8: typedef int ptrdiff_t;
 [; ;stdio.h: 9: typedef unsigned size_t;
@@ -118,7 +118,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f877a.h: 47: extern volatile unsigned char INDF @ 0x000;
-"49 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [; ;pic16f877a.h: 49: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f877a.h: 53: extern volatile unsigned char TMR0 @ 0x001;

@@ -213,7 +213,7 @@ void interrupt ISR(void) {
             lcd_gotoxy(0, 1);
             lcd_escreve_string("N1:");
             USARTWriteString("\nS");
-            USARTWriteString(FormatarValor(per));
+            USARTWriteString(per);
             lcd_gotoxy(4, 1);
             lcd_escreve_string("   ");
             lcd_gotoxy(4, 1);
@@ -245,7 +245,7 @@ void interrupt ISR(void) {
 
             lcd_escreve_string("N2:");
             USARTWriteString("\nI");
-            USARTWriteString(FormatarValor(per));
+            USARTWriteString(per);
             lcd_gotoxy(13, 1);
             lcd_escreve_string("   ");
             lcd_gotoxy(13, 1);

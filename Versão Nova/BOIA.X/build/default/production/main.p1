@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"2028 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"2028 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
 "1954
 [s S87 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -83,20 +83,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 "1153
 [v _ADCON0bits `VS51 ~T0 @X0 0 e@31 ]
 [v F1275 `(v ~T0 @X0 1 tf1`ul ]
-"154 C:\Program Files\Microchip\xc8\v1.32\include\pic.h
+"154 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic.h
 [v __delay `JF1275 ~T0 @X0 0 e ]
 [p i __delay ]
-"1116 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"1116 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
 "2167
 [v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
-"112 C:\Program Files\Microchip\xc8\v1.32\include\stdlib.h
+"112 C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdlib.h
 [v _ftoa `(*uc ~T0 @X0 0 ef2`f`*i ]
 "38 lcd_4bit.h
 [v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
 "41
 [v _lcd_escreve_string `(v ~T0 @X0 0 ef1`*Cuc ]
-"335 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"335 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S18 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
 "334
@@ -140,7 +140,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTCbits `VS15 ~T0 @X0 0 e@7 ]
 "35 lcd_4bit.h
 [v _init_lcd_4bit `(v ~T0 @X0 0 ef ]
-"446 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"446 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [s S24 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S24 . RBIF INTF TMR0IF RBIE INTE TMR0IE PEIE GIE ]
 "456
@@ -241,7 +241,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f877a.h: 47: extern volatile unsigned char INDF @ 0x000;
-"49 C:\Program Files\Microchip\xc8\v1.32\include\pic16f877a.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f877a.h
 [; ;pic16f877a.h: 49: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f877a.h: 53: extern volatile unsigned char TMR0 @ 0x001;
@@ -1836,9 +1836,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 215: USARTWriteString("\nS");
 "215
 [e ( _USARTWriteString (1 :s 3C ]
-[; ;main.c: 216: USARTWriteString(FormatarValor(per));
+[; ;main.c: 216: USARTWriteString(per);
 "216
-[e ( _USARTWriteString (1 -> ( _FormatarValor (1 -> _per `*Cuc `*Cuc ]
+[e ( _USARTWriteString (1 -> _per `*Cuc ]
 [; ;main.c: 217: lcd_gotoxy(4, 1);
 "217
 [e ( _lcd_gotoxy (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
@@ -1919,9 +1919,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 247: USARTWriteString("\nI");
 "247
 [e ( _USARTWriteString (1 :s 7C ]
-[; ;main.c: 248: USARTWriteString(FormatarValor(per));
+[; ;main.c: 248: USARTWriteString(per);
 "248
-[e ( _USARTWriteString (1 -> ( _FormatarValor (1 -> _per `*Cuc `*Cuc ]
+[e ( _USARTWriteString (1 -> _per `*Cuc ]
 [; ;main.c: 249: lcd_gotoxy(13, 1);
 "249
 [e ( _lcd_gotoxy (2 , -> -> 13 `i `uc -> -> 1 `i `uc ]
