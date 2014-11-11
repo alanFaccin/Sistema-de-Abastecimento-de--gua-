@@ -262,10 +262,12 @@ void interrupt ISR(void) {
         if (ADCResult < 50 && flag_ch == 0) {
             PORTDbits.RD2 = 0;
             PORTDbits.RD3 = 1;
+            USARTWriteString("B");
         }
         if (ADCResult > 200 && flag_ch == 0) {
             PORTDbits.RD2 = 1;
             PORTDbits.RD3 = 0;
+            USARTWriteString("b");
         }
         __delay_ms(200);
         PIR1bits.ADIF = 0; // Limpa a flag da interrupção do conversor A/D.
@@ -331,10 +333,10 @@ void ativar(void) {
         if (flag_Start == 0) {
             //Ativar(LIGAR);
             flag_Start = 1;
-            USARTWriteString(LIGAR);
+            USARTWriteString("L");
         } else {
             flag_Start = 0;
-            USARTWriteString(DESLIGAR);
+            USARTWriteString("l");
             //Ativar(DESLIGAR);
         }
     }
